@@ -1,0 +1,363 @@
+{
+  "cnpj": "37.072.192/0001-51",
+  "razao_social": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+  "qt_nfes": 6,
+  "qt_itens": 31,
+  "faturamento_total": 41931.32,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 31,
+      "qt_total_pecas": 1150,
+      "vu_min": 29.0,
+      "vu_med": 37.09,
+      "vu_max": 55.37,
+      "faturamento": 41931.32
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-08-19",
+        "numero_nf": "5157",
+        "produto": "03.04.174",
+        "descricao": "Barra Redonda 304L - 3,97mm (5/32\")",
+        "qtd": 0.87,
+        "vu": 38.86,
+        "vt": 33.81
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-08-19",
+        "numero_nf": "5157",
+        "produto": "9059001",
+        "descricao": "PIRCÍMETRO MARCADOR DE PERFURAÇÃO",
+        "qtd": 300.0,
+        "vu": 37.71,
+        "vt": 11313.0
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-08-19",
+        "numero_nf": "5157",
+        "produto": "03.04.175",
+        "descricao": "Barra Redonda 304L - 15,87mm (5/8\")",
+        "qtd": 1.06,
+        "vu": 33.5,
+        "vt": 35.51
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-08-19",
+        "numero_nf": "5157",
+        "produto": "03.04.177",
+        "descricao": "Barra Redonda 304L - 9,53mm (3/8\")",
+        "qtd": 18.0,
+        "vu": 29.65,
+        "vt": 533.7
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-08-19",
+        "numero_nf": "5157",
+        "produto": "03.04.176",
+        "descricao": "Barra Redonda 304L - 4,76mm (3/16\")",
+        "qtd": 0.54,
+        "vu": 37.45,
+        "vt": 20.22
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-06-02",
+        "numero_nf": "5099",
+        "produto": "9059001",
+        "descricao": "PIRCÍMETRO MARCADOR DE PERFURAÇÃO",
+        "qtd": 200.0,
+        "vu": 37.71,
+        "vt": 7542.0
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-06-02",
+        "numero_nf": "5099",
+        "produto": "03.04.174",
+        "descricao": "Barra Redonda 304L - 3,97mm (5/32\")",
+        "qtd": 0.87,
+        "vu": 38.86,
+        "vt": 33.81
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-06-02",
+        "numero_nf": "5099",
+        "produto": "03.04.175",
+        "descricao": "Barra Redonda 304L - 15,87mm (5/8\")",
+        "qtd": 1.06,
+        "vu": 33.5,
+        "vt": 35.51
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-06-02",
+        "numero_nf": "5099",
+        "produto": "03.04.177",
+        "descricao": "Barra Redonda 304L - 9,53mm (3/8\")",
+        "qtd": 3.66,
+        "vu": 34.14,
+        "vt": 124.95
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-06-02",
+        "numero_nf": "5099",
+        "produto": "03.04.177",
+        "descricao": "Barra Redonda 304L - 9,53mm (3/8\")",
+        "qtd": 9.0,
+        "vu": 29.65,
+        "vt": 266.85
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-06-02",
+        "numero_nf": "5099",
+        "produto": "03.04.176",
+        "descricao": "Barra Redonda 304L - 4,76mm (3/16\")",
+        "qtd": 0.54,
+        "vu": 37.45,
+        "vt": 20.22
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-03-25",
+        "numero_nf": "5049",
+        "produto": "03.04.175",
+        "descricao": "Barra Redonda 316L - 15,87mm (5/8\")",
+        "qtd": 7.385,
+        "vu": 33.5,
+        "vt": 247.4
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-03-25",
+        "numero_nf": "5049",
+        "produto": "9059001",
+        "descricao": "PIRCÍMETRO MARCADOR DE PERFURAÇÃO",
+        "qtd": 105.0,
+        "vu": 35.41,
+        "vt": 3718.05
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-03-25",
+        "numero_nf": "5049",
+        "produto": "03.04.176",
+        "descricao": "Barra Redonda 316L - 6,35mm (1/4\")",
+        "qtd": 1.421,
+        "vu": 37.45,
+        "vt": 53.22
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-03-25",
+        "numero_nf": "5049",
+        "produto": "03.04.174",
+        "descricao": "Barra Redonda 316L - 3,97mm (5/32\")",
+        "qtd": 0.0575,
+        "vu": 38.86,
+        "vt": 2.23
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-03-25",
+        "numero_nf": "5049",
+        "produto": "03.04.177",
+        "descricao": "Barra Redonda 316L - 9,53mm (3/8\")",
+        "qtd": 6.345,
+        "vu": 34.14,
+        "vt": 216.62
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-01-27",
+        "numero_nf": "5001",
+        "produto": "9059001",
+        "descricao": "PIRCÍMETRO MARCADOR DE PERFURAÇÃO",
+        "qtd": 285.0,
+        "vu": 35.41,
+        "vt": 10091.85
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-01-27",
+        "numero_nf": "5001",
+        "produto": "03.04.177",
+        "descricao": "Barra Redonda 316L - 9,53mm (3/8\")",
+        "qtd": 16.65,
+        "vu": 33.9,
+        "vt": 564.43
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-01-27",
+        "numero_nf": "5001",
+        "produto": "03.04.175",
+        "descricao": "Barra Redonda 316L - 15,87mm (5/8\")",
+        "qtd": 7.9,
+        "vu": 33.9,
+        "vt": 267.81
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-01-27",
+        "numero_nf": "5001",
+        "produto": "03.04.174",
+        "descricao": "Barra Redonda 316L - 3,97mm (5/32\")",
+        "qtd": 1.0,
+        "vu": 37.0,
+        "vt": 37.0
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2025-01-27",
+        "numero_nf": "5001",
+        "produto": "03.04.184",
+        "descricao": "Barra Redonda 420 - 4,76mm (3/16\")",
+        "qtd": 1.4,
+        "vu": 29.0,
+        "vt": 40.6
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2024-12-09",
+        "numero_nf": "4993",
+        "produto": "03.04.175",
+        "descricao": "Barra Redonda 316L - 15,87mm (5/8\")",
+        "qtd": 1.6,
+        "vu": 33.9,
+        "vt": 54.24
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2024-12-09",
+        "numero_nf": "4993",
+        "produto": "03.04.177",
+        "descricao": "Barra Redonda 316L - 9,53mm (3/8\")",
+        "qtd": 3.35,
+        "vu": 33.9,
+        "vt": 113.56
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2024-12-09",
+        "numero_nf": "4993",
+        "produto": "03.04.184",
+        "descricao": "Barra Redonda 420 - 4,76mm (3/16\")",
+        "qtd": 0.3,
+        "vu": 29.0,
+        "vt": 8.7
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2024-12-09",
+        "numero_nf": "4993",
+        "produto": "03.04.174",
+        "descricao": "Barra Redonda 316L - 3,97mm (5/32\")",
+        "qtd": 0.2,
+        "vu": 37.0,
+        "vt": 7.4
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2024-12-09",
+        "numero_nf": "4993",
+        "produto": "9059001",
+        "descricao": "PIRCÍMETRO MARCADOR DE PERFURAÇÃO",
+        "qtd": 50.0,
+        "vu": 35.41,
+        "vt": 1770.5
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2024-10-18",
+        "numero_nf": "4959",
+        "produto": "9059001",
+        "descricao": "PIRCÍMETRO MARCADOR DE PERFURAÇÃO",
+        "qtd": 111.0,
+        "vu": 35.41,
+        "vt": 3930.51
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2024-10-18",
+        "numero_nf": "4959",
+        "produto": "03.04.177",
+        "descricao": "Barra Redonda 316L - 9,53mm (3/8\")",
+        "qtd": 6.7,
+        "vu": 50.9,
+        "vt": 341.03
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2024-10-18",
+        "numero_nf": "4959",
+        "produto": "03.04.175",
+        "descricao": "Barra Redonda 316L - 15,87mm (5/8\")",
+        "qtd": 7.8,
+        "vu": 50.9,
+        "vt": 397.02
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2024-10-18",
+        "numero_nf": "4959",
+        "produto": "03.04.174",
+        "descricao": "Barra Redonda 316L - 3,97mm (5/32\")",
+        "qtd": 0.6,
+        "vu": 55.37,
+        "vt": 33.22
+      },
+      {
+        "cnpj": "37.072.192/0001-51",
+        "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+        "data": "2024-10-18",
+        "numero_nf": "4959",
+        "produto": "03.04.176",
+        "descricao": "Barra Redonda 316L - 6,35mm (1/4\")",
+        "qtd": 1.5,
+        "vu": 50.9,
+        "vt": 76.35
+      }
+    ]
+  }
+}

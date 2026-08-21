@@ -1,0 +1,286 @@
+{
+  "cnpj": "26.206.114/0001-86",
+  "razao_social": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+  "qt_nfes": 11,
+  "qt_itens": 20,
+  "faturamento_total": 44243.49,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 9,
+      "qt_total_pecas": 215,
+      "vu_min": 23.0,
+      "vu_med": 502.03,
+      "vu_max": 1245.0,
+      "faturamento": 18363.09
+    },
+    {
+      "tipo": "HASTE",
+      "qt_itens": 3,
+      "qt_total_pecas": 3357,
+      "vu_min": 3.5,
+      "vu_med": 4.17,
+      "vu_max": 4.5,
+      "faturamento": 13749.5
+    },
+    {
+      "tipo": "FLANGE",
+      "qt_itens": 5,
+      "qt_total_pecas": 432,
+      "vu_min": 14.2,
+      "vu_med": 20.54,
+      "vu_max": 26.5,
+      "faturamento": 8138.0
+    },
+    {
+      "tipo": "PORCA",
+      "qt_itens": 2,
+      "qt_total_pecas": 107,
+      "vu_min": 14.3,
+      "vu_med": 422.95,
+      "vu_max": 831.6,
+      "faturamento": 3164.7
+    },
+    {
+      "tipo": "PINO",
+      "qt_itens": 1,
+      "qt_total_pecas": 202,
+      "vu_min": 4.1,
+      "vu_med": 4.1,
+      "vu_max": 4.1,
+      "faturamento": 828.2
+    }
+  ],
+  "itens_por_tipo": {
+    "PORCA": [
+      {
+        "cnpj": "26.206.114/0001-86",
+        "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+        "data": "2023-07-18",
+        "numero_nf": "4667",
+        "produto": "02.01.099",
+        "descricao": "Latão Diam de 1 e 1/18 28.58 MP para a porca",
+        "qtd": 2.0,
+        "vu": 831.6,
+        "vt": 1663.2
+      },
+      {
+        "cnpj": "26.206.114/0001-86",
+        "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+        "data": "2023-07-18",
+        "numero_nf": "4667",
+        "produto": "9025011",
+        "descricao": "Porca Especial em latão s/ rosca p/ fuso 1588FP",
+        "qtd": 105.0,
+        "vu": 14.3,
+        "vt": 1501.5
+      }
+    ],
+    "PINO": [
+      {
+        "cnpj": "26.206.114/0001-86",
+        "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+        "data": "2023-10-09",
+        "numero_nf": "4731",
+        "produto": "9025002",
+        "descricao": "PINO BOTTERO - 208,50MM Ø 12,00 Ø 11,00",
+        "qtd": 202.0,
+        "vu": 4.1,
+        "vt": 828.2
+      }
+    ],
+    "OUTROS": [
+      {
+        "cnpj": "26.206.114/0001-86",
+        "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+        "data": "2024-05-22",
+        "numero_nf": "4860",
+        "produto": "01.04.027",
+        "descricao": "BARRA ALUMÍNIO 4X38 MM ERRADA",
+        "qtd": 5.0,
+        "vu": 31.6,
+        "vt": 158.0
+      },
+      {
+        "cnpj": "26.206.114/0001-86",
+        "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+        "data": "2024-05-22",
+        "numero_nf": "4860",
+        "produto": "01.04.026",
+        "descricao": "BARRA ALUMÍNIO 4X43 MM ERRADA",
+        "qtd": 60.0,
+        "vu": 35.95,
+        "vt": 2157.0
+      },
+      {
+        "cnpj": "26.206.114/0001-86",
+        "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+        "data": "2024-05-09",
+        "numero_nf": "4847",
+        "produto": "9025018",
+        "descricao": "TRAVA PARA STRIP LED",
+        "qtd": 103.0,
+        "vu": 23.0,
+        "vt": 2369.0
+      },
+      {
+        "cnpj": "26.206.114/0001-86",
+        "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+        "data": "2023-11-14",
+        "numero_nf": "4761",
+        "produto": "01.01.089",
+        "descricao": "BARRA RED ALUMÍNIO 6351 T6 6 POLEGADAS",
+        "qtd": 1.0,
+        "vu": 1245.0,
+        "vt": 1245.0
+      },
+      {
+        "cnpj": "26.206.114/0001-86",
+        "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+        "data": "2023-11-13",
+        "numero_nf": "4760",
+        "produto": "01.01.088",
+        "descricao": "BARRA ALUMÍNIO 1 M 5\" 6351T6",
+        "qtd": 2.0,
+        "vu": 868.73,
+        "vt": 1737.46
+      },
+      {
+        "cnpj": "26.206.114/0001-86",
+        "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+        "data": "2023-11-08",
+        "numero_nf": "4754",
+        "produto": "01.01.087",
+        "descricao": "BARRA RED ALUMÍNIO 6351T6 4\" - 1001.60MM",
+        "qtd": 7.0,
+        "vu": 551.36,
+        "vt": 3859.52
+      },
+      {
+        "cnpj": "26.206.114/0001-86",
+        "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+        "data": "2023-11-07",
+        "numero_nf": "4751",
+        "produto": "01.01.088",
+        "descricao": "BARRA ALUMÍNIO 1 M 5\" 6351T6",
+        "qtd": 2.0,
+        "vu": 868.73,
+        "vt": 1737.46
+      },
+      {
+        "cnpj": "26.206.114/0001-86",
+        "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+        "data": "2023-11-01",
+        "numero_nf": "4749",
+        "produto": "01.01.088",
+        "descricao": "BARRA ALUMÍNIO 1 M 5\" 6351T6",
+        "qtd": 5.0,
+        "vu": 868.73,
+        "vt": 4343.65
+      },
+      {
+        "cnpj": "26.206.114/0001-86",
+        "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+        "data": "2023-10-09",
+        "numero_nf": "4731",
+        "produto": "04.04.002",
+        "descricao": "BARRA RD RETIF 1045 12MM H-7 X 3000MM - 15 BR CORT",
+        "qtd": 30.0,
+        "vu": 25.2,
+        "vt": 756.0
+      }
+    ],
+    "FLANGE": [
+      {
+        "cnpj": "26.206.114/0001-86",
+        "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+        "data": "2024-05-22",
+        "numero_nf": "4860",
+        "produto": "9025019",
+        "descricao": "FLANGE DE MOTORL LC/RPC ENKONG 78MMx16,50MM",
+        "qtd": 130.0,
+        "vu": 14.2,
+        "vt": 1846.0
+      },
+      {
+        "cnpj": "26.206.114/0001-86",
+        "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+        "data": "2023-11-14",
+        "numero_nf": "4761",
+        "produto": "9025016",
+        "descricao": "2.09.149.018 - Flange AL P/Rebolo Feltro",
+        "qtd": 43.0,
+        "vu": 26.5,
+        "vt": 1139.5
+      },
+      {
+        "cnpj": "26.206.114/0001-86",
+        "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+        "data": "2023-11-13",
+        "numero_nf": "4760",
+        "produto": "9025015",
+        "descricao": "2.09.149.017 - Tampa Flange AL LP REB 120mm pol/di",
+        "qtd": 97.0,
+        "vu": 14.5,
+        "vt": 1406.5
+      },
+      {
+        "cnpj": "26.206.114/0001-86",
+        "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+        "data": "2023-11-07",
+        "numero_nf": "4751",
+        "produto": "9025012",
+        "descricao": "2.09.149.012 - Flange do Motor LP 75mmx120mmx55mmx",
+        "qtd": 52.0,
+        "vu": 25.5,
+        "vt": 1326.0
+      },
+      {
+        "cnpj": "26.206.114/0001-86",
+        "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+        "data": "2023-11-01",
+        "numero_nf": "4749",
+        "produto": "9025014",
+        "descricao": "2.09.149.015 - Flange Interna Reb Polimento",
+        "qtd": 110.0,
+        "vu": 22.0,
+        "vt": 2420.0
+      }
+    ],
+    "HASTE": [
+      {
+        "cnpj": "26.206.114/0001-86",
+        "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+        "data": "2024-06-18",
+        "numero_nf": "4874",
+        "produto": "04.04.003",
+        "descricao": "HASTE METAL PA BOTERO",
+        "qtd": 643.0,
+        "vu": 4.5,
+        "vt": 2893.5
+      },
+      {
+        "cnpj": "26.206.114/0001-86",
+        "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+        "data": "2024-06-13",
+        "numero_nf": "4872",
+        "produto": "9025017",
+        "descricao": "HASTE METAL PA BOTERO",
+        "qtd": 1357.0,
+        "vu": 3.5,
+        "vt": 4749.5
+      },
+      {
+        "cnpj": "26.206.114/0001-86",
+        "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+        "data": "2024-06-13",
+        "numero_nf": "4872",
+        "produto": "04.04.003",
+        "descricao": "HASTE METAL PA BOTERO",
+        "qtd": 1357.0,
+        "vu": 4.5,
+        "vt": 6106.5
+      }
+    ]
+  }
+}

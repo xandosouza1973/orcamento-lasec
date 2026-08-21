@@ -1,0 +1,165 @@
+{
+  "cnpj": "32.203.909/0001-33",
+  "razao_social": "HGS INDUSTRIAL LTDA",
+  "qt_nfes": 8,
+  "qt_itens": 12,
+  "faturamento_total": 27080.0,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 11,
+      "qt_total_pecas": 1201,
+      "vu_min": 10.0,
+      "vu_med": 21.11,
+      "vu_max": 33.0,
+      "faturamento": 24812.0
+    },
+    {
+      "tipo": "ARRUELA",
+      "qt_itens": 1,
+      "qt_total_pecas": 81,
+      "vu_min": 28.0,
+      "vu_med": 28.0,
+      "vu_max": 28.0,
+      "faturamento": 2268.0
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "32.203.909/0001-33",
+        "razao": "HGS INDUSTRIAL LTDA",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9065004",
+        "descricao": "SAÍDA DE ÁGUA",
+        "qtd": 100.0,
+        "vu": 15.0,
+        "vt": 1500.0
+      },
+      {
+        "cnpj": "32.203.909/0001-33",
+        "razao": "HGS INDUSTRIAL LTDA",
+        "data": "2025-11-03",
+        "numero_nf": "5211",
+        "produto": "9065004",
+        "descricao": "SAÍDA DE ÁGUA",
+        "qtd": 204.0,
+        "vu": 15.0,
+        "vt": 3060.0
+      },
+      {
+        "cnpj": "32.203.909/0001-33",
+        "razao": "HGS INDUSTRIAL LTDA",
+        "data": "2025-09-15",
+        "numero_nf": "5177",
+        "produto": "03.04.196",
+        "descricao": "REDONDO 4140",
+        "qtd": 84.0,
+        "vu": 10.0,
+        "vt": 840.0
+      },
+      {
+        "cnpj": "32.203.909/0001-33",
+        "razao": "HGS INDUSTRIAL LTDA",
+        "data": "2025-08-28",
+        "numero_nf": "5166",
+        "produto": "9065004",
+        "descricao": "SAÍDA DE ÁGUA",
+        "qtd": 109.0,
+        "vu": 15.0,
+        "vt": 1635.0
+      },
+      {
+        "cnpj": "32.203.909/0001-33",
+        "razao": "HGS INDUSTRIAL LTDA",
+        "data": "2025-06-24",
+        "numero_nf": "5119",
+        "produto": "9065004",
+        "descricao": "SAÍDA DE ÁGUA",
+        "qtd": 104.0,
+        "vu": 15.0,
+        "vt": 1560.0
+      },
+      {
+        "cnpj": "32.203.909/0001-33",
+        "razao": "HGS INDUSTRIAL LTDA",
+        "data": "2025-05-28",
+        "numero_nf": "5097",
+        "produto": "9065002",
+        "descricao": "CONEXÃO SAID",
+        "qtd": 100.0,
+        "vu": 26.57,
+        "vt": 2657.0
+      },
+      {
+        "cnpj": "32.203.909/0001-33",
+        "razao": "HGS INDUSTRIAL LTDA",
+        "data": "2025-05-28",
+        "numero_nf": "5097",
+        "produto": "03.04.190",
+        "descricao": "CONEXÃO SAIDA DE AR",
+        "qtd": 100.0,
+        "vu": 21.78,
+        "vt": 2178.0
+      },
+      {
+        "cnpj": "32.203.909/0001-33",
+        "razao": "HGS INDUSTRIAL LTDA",
+        "data": "2025-05-26",
+        "numero_nf": "5094",
+        "produto": "03.04.189",
+        "descricao": "CONEXÃO SAIDA DE COMBUSTIVEL",
+        "qtd": 100.0,
+        "vu": 25.41,
+        "vt": 2541.0
+      },
+      {
+        "cnpj": "32.203.909/0001-33",
+        "razao": "HGS INDUSTRIAL LTDA",
+        "data": "2025-05-26",
+        "numero_nf": "5094",
+        "produto": "9065003",
+        "descricao": "CONEXÃO SAIDA",
+        "qtd": 100.0,
+        "vu": 25.41,
+        "vt": 2541.0
+      },
+      {
+        "cnpj": "32.203.909/0001-33",
+        "razao": "HGS INDUSTRIAL LTDA",
+        "data": "2025-05-23",
+        "numero_nf": "5090",
+        "produto": "9065001",
+        "descricao": "JANELA DE INSPEÇÃO",
+        "qtd": 100.0,
+        "vu": 33.0,
+        "vt": 3300.0
+      },
+      {
+        "cnpj": "32.203.909/0001-33",
+        "razao": "HGS INDUSTRIAL LTDA",
+        "data": "2025-05-23",
+        "numero_nf": "5090",
+        "produto": "03.04.188",
+        "descricao": "JANELA DE INSPEÇÃO",
+        "qtd": 100.0,
+        "vu": 30.0,
+        "vt": 3000.0
+      }
+    ],
+    "ARRUELA": [
+      {
+        "cnpj": "32.203.909/0001-33",
+        "razao": "HGS INDUSTRIAL LTDA",
+        "data": "2025-09-15",
+        "numero_nf": "5177",
+        "produto": "9065005",
+        "descricao": "CONEXAO DE SAIDA + ARRUELA/ROSCA ESQUERDA",
+        "qtd": 81.0,
+        "vu": 28.0,
+        "vt": 2268.0
+      }
+    ]
+  }
+}

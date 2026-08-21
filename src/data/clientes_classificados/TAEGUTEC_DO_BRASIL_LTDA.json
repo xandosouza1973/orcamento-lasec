@@ -1,0 +1,88 @@
+{
+  "cnpj": "04.306.120/0001-72",
+  "razao_social": "TAEGUTEC DO BRASIL LTDA",
+  "qt_nfes": 5,
+  "qt_itens": 6,
+  "faturamento_total": 2004.0,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 6,
+      "qt_total_pecas": 30,
+      "vu_min": 42.0,
+      "vu_med": 166.0,
+      "vu_max": 300.0,
+      "faturamento": 2004.0
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "04.306.120/0001-72",
+        "razao": "TAEGUTEC DO BRASIL LTDA",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "6000660",
+        "descricao": "PASTILHA DE METAL DURO (TDC 2-15R    TT9030)",
+        "qtd": 9.0,
+        "vu": 42.0,
+        "vt": 378.0
+      },
+      {
+        "cnpj": "04.306.120/0001-72",
+        "razao": "TAEGUTEC DO BRASIL LTDA",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "6000660",
+        "descricao": "PASTILHA DE METAL DURO (TDC 2-15R    TT9030)",
+        "qtd": 9.0,
+        "vu": 42.0,
+        "vt": 378.0
+      },
+      {
+        "cnpj": "04.306.120/0001-72",
+        "razao": "TAEGUTEC DO BRASIL LTDA",
+        "data": "2017-09-18",
+        "numero_nf": "3111",
+        "produto": "08.14.013",
+        "descricao": "PORTA FERRAMENTA TTER 2020-3T20",
+        "qtd": 1.0,
+        "vu": 280.0,
+        "vt": 280.0
+      },
+      {
+        "cnpj": "04.306.120/0001-72",
+        "razao": "TAEGUTEC DO BRASIL LTDA",
+        "data": "2016-03-28",
+        "numero_nf": "2512",
+        "produto": "08.14.012",
+        "descricao": "PORTA FERRAMENTA TTER 2020-2T20",
+        "qtd": 1.0,
+        "vu": 300.0,
+        "vt": 300.0
+      },
+      {
+        "cnpj": "04.306.120/0001-72",
+        "razao": "TAEGUTEC DO BRASIL LTDA",
+        "data": "2014-10-07",
+        "numero_nf": "1958",
+        "produto": "2300032",
+        "descricao": "PORTA FERRAMENTA (TTBN 25-32)",
+        "qtd": 1.0,
+        "vu": 290.0,
+        "vt": 290.0
+      },
+      {
+        "cnpj": "04.306.120/0001-72",
+        "razao": "TAEGUTEC DO BRASIL LTDA",
+        "data": "2014-07-31",
+        "numero_nf": "1887",
+        "produto": "6000660",
+        "descricao": "PASTILHA DE METAL DURO (TDC 2-15R    TT9030)",
+        "qtd": 9.0,
+        "vu": 42.0,
+        "vt": 378.0
+      }
+    ]
+  }
+}

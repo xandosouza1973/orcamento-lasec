@@ -1,0 +1,231 @@
+{
+  "cnpj": "29.582.039/0001-46",
+  "razao_social": "NANQUIM INJEÇÃO PLÁTICA E MONTAGENS EIRELI.",
+  "qt_nfes": 3,
+  "qt_itens": 18,
+  "faturamento_total": 17429.44,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 15,
+      "qt_total_pecas": 18,
+      "vu_min": 80.0,
+      "vu_med": 655.71,
+      "vu_max": 1571.4,
+      "faturamento": 12119.44
+    },
+    {
+      "tipo": "SUPORTE",
+      "qt_itens": 3,
+      "qt_total_pecas": 4,
+      "vu_min": 510.0,
+      "vu_med": 1320.0,
+      "vu_max": 2100.0,
+      "faturamento": 5310.0
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "29.582.039/0001-46",
+        "razao": "NANQUIM INJEÇÃO PLÁTICA E MONTAGENS EIRELI.",
+        "data": "2018-08-21",
+        "numero_nf": "3409",
+        "produto": "9035010",
+        "descricao": "BERÇO B",
+        "qtd": 1.0,
+        "vu": 1100.0,
+        "vt": 1100.0
+      },
+      {
+        "cnpj": "29.582.039/0001-46",
+        "razao": "NANQUIM INJEÇÃO PLÁTICA E MONTAGENS EIRELI.",
+        "data": "2018-08-21",
+        "numero_nf": "3409",
+        "produto": "9035009",
+        "descricao": "BERÇO A",
+        "qtd": 1.0,
+        "vu": 1100.0,
+        "vt": 1100.0
+      },
+      {
+        "cnpj": "29.582.039/0001-46",
+        "razao": "NANQUIM INJEÇÃO PLÁTICA E MONTAGENS EIRELI.",
+        "data": "2018-08-21",
+        "numero_nf": "3409",
+        "produto": "02.01.031",
+        "descricao": "CELERON 30X15X305MM",
+        "qtd": 2.0,
+        "vu": 204.0,
+        "vt": 408.0
+      },
+      {
+        "cnpj": "29.582.039/0001-46",
+        "razao": "NANQUIM INJEÇÃO PLÁTICA E MONTAGENS EIRELI.",
+        "data": "2018-08-10",
+        "numero_nf": "3397",
+        "produto": "02.01.032",
+        "descricao": "COBRE ELETROLITICO 50,80X60",
+        "qtd": 0.5,
+        "vu": 80.0,
+        "vt": 40.0
+      },
+      {
+        "cnpj": "29.582.039/0001-46",
+        "razao": "NANQUIM INJEÇÃO PLÁTICA E MONTAGENS EIRELI.",
+        "data": "2018-08-10",
+        "numero_nf": "3397",
+        "produto": "9035007",
+        "descricao": "Eletrodo 2 Erodir Gaveta - Cód. WA-528-CM368 DESB.",
+        "qtd": 2.0,
+        "vu": 538.76,
+        "vt": 1077.52
+      },
+      {
+        "cnpj": "29.582.039/0001-46",
+        "razao": "NANQUIM INJEÇÃO PLÁTICA E MONTAGENS EIRELI.",
+        "data": "2018-08-10",
+        "numero_nf": "3397",
+        "produto": "9035008",
+        "descricao": "Eletrodo 2 Erodir Gaveta - Cód. WA-528-CM368 ACAB.",
+        "qtd": 2.0,
+        "vu": 538.76,
+        "vt": 1077.52
+      },
+      {
+        "cnpj": "29.582.039/0001-46",
+        "razao": "NANQUIM INJEÇÃO PLÁTICA E MONTAGENS EIRELI.",
+        "data": "2018-07-26",
+        "numero_nf": "3378",
+        "produto": "06.01.008",
+        "descricao": "CELERON 30X215X305MM",
+        "qtd": 1.0,
+        "vu": 204.0,
+        "vt": 204.0
+      },
+      {
+        "cnpj": "29.582.039/0001-46",
+        "razao": "NANQUIM INJEÇÃO PLÁTICA E MONTAGENS EIRELI.",
+        "data": "2018-07-26",
+        "numero_nf": "3378",
+        "produto": "9035002",
+        "descricao": "BERÇO CELERON FERRO 2",
+        "qtd": 1.0,
+        "vu": 450.0,
+        "vt": 450.0
+      },
+      {
+        "cnpj": "29.582.039/0001-46",
+        "razao": "NANQUIM INJEÇÃO PLÁTICA E MONTAGENS EIRELI.",
+        "data": "2018-07-26",
+        "numero_nf": "3378",
+        "produto": "06.01.008",
+        "descricao": "CELERON 30X215X305MM",
+        "qtd": 1.0,
+        "vu": 204.0,
+        "vt": 204.0
+      },
+      {
+        "cnpj": "29.582.039/0001-46",
+        "razao": "NANQUIM INJEÇÃO PLÁTICA E MONTAGENS EIRELI.",
+        "data": "2018-07-26",
+        "numero_nf": "3378",
+        "produto": "9035001",
+        "descricao": "BERÇO CELERON FERRO1",
+        "qtd": 1.0,
+        "vu": 450.0,
+        "vt": 450.0
+      },
+      {
+        "cnpj": "29.582.039/0001-46",
+        "razao": "NANQUIM INJEÇÃO PLÁTICA E MONTAGENS EIRELI.",
+        "data": "2018-07-26",
+        "numero_nf": "3378",
+        "produto": "9035005",
+        "descricao": "BERÇO MONTAR PEDESTAL BATEDEIRA",
+        "qtd": 1.0,
+        "vu": 450.0,
+        "vt": 450.0
+      },
+      {
+        "cnpj": "29.582.039/0001-46",
+        "razao": "NANQUIM INJEÇÃO PLÁTICA E MONTAGENS EIRELI.",
+        "data": "2018-07-26",
+        "numero_nf": "3378",
+        "produto": "06.01.012",
+        "descricao": "NYLON 100X205X205",
+        "qtd": 1.0,
+        "vu": 928.8,
+        "vt": 928.8
+      },
+      {
+        "cnpj": "29.582.039/0001-46",
+        "razao": "NANQUIM INJEÇÃO PLÁTICA E MONTAGENS EIRELI.",
+        "data": "2018-07-26",
+        "numero_nf": "3378",
+        "produto": "06.01.010",
+        "descricao": "NYLON 100X255X305",
+        "qtd": 2.0,
+        "vu": 1042.2,
+        "vt": 2084.4
+      },
+      {
+        "cnpj": "29.582.039/0001-46",
+        "razao": "NANQUIM INJEÇÃO PLÁTICA E MONTAGENS EIRELI.",
+        "data": "2018-07-26",
+        "numero_nf": "3378",
+        "produto": "06.01.011",
+        "descricao": "NYLON 100X255X255",
+        "qtd": 1.0,
+        "vu": 973.8,
+        "vt": 973.8
+      },
+      {
+        "cnpj": "29.582.039/0001-46",
+        "razao": "NANQUIM INJEÇÃO PLÁTICA E MONTAGENS EIRELI.",
+        "data": "2018-07-26",
+        "numero_nf": "3378",
+        "produto": "06.01.009",
+        "descricao": "NYLON 130X255X255",
+        "qtd": 1.0,
+        "vu": 1571.4,
+        "vt": 1571.4
+      }
+    ],
+    "SUPORTE": [
+      {
+        "cnpj": "29.582.039/0001-46",
+        "razao": "NANQUIM INJEÇÃO PLÁTICA E MONTAGENS EIRELI.",
+        "data": "2018-07-26",
+        "numero_nf": "3378",
+        "produto": "9035004",
+        "descricao": "BERÇO MONTAR SUPORTE DIREITA / ESQUERDA",
+        "qtd": 2.0,
+        "vu": 1350.0,
+        "vt": 2700.0
+      },
+      {
+        "cnpj": "29.582.039/0001-46",
+        "razao": "NANQUIM INJEÇÃO PLÁTICA E MONTAGENS EIRELI.",
+        "data": "2018-07-26",
+        "numero_nf": "3378",
+        "produto": "9035003",
+        "descricao": "BERÇO MONTAR SUPORTE ARTICULAR BATEDEIRA",
+        "qtd": 1.0,
+        "vu": 510.0,
+        "vt": 510.0
+      },
+      {
+        "cnpj": "29.582.039/0001-46",
+        "razao": "NANQUIM INJEÇÃO PLÁTICA E MONTAGENS EIRELI.",
+        "data": "2018-07-26",
+        "numero_nf": "3378",
+        "produto": "9035006",
+        "descricao": "BERÇO PARAFUSAR BASE SUPORTE ARTICULADO BASE APOIO",
+        "qtd": 1.0,
+        "vu": 2100.0,
+        "vt": 2100.0
+      }
+    ]
+  }
+}

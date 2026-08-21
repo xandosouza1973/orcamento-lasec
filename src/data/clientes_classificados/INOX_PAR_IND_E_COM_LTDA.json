@@ -1,0 +1,77 @@
+{
+  "cnpj": "56.057.672/0001-98",
+  "razao_social": "INOX-PAR IND. E COM. LTDA",
+  "qt_nfes": 5,
+  "qt_itens": 5,
+  "faturamento_total": 38910.2,
+  "resumo_por_tipo": [
+    {
+      "tipo": "SUPORTE",
+      "qt_itens": 5,
+      "qt_total_pecas": 286,
+      "vu_min": 133.62,
+      "vu_med": 137.85,
+      "vu_max": 148.4,
+      "faturamento": 38910.2
+    }
+  ],
+  "itens_por_tipo": {
+    "SUPORTE": [
+      {
+        "cnpj": "56.057.672/0001-98",
+        "razao": "INOX-PAR IND. E COM. LTDA",
+        "data": "2017-07-10",
+        "numero_nf": "3039",
+        "produto": "9010010",
+        "descricao": "SUPORTE DE FIXAÇÃO SWAY BAR 03 SC DES.201204003C",
+        "qtd": 25.0,
+        "vu": 148.4,
+        "vt": 3710.0
+      },
+      {
+        "cnpj": "56.057.672/0001-98",
+        "razao": "INOX-PAR IND. E COM. LTDA",
+        "data": "2016-11-10",
+        "numero_nf": "2781",
+        "produto": "9010010",
+        "descricao": "SUPORTE DE FIXAÇÃO SWAY BAR 03 SC DES.201204003C",
+        "qtd": 51.0,
+        "vu": 140.0,
+        "vt": 7140.0
+      },
+      {
+        "cnpj": "56.057.672/0001-98",
+        "razao": "INOX-PAR IND. E COM. LTDA",
+        "data": "2016-06-23",
+        "numero_nf": "2606",
+        "produto": "9010010",
+        "descricao": "SUPORTE DE FIXAÇÃO SWAY BAR 03 SC DES.201204003C",
+        "qtd": 109.0,
+        "vu": 133.62,
+        "vt": 14564.58
+      },
+      {
+        "cnpj": "56.057.672/0001-98",
+        "razao": "INOX-PAR IND. E COM. LTDA",
+        "data": "2016-06-21",
+        "numero_nf": "2602",
+        "produto": "9010010",
+        "descricao": "SUPORTE DE FIXAÇÃO SWAY BAR 03 SC DES.201204003C",
+        "qtd": 53.0,
+        "vu": 133.62,
+        "vt": 7081.86
+      },
+      {
+        "cnpj": "56.057.672/0001-98",
+        "razao": "INOX-PAR IND. E COM. LTDA",
+        "data": "2016-06-13",
+        "numero_nf": "2587",
+        "produto": "9010010",
+        "descricao": "SUPORTE DE FIXAÇÃO SWAY BAR 03 SC DES.201204003C",
+        "qtd": 48.0,
+        "vu": 133.62,
+        "vt": 6413.76
+      }
+    ]
+  }
+}

@@ -8,7 +8,8 @@ import {
   Cpu,
   Layers,
   Database,
-  Printer
+  Printer,
+  PackageCheck
 } from 'lucide-react';
 
 export type NavTab = 
@@ -16,6 +17,7 @@ export type NavTab =
   | 'novo_orcamento' 
   | 'orcamentos' 
   | 'busca_cnc' 
+  | 'minipcp'
   | 'clientes' 
   | 'maquinas' 
   | 'materiais' 
@@ -34,9 +36,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
 }) => {
   const navItems = [
     { id: 'dashboard' as NavTab, label: 'Dashboard', icon: LayoutDashboard },
-    { id: 'novo_orcamento' as NavTab, label: 'Novo Orçamento', icon: Calculator, badge: 'Rápido' },
+    { id: 'novo_orcamento' as NavTab, label: 'Novo Orçamento (v2.0)', icon: Calculator, badge: 'Fórmula v2' },
     { id: 'orcamentos' as NavTab, label: 'Histórico de Orçamentos', icon: FileText, count: orcamentosCount },
     { id: 'busca_cnc' as NavTab, label: 'Banco CNC (11.5k)', icon: Search },
+    { id: 'minipcp' as NavTab, label: 'Base MiniPCP (2.7k)', icon: PackageCheck, badge: 'Fábrica' },
     { id: 'documentos' as NavTab, label: 'Central de Documentos', icon: Printer },
   ];
 
@@ -118,11 +121,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
       <div className="rounded-xl border border-zinc-200 bg-white p-3 shadow-xs dark:border-zinc-800 dark:bg-zinc-900">
         <div className="flex items-center gap-2 text-xs font-semibold text-zinc-900 dark:text-white">
-          <Database className="h-4 w-4 text-amber-500" />
-          <span>LASEC Local Storage</span>
+          <Database className="h-4 w-4 text-emerald-500" />
+          <span>Neon PostgreSQL Conectado</span>
         </div>
         <p className="mt-1 text-[11px] text-zinc-500 dark:text-zinc-400">
-          Dados sincronizados localmente no seu computador.
+          Tabelas e MiniPCP sincronizados no cloud.
         </p>
       </div>
     </aside>

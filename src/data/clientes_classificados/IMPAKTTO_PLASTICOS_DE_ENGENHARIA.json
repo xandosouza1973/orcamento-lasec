@@ -1,0 +1,77 @@
+{
+  "cnpj": "07.410.726/0001-41",
+  "razao_social": "Impaktto Plasticos de Engenharia",
+  "qt_nfes": 1,
+  "qt_itens": 5,
+  "faturamento_total": 3419.0,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 5,
+      "qt_total_pecas": 685,
+      "vu_min": 3.0,
+      "vu_med": 5.0,
+      "vu_max": 7.0,
+      "faturamento": 3419.0
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "07.410.726/0001-41",
+        "razao": "Impaktto Plasticos de Engenharia",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9010007",
+        "descricao": "ROLLER Ø90 - AGUDIO",
+        "qtd": 196.0,
+        "vu": 7.0,
+        "vt": 1372.0
+      },
+      {
+        "cnpj": "07.410.726/0001-41",
+        "razao": "Impaktto Plasticos de Engenharia",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9010008",
+        "descricao": "CONECTOR DO FILTRO - LOKTAL",
+        "qtd": 199.0,
+        "vu": 3.0,
+        "vt": 597.0
+      },
+      {
+        "cnpj": "07.410.726/0001-41",
+        "razao": "Impaktto Plasticos de Engenharia",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9010022",
+        "descricao": "MEIA LUA - 105X250 - QUEIJO",
+        "qtd": 180.0,
+        "vu": 5.0,
+        "vt": 900.0
+      },
+      {
+        "cnpj": "07.410.726/0001-41",
+        "razao": "Impaktto Plasticos de Engenharia",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9010023",
+        "descricao": "MEIA LUA - 90X250 - QUEIJO",
+        "qtd": 74.0,
+        "vu": 5.0,
+        "vt": 370.0
+      },
+      {
+        "cnpj": "07.410.726/0001-41",
+        "razao": "Impaktto Plasticos de Engenharia",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9010023",
+        "descricao": "MEIA LUA - 90X250 - QUEIJO",
+        "qtd": 36.0,
+        "vu": 5.0,
+        "vt": 180.0
+      }
+    ]
+  }
+}

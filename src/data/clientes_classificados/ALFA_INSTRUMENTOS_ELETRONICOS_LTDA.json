@@ -1,0 +1,231 @@
+{
+  "cnpj": "50.632.017/0001-30",
+  "razao_social": "Alfa Instrumentos Eletronicos Ltda",
+  "qt_nfes": 15,
+  "qt_itens": 18,
+  "faturamento_total": 36198.97,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 14,
+      "qt_total_pecas": 11059,
+      "vu_min": 2.83,
+      "vu_med": 3.67,
+      "vu_max": 11.0,
+      "faturamento": 34938.97
+    },
+    {
+      "tipo": "PINO",
+      "qt_itens": 4,
+      "qt_total_pecas": 600,
+      "vu_min": 2.1,
+      "vu_med": 2.1,
+      "vu_max": 2.1,
+      "faturamento": 1260.0
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "50.632.017/0001-30",
+        "razao": "Alfa Instrumentos Eletronicos Ltda",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9002001",
+        "descricao": "Plaqueta de Montagem Células l E L  (250 A 2T)",
+        "qtd": 2000.0,
+        "vu": 3.16,
+        "vt": 6320.0
+      },
+      {
+        "cnpj": "50.632.017/0001-30",
+        "razao": "Alfa Instrumentos Eletronicos Ltda",
+        "data": "2024-11-22",
+        "numero_nf": "4981",
+        "produto": "9002001",
+        "descricao": "Plaqueta de Montagem Células l E L  (250 A 2T)",
+        "qtd": 459.0,
+        "vu": 2.83,
+        "vt": 1298.97
+      },
+      {
+        "cnpj": "50.632.017/0001-30",
+        "razao": "Alfa Instrumentos Eletronicos Ltda",
+        "data": "2015-04-24",
+        "numero_nf": "2178",
+        "produto": "9002010",
+        "descricao": "Copo p/ 8107 Usinado - Des.0948.CC.00.A",
+        "qtd": 100.0,
+        "vu": 11.0,
+        "vt": 1100.0
+      },
+      {
+        "cnpj": "50.632.017/0001-30",
+        "razao": "Alfa Instrumentos Eletronicos Ltda",
+        "data": "2015-04-09",
+        "numero_nf": "2167",
+        "produto": "9002001",
+        "descricao": "Plaqueta de Montagem Células l E L  (250 A 2T)",
+        "qtd": 2000.0,
+        "vu": 3.0,
+        "vt": 6000.0
+      },
+      {
+        "cnpj": "50.632.017/0001-30",
+        "razao": "Alfa Instrumentos Eletronicos Ltda",
+        "data": "2015-03-05",
+        "numero_nf": "2124",
+        "produto": "9002001",
+        "descricao": "Plaqueta de Montagem Células l E L  (250 A 2T)",
+        "qtd": 2000.0,
+        "vu": 3.0,
+        "vt": 6000.0
+      },
+      {
+        "cnpj": "50.632.017/0001-30",
+        "razao": "Alfa Instrumentos Eletronicos Ltda",
+        "data": "2015-01-28",
+        "numero_nf": "2083",
+        "produto": "9002001",
+        "descricao": "Plaqueta de Montagem Células l E L  (250 A 2T)",
+        "qtd": 500.0,
+        "vu": 3.2,
+        "vt": 1600.0
+      },
+      {
+        "cnpj": "50.632.017/0001-30",
+        "razao": "Alfa Instrumentos Eletronicos Ltda",
+        "data": "2014-12-05",
+        "numero_nf": "2035",
+        "produto": "9002001",
+        "descricao": "Plaqueta de Montagem Células l E L  (250 A 2T)",
+        "qtd": 500.0,
+        "vu": 3.2,
+        "vt": 1600.0
+      },
+      {
+        "cnpj": "50.632.017/0001-30",
+        "razao": "Alfa Instrumentos Eletronicos Ltda",
+        "data": "2014-11-17",
+        "numero_nf": "2012",
+        "produto": "9002001",
+        "descricao": "Plaqueta de Montagem Células l E L  (250 A 2T)",
+        "qtd": 500.0,
+        "vu": 3.2,
+        "vt": 1600.0
+      },
+      {
+        "cnpj": "50.632.017/0001-30",
+        "razao": "Alfa Instrumentos Eletronicos Ltda",
+        "data": "2014-07-10",
+        "numero_nf": "1859",
+        "produto": "9002001",
+        "descricao": "Plaqueta de Montagem Células l E L  (250 A 2T)",
+        "qtd": 500.0,
+        "vu": 3.16,
+        "vt": 1580.0
+      },
+      {
+        "cnpj": "50.632.017/0001-30",
+        "razao": "Alfa Instrumentos Eletronicos Ltda",
+        "data": "2014-06-10",
+        "numero_nf": "1831",
+        "produto": "9002001",
+        "descricao": "Plaqueta de Montagem Células l E L  (250 A 2T)",
+        "qtd": 500.0,
+        "vu": 3.16,
+        "vt": 1580.0
+      },
+      {
+        "cnpj": "50.632.017/0001-30",
+        "razao": "Alfa Instrumentos Eletronicos Ltda",
+        "data": "2014-05-22",
+        "numero_nf": "1819",
+        "produto": "9002001",
+        "descricao": "Plaqueta de Montagem Células l E L  (250 A 2T)",
+        "qtd": 500.0,
+        "vu": 3.16,
+        "vt": 1580.0
+      },
+      {
+        "cnpj": "50.632.017/0001-30",
+        "razao": "Alfa Instrumentos Eletronicos Ltda",
+        "data": "2014-05-06",
+        "numero_nf": "1797",
+        "produto": "9002001",
+        "descricao": "Plaqueta de Montagem Células l E L  (250 A 2T)",
+        "qtd": 500.0,
+        "vu": 3.16,
+        "vt": 1580.0
+      },
+      {
+        "cnpj": "50.632.017/0001-30",
+        "razao": "Alfa Instrumentos Eletronicos Ltda",
+        "data": "2014-04-10",
+        "numero_nf": "1777",
+        "produto": "9002001",
+        "descricao": "Plaqueta de Montagem Células l E L  (250 A 2T)",
+        "qtd": 500.0,
+        "vu": 3.1,
+        "vt": 1550.0
+      },
+      {
+        "cnpj": "50.632.017/0001-30",
+        "razao": "Alfa instrumentos eletronicos Ltda",
+        "data": "2014-03-13",
+        "numero_nf": "1748",
+        "produto": "9002001",
+        "descricao": "Plaqueta de Montagem Células l E L  (250 A 2T)",
+        "qtd": 500.0,
+        "vu": 3.1,
+        "vt": 1550.0
+      }
+    ],
+    "PINO": [
+      {
+        "cnpj": "50.632.017/0001-30",
+        "razao": "Alfa Instrumentos Eletronicos Ltda",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9002003",
+        "descricao": "Pino Usinado Conf.Desenho 0725.CC.01.A",
+        "qtd": 200.0,
+        "vu": 2.1,
+        "vt": 420.0
+      },
+      {
+        "cnpj": "50.632.017/0001-30",
+        "razao": "Alfa Instrumentos Eletronicos Ltda",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9002003",
+        "descricao": "Pino Usinado Conf.Desenho 0725.CC.01.A",
+        "qtd": 200.0,
+        "vu": 2.1,
+        "vt": 420.0
+      },
+      {
+        "cnpj": "50.632.017/0001-30",
+        "razao": "Alfa Instrumentos Eletronicos Ltda",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9002003",
+        "descricao": "Pino Usinado Conf.Desenho 0725.CC.01.A",
+        "qtd": 0,
+        "vu": 2.1,
+        "vt": 0.0
+      },
+      {
+        "cnpj": "50.632.017/0001-30",
+        "razao": "Alfa Instrumentos Eletronicos Ltda",
+        "data": "2014-04-03",
+        "numero_nf": "1772",
+        "produto": "9002003",
+        "descricao": "Pino Usinado Conf.Desenho 0725.CC.01.A",
+        "qtd": 200.0,
+        "vu": 2.1,
+        "vt": 420.0
+      }
+    ]
+  }
+}

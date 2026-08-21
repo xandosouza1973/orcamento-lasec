@@ -1,0 +1,154 @@
+{
+  "cnpj": "25.160.086/0001-40",
+  "razao_social": "IDEAL INDUSTRIA E COMERCIO DE ANTENAS LTDA",
+  "qt_nfes": 1,
+  "qt_itens": 11,
+  "faturamento_total": 856.6,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 10,
+      "qt_total_pecas": 27,
+      "vu_min": 15.0,
+      "vu_med": 34.6,
+      "vu_max": 116.0,
+      "faturamento": 791.0
+    },
+    {
+      "tipo": "TAMPA",
+      "qt_itens": 1,
+      "qt_total_pecas": 1,
+      "vu_min": 65.6,
+      "vu_med": 65.6,
+      "vu_max": 65.6,
+      "faturamento": 65.6
+    }
+  ],
+  "itens_por_tipo": {
+    "TAMPA": [
+      {
+        "cnpj": "25.160.086/0001-40",
+        "razao": "IDEAL INDUSTRIA E COMERCIO DE ANTENAS LTDA",
+        "data": "2015-05-28",
+        "numero_nf": "2208",
+        "produto": "9009004",
+        "descricao": "Tampa - OMT 8 GHz",
+        "qtd": 1.0,
+        "vu": 65.6,
+        "vt": 65.6
+      }
+    ],
+    "OUTROS": [
+      {
+        "cnpj": "25.160.086/0001-40",
+        "razao": "IDEAL INDUSTRIA E COMERCIO DE ANTENAS LTDA",
+        "data": "2015-05-28",
+        "numero_nf": "2208",
+        "produto": "9009003",
+        "descricao": "Corpo (Detalhe) - OMT 8 GHz",
+        "qtd": 1.0,
+        "vu": 116.0,
+        "vt": 116.0
+      },
+      {
+        "cnpj": "25.160.086/0001-40",
+        "razao": "IDEAL INDUSTRIA E COMERCIO DE ANTENAS LTDA",
+        "data": "2015-05-28",
+        "numero_nf": "2208",
+        "produto": "9009002",
+        "descricao": "Adaptador - OMT 8 GHZ",
+        "qtd": 3.0,
+        "vu": 41.6,
+        "vt": 124.8
+      },
+      {
+        "cnpj": "25.160.086/0001-40",
+        "razao": "IDEAL INDUSTRIA E COMERCIO DE ANTENAS LTDA",
+        "data": "2015-05-28",
+        "numero_nf": "2208",
+        "produto": "9009006",
+        "descricao": "Base Externa Degrau - OMT 8 GHz",
+        "qtd": 3.0,
+        "vu": 45.6,
+        "vt": 136.8
+      },
+      {
+        "cnpj": "25.160.086/0001-40",
+        "razao": "IDEAL INDUSTRIA E COMERCIO DE ANTENAS LTDA",
+        "data": "2015-05-28",
+        "numero_nf": "2208",
+        "produto": "9009005",
+        "descricao": "Interno Degrau 01 - OMT 8 GHz",
+        "qtd": 3.0,
+        "vu": 15.0,
+        "vt": 45.0
+      },
+      {
+        "cnpj": "25.160.086/0001-40",
+        "razao": "IDEAL INDUSTRIA E COMERCIO DE ANTENAS LTDA",
+        "data": "2015-05-28",
+        "numero_nf": "2208",
+        "produto": "9009007",
+        "descricao": "Interno Degrau 02 - OMT 8 GHz",
+        "qtd": 3.0,
+        "vu": 15.0,
+        "vt": 45.0
+      },
+      {
+        "cnpj": "25.160.086/0001-40",
+        "razao": "IDEAL INDUSTRIA E COMERCIO DE ANTENAS LTDA",
+        "data": "2015-05-28",
+        "numero_nf": "2208",
+        "produto": "9009008",
+        "descricao": "Interno Degrau 03 - OMT 8 GHz",
+        "qtd": 3.0,
+        "vu": 16.5,
+        "vt": 49.5
+      },
+      {
+        "cnpj": "25.160.086/0001-40",
+        "razao": "IDEAL INDUSTRIA E COMERCIO DE ANTENAS LTDA",
+        "data": "2015-05-28",
+        "numero_nf": "2208",
+        "produto": "9009001",
+        "descricao": "Base Externa Ângulo - OMT 8 GHz",
+        "qtd": 3.0,
+        "vu": 51.3,
+        "vt": 153.9
+      },
+      {
+        "cnpj": "25.160.086/0001-40",
+        "razao": "IDEAL INDUSTRIA E COMERCIO DE ANTENAS LTDA",
+        "data": "2015-05-28",
+        "numero_nf": "2208",
+        "produto": "9009009",
+        "descricao": "Interno Ângulo 01 - OMT 8 GHz",
+        "qtd": 3.0,
+        "vu": 15.0,
+        "vt": 45.0
+      },
+      {
+        "cnpj": "25.160.086/0001-40",
+        "razao": "IDEAL INDUSTRIA E COMERCIO DE ANTENAS LTDA",
+        "data": "2015-05-28",
+        "numero_nf": "2208",
+        "produto": "9009010",
+        "descricao": "Interno Ângulo 02 - OMT 8 GHz",
+        "qtd": 3.0,
+        "vu": 15.0,
+        "vt": 45.0
+      },
+      {
+        "cnpj": "25.160.086/0001-40",
+        "razao": "IDEAL INDUSTRIA E COMERCIO DE ANTENAS LTDA",
+        "data": "2015-05-28",
+        "numero_nf": "2208",
+        "produto": "9009011",
+        "descricao": "Interno Ângulo 03 - OMT 8 GHz",
+        "qtd": 2.0,
+        "vu": 15.0,
+        "vt": 30.0
+      }
+    ]
+  }
+}

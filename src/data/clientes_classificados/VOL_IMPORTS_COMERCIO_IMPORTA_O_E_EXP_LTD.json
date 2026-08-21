@@ -1,0 +1,209 @@
+{
+  "cnpj": "14.172.163/0001-66",
+  "razao_social": "VOL IMPORTS COMERCIO IMPORTAÇÃO E EXP. LTDA",
+  "qt_nfes": 9,
+  "qt_itens": 14,
+  "faturamento_total": 15540.13,
+  "resumo_por_tipo": [
+    {
+      "tipo": "ESPACADOR",
+      "qt_itens": 6,
+      "qt_total_pecas": 126,
+      "vu_min": 39.79,
+      "vu_med": 40.31,
+      "vu_max": 41.36,
+      "faturamento": 5079.48
+    },
+    {
+      "tipo": "ARRUELA",
+      "qt_itens": 3,
+      "qt_total_pecas": 165,
+      "vu_min": 15.5,
+      "vu_med": 25.46,
+      "vu_max": 39.79,
+      "faturamento": 3846.2
+    },
+    {
+      "tipo": "FLANGE",
+      "qt_itens": 3,
+      "qt_total_pecas": 17,
+      "vu_min": 218.05,
+      "vu_med": 218.05,
+      "vu_max": 218.05,
+      "faturamento": 3706.85
+    },
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 2,
+      "qt_total_pecas": 12,
+      "vu_min": 242.3,
+      "vu_med": 242.3,
+      "vu_max": 242.3,
+      "faturamento": 2907.6
+    }
+  ],
+  "itens_por_tipo": {
+    "ESPACADOR": [
+      {
+        "cnpj": "14.172.163/0001-66",
+        "razao": "VOL IMPORTS COMERCIO IMPORTAÇÃO E EXP. LTDA",
+        "data": "2018-12-11",
+        "numero_nf": "3505",
+        "produto": "9031003",
+        "descricao": "ESPAÇADOR",
+        "qtd": 29.0,
+        "vu": 39.79,
+        "vt": 1153.91
+      },
+      {
+        "cnpj": "14.172.163/0001-66",
+        "razao": "VOL IMPORTS COMERCIO IMPORTAÇÃO E EXP. LTDA",
+        "data": "2018-12-11",
+        "numero_nf": "3505",
+        "produto": "9031005",
+        "descricao": "ESPAÇADOR 3,36",
+        "qtd": 29.0,
+        "vu": 39.79,
+        "vt": 1153.91
+      },
+      {
+        "cnpj": "14.172.163/0001-66",
+        "razao": "VOL IMPORTS COMERCIO IMPORTAÇÃO E EXP. LTDA",
+        "data": "2018-12-11",
+        "numero_nf": "3505",
+        "produto": "9031006",
+        "descricao": "ESPAÇADOR",
+        "qtd": 30.0,
+        "vu": 41.36,
+        "vt": 1240.8
+      },
+      {
+        "cnpj": "14.172.163/0001-66",
+        "razao": "VOL IMPORTS COMERCIO IMPORTAÇÃO E EXP. LTDA",
+        "data": "2018-12-11",
+        "numero_nf": "3505",
+        "produto": "9031002",
+        "descricao": "ESPAÇADOR 2,92",
+        "qtd": 14.0,
+        "vu": 39.79,
+        "vt": 557.06
+      },
+      {
+        "cnpj": "14.172.163/0001-66",
+        "razao": "VOL IMPORTS COMERCIO IMPORTAÇÃO E EXP. LTDA",
+        "data": "2018-09-26",
+        "numero_nf": "3442",
+        "produto": "9031006",
+        "descricao": "ESPAÇADOR",
+        "qtd": 12.0,
+        "vu": 41.36,
+        "vt": 496.32
+      },
+      {
+        "cnpj": "14.172.163/0001-66",
+        "razao": "VOL IMPORTS COMERCIO IMPORTAÇÃO E EXP. LTDA",
+        "data": "2018-09-26",
+        "numero_nf": "3442",
+        "produto": "9031002",
+        "descricao": "ESPAÇADOR 2,92",
+        "qtd": 12.0,
+        "vu": 39.79,
+        "vt": 477.48
+      }
+    ],
+    "ARRUELA": [
+      {
+        "cnpj": "14.172.163/0001-66",
+        "razao": "VOL IMPORTS COMERCIO IMPORTAÇÃO E EXP. LTDA",
+        "data": "2019-06-03",
+        "numero_nf": "3630",
+        "produto": "9031009",
+        "descricao": "ARRUELA",
+        "qtd": 35.0,
+        "vu": 15.5,
+        "vt": 542.5
+      },
+      {
+        "cnpj": "14.172.163/0001-66",
+        "razao": "VOL IMPORTS COMERCIO IMPORTAÇÃO E EXP. LTDA",
+        "data": "2018-12-11",
+        "numero_nf": "3505",
+        "produto": "9031004",
+        "descricao": "ARRUELA MANCAL",
+        "qtd": 30.0,
+        "vu": 39.79,
+        "vt": 1193.7
+      },
+      {
+        "cnpj": "14.172.163/0001-66",
+        "razao": "VOL IMPORTS COMERCIO IMPORTAÇÃO E EXP. LTDA",
+        "data": "2018-08-30",
+        "numero_nf": "3419",
+        "produto": "9031007",
+        "descricao": "Arruela",
+        "qtd": 100.0,
+        "vu": 21.1,
+        "vt": 2110.0
+      }
+    ],
+    "FLANGE": [
+      {
+        "cnpj": "14.172.163/0001-66",
+        "razao": "VOL IMPORTS COMERCIO IMPORTAÇÃO E EXP. LTDA",
+        "data": "2018-11-28",
+        "numero_nf": "3491",
+        "produto": "9031001",
+        "descricao": "FLANGE AÇO",
+        "qtd": 11.0,
+        "vu": 218.05,
+        "vt": 2398.55
+      },
+      {
+        "cnpj": "14.172.163/0001-66",
+        "razao": "VOL IMPORTS COMERCIO IMPORTAÇÃO E EXP. LTDA",
+        "data": "2018-08-13",
+        "numero_nf": "3401",
+        "produto": "9031001",
+        "descricao": "FLANGE AÇO",
+        "qtd": 4.0,
+        "vu": 218.05,
+        "vt": 872.2
+      },
+      {
+        "cnpj": "14.172.163/0001-66",
+        "razao": "VOL IMPORTS COMERCIO IMPORTAÇÃO E EXP. LTDA",
+        "data": "2018-07-26",
+        "numero_nf": "3377",
+        "produto": "9031001",
+        "descricao": "FLANGE AÇO",
+        "qtd": 2.0,
+        "vu": 218.05,
+        "vt": 436.1
+      }
+    ],
+    "OUTROS": [
+      {
+        "cnpj": "14.172.163/0001-66",
+        "razao": "VOL IMPORTS COMERCIO IMPORTAÇÃO E EXP. LTDA",
+        "data": "2019-04-16",
+        "numero_nf": "3597",
+        "produto": "9031008",
+        "descricao": "Acoplamento Aço",
+        "qtd": 6.0,
+        "vu": 242.3,
+        "vt": 1453.8
+      },
+      {
+        "cnpj": "14.172.163/0001-66",
+        "razao": "VOL IMPORTS COMERCIO IMPORTAÇÃO E EXP. LTDA",
+        "data": "2019-01-24",
+        "numero_nf": "3524",
+        "produto": "9031008",
+        "descricao": "Acoplamento",
+        "qtd": 6.0,
+        "vu": 242.3,
+        "vt": 1453.8
+      }
+    ]
+  }
+}

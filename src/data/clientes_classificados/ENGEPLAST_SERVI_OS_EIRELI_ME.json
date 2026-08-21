@@ -1,0 +1,121 @@
+{
+  "cnpj": "25.158.340/0001-76",
+  "razao_social": "ENGEPLAST SERVIÇOS EIRELI - ME",
+  "qt_nfes": 3,
+  "qt_itens": 6,
+  "faturamento_total": 9444.9,
+  "resumo_por_tipo": [
+    {
+      "tipo": "VALVULA",
+      "qt_itens": 1,
+      "qt_total_pecas": 1,
+      "vu_min": 4902.0,
+      "vu_med": 4902.0,
+      "vu_max": 4902.0,
+      "faturamento": 4902.0
+    },
+    {
+      "tipo": "CAPA",
+      "qt_itens": 2,
+      "qt_total_pecas": 55,
+      "vu_min": 36.3,
+      "vu_med": 36.3,
+      "vu_max": 36.3,
+      "faturamento": 1996.5
+    },
+    {
+      "tipo": "HASTE",
+      "qt_itens": 1,
+      "qt_total_pecas": 6,
+      "vu_min": 233.0,
+      "vu_med": 233.0,
+      "vu_max": 233.0,
+      "faturamento": 1398.0
+    },
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 2,
+      "qt_total_pecas": 12,
+      "vu_min": 95.7,
+      "vu_med": 95.7,
+      "vu_max": 95.7,
+      "faturamento": 1148.4
+    }
+  ],
+  "itens_por_tipo": {
+    "VALVULA": [
+      {
+        "cnpj": "25.158.340/0001-76",
+        "razao": "ENGEPLAST SERVIÇOS EIRELI - ME",
+        "data": "2018-07-19",
+        "numero_nf": "3371",
+        "produto": "9012004",
+        "descricao": "CONJUNTO DO COMPONENTE DE VALVULA",
+        "qtd": 1.0,
+        "vu": 4902.0,
+        "vt": 4902.0
+      }
+    ],
+    "HASTE": [
+      {
+        "cnpj": "25.158.340/0001-76",
+        "razao": "ENGEPLAST SERVIÇOS EIRELI - ME",
+        "data": "2018-07-19",
+        "numero_nf": "3371",
+        "produto": "9012003",
+        "descricao": "HASTE DO SILINDRO",
+        "qtd": 6.0,
+        "vu": 233.0,
+        "vt": 1398.0
+      }
+    ],
+    "OUTROS": [
+      {
+        "cnpj": "25.158.340/0001-76",
+        "razao": "ENGEPLAST SERVIÇOS EIRELI - ME",
+        "data": "2020-07-30",
+        "numero_nf": "3876",
+        "produto": "9008014",
+        "descricao": "Quadrado",
+        "qtd": 6.0,
+        "vu": 95.7,
+        "vt": 574.2
+      },
+      {
+        "cnpj": "25.158.340/0001-76",
+        "razao": "ENGEPLAST SERVIÇOS EIRELI - ME",
+        "data": "2020-07-29",
+        "numero_nf": "3875",
+        "produto": "9008014",
+        "descricao": "Quadrado",
+        "qtd": 6.0,
+        "vu": 95.7,
+        "vt": 574.2
+      }
+    ],
+    "CAPA": [
+      {
+        "cnpj": "25.158.340/0001-76",
+        "razao": "ENGEPLAST SERVIÇOS EIRELI - ME",
+        "data": "2020-07-30",
+        "numero_nf": "3876",
+        "produto": "9012001",
+        "descricao": "MANDRIL COM CAPA",
+        "qtd": 25.0,
+        "vu": 36.3,
+        "vt": 907.5
+      },
+      {
+        "cnpj": "25.158.340/0001-76",
+        "razao": "ENGEPLAST SERVIÇOS EIRELI - ME",
+        "data": "2020-07-29",
+        "numero_nf": "3875",
+        "produto": "9012001",
+        "descricao": "MANDRIL COM CAPA",
+        "qtd": 30.0,
+        "vu": 36.3,
+        "vt": 1089.0
+      }
+    ]
+  }
+}

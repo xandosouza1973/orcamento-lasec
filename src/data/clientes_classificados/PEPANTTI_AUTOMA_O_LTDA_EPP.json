@@ -1,0 +1,99 @@
+{
+  "cnpj": "42.049.229/0001-60",
+  "razao_social": "PEPANTTI AUTOMAÇÃO LTDA EPP",
+  "qt_nfes": 2,
+  "qt_itens": 6,
+  "faturamento_total": 9399.48,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 4,
+      "qt_total_pecas": 554,
+      "vu_min": 8.1,
+      "vu_med": 15.33,
+      "vu_max": 35.14,
+      "faturamento": 6073.08
+    },
+    {
+      "tipo": "EIXO",
+      "qt_itens": 2,
+      "qt_total_pecas": 560,
+      "vu_min": 5.94,
+      "vu_med": 5.94,
+      "vu_max": 5.94,
+      "faturamento": 3326.4
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "42.049.229/0001-60",
+        "razao": "PEPANTTI AUTOMAÇÃO LTDA EPP",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9057001",
+        "descricao": "Mancal para tubo 63,5 x 2,65 parede",
+        "qtd": 230.0,
+        "vu": 8.1,
+        "vt": 1863.0
+      },
+      {
+        "cnpj": "42.049.229/0001-60",
+        "razao": "PEPANTTI AUTOMAÇÃO LTDA EPP",
+        "data": "2024-08-23",
+        "numero_nf": "4918",
+        "produto": "03.04.169",
+        "descricao": "TUBO MEC RED TREF VMEC 134-AP 63X50 PT 7,2 MM CNA",
+        "qtd": 56.0,
+        "vu": 35.14,
+        "vt": 1967.84
+      },
+      {
+        "cnpj": "42.049.229/0001-60",
+        "razao": "PEPANTTI AUTOMAÇÃO LTDA EPP",
+        "data": "2024-08-23",
+        "numero_nf": "4918",
+        "produto": "9057001",
+        "descricao": "Mancal para tubo 63,5 x 2,65 parede",
+        "qtd": 230.0,
+        "vu": 8.1,
+        "vt": 1863.0
+      },
+      {
+        "cnpj": "42.049.229/0001-60",
+        "razao": "PEPANTTI AUTOMAÇÃO LTDA EPP",
+        "data": "2024-08-23",
+        "numero_nf": "4918",
+        "produto": "03.04.170",
+        "descricao": "AÇO LAM RED SAE 1020 FX 1.1/4 CNA N-M/KG",
+        "qtd": 38.0,
+        "vu": 9.98,
+        "vt": 379.24
+      }
+    ],
+    "EIXO": [
+      {
+        "cnpj": "42.049.229/0001-60",
+        "razao": "PEPANTTI AUTOMAÇÃO LTDA EPP",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9057002",
+        "descricao": "Bucha Sextavada para eixo 11/16",
+        "qtd": 280.0,
+        "vu": 5.94,
+        "vt": 1663.2
+      },
+      {
+        "cnpj": "42.049.229/0001-60",
+        "razao": "PEPANTTI AUTOMAÇÃO LTDA EPP",
+        "data": "2024-08-23",
+        "numero_nf": "4918",
+        "produto": "9057002",
+        "descricao": "Bucha Sextavada para eixo 11/16",
+        "qtd": 280.0,
+        "vu": 5.94,
+        "vt": 1663.2
+      }
+    ]
+  }
+}

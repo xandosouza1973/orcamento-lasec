@@ -1,0 +1,286 @@
+{
+  "cnpj": "16.365.576/0001-92",
+  "razao_social": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+  "qt_nfes": 14,
+  "qt_itens": 21,
+  "faturamento_total": 38790.12,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 9,
+      "qt_total_pecas": 754,
+      "vu_min": 5.49,
+      "vu_med": 354.17,
+      "vu_max": 3000.0,
+      "faturamento": 14389.13
+    },
+    {
+      "tipo": "CAPA",
+      "qt_itens": 7,
+      "qt_total_pecas": 295,
+      "vu_min": 17.24,
+      "vu_med": 63.22,
+      "vu_max": 93.28,
+      "faturamento": 14187.99
+    },
+    {
+      "tipo": "PINO",
+      "qt_itens": 3,
+      "qt_total_pecas": 378,
+      "vu_min": 9.6,
+      "vu_med": 12.81,
+      "vu_max": 17.8,
+      "faturamento": 5298.0
+    },
+    {
+      "tipo": "VALVULA",
+      "qt_itens": 2,
+      "qt_total_pecas": 73,
+      "vu_min": 50.0,
+      "vu_med": 77.5,
+      "vu_max": 105.0,
+      "faturamento": 4915.0
+    }
+  ],
+  "itens_por_tipo": {
+    "CAPA": [
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9008017",
+        "descricao": "MANDRIL COM CAPA 16 ESFERAS",
+        "qtd": 20.0,
+        "vu": 88.0,
+        "vt": 1760.0
+      },
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9012001",
+        "descricao": "MANDRIL COM CAPA",
+        "qtd": 31.0,
+        "vu": 58.0,
+        "vt": 1798.0
+      },
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "2025-10-16",
+        "numero_nf": "5198",
+        "produto": "9008017",
+        "descricao": "MANDRIL COM CAPA 16 ESFERAS",
+        "qtd": 25.0,
+        "vu": 93.28,
+        "vt": 2332.0
+      },
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "2024-05-02",
+        "numero_nf": "4842",
+        "produto": "9012001",
+        "descricao": "MANDRIL COM CAPA",
+        "qtd": 31.0,
+        "vu": 58.0,
+        "vt": 1798.0
+      },
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "2024-05-02",
+        "numero_nf": "4842",
+        "produto": "9008017",
+        "descricao": "MANDRIL COM CAPA 16 ESFERAS",
+        "qtd": 20.0,
+        "vu": 88.0,
+        "vt": 1760.0
+      },
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "2021-09-16",
+        "numero_nf": "4208",
+        "produto": "9012001",
+        "descricao": "MANDRIL COM CAPA",
+        "qtd": 81.0,
+        "vu": 40.0,
+        "vt": 3240.0
+      },
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "2018-03-15",
+        "numero_nf": "3272",
+        "produto": "9012001",
+        "descricao": "MANDRIL COM CAPA",
+        "qtd": 87.0,
+        "vu": 17.2413,
+        "vt": 1499.99
+      }
+    ],
+    "PINO": [
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "2019-11-06",
+        "numero_nf": "3737",
+        "produto": "9008012",
+        "descricao": "PINO ENVASADOR",
+        "qtd": 100.0,
+        "vu": 11.04,
+        "vt": 1104.0
+      },
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "2019-10-29",
+        "numero_nf": "3732",
+        "produto": "9008007",
+        "descricao": "PINO GIRO",
+        "qtd": 186.0,
+        "vu": 17.8,
+        "vt": 3310.8
+      },
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "2018-04-17",
+        "numero_nf": "3300",
+        "produto": "9012002",
+        "descricao": "PINO",
+        "qtd": 92.0,
+        "vu": 9.6,
+        "vt": 883.2
+      }
+    ],
+    "OUTROS": [
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9008016",
+        "descricao": "PLATOR - ADAPTAÇÃO",
+        "qtd": 150.0,
+        "vu": 19.81,
+        "vt": 2971.5
+      },
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "2025-08-01",
+        "numero_nf": "5143",
+        "produto": "9008020",
+        "descricao": "BICO DO FORNO 2",
+        "qtd": 36.0,
+        "vu": 34.24,
+        "vt": 1232.64
+      },
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "2025-06-24",
+        "numero_nf": "5120",
+        "produto": "9008019",
+        "descricao": "BICO DO FORNO",
+        "qtd": 36.0,
+        "vu": 32.3,
+        "vt": 1162.8
+      },
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "2024-05-02",
+        "numero_nf": "4842",
+        "produto": "9008016",
+        "descricao": "PLATOR - ADAPTAÇÃO",
+        "qtd": 150.0,
+        "vu": 19.81,
+        "vt": 2971.5
+      },
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "2019-10-29",
+        "numero_nf": "3732",
+        "produto": "9008011",
+        "descricao": "PEÇA PLÁSTICA",
+        "qtd": 200.0,
+        "vu": 5.49,
+        "vt": 1098.0
+      },
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "2019-03-14",
+        "numero_nf": "3568",
+        "produto": "9008009",
+        "descricao": "Calço de Injetora",
+        "qtd": 8.0,
+        "vu": 50.0,
+        "vt": 400.0
+      },
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "2018-09-17",
+        "numero_nf": "3430",
+        "produto": "9012005",
+        "descricao": "BATENTE (CANOTTO)",
+        "qtd": 1.0,
+        "vu": 3000.0,
+        "vt": 2999.99
+      },
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "2018-04-17",
+        "numero_nf": "3300",
+        "produto": "06.01.022",
+        "descricao": "TUBO AL RED LIGA 6082-T6 FREIOS FARJ-30,10 X 13,00",
+        "qtd": 29.2,
+        "vu": 18.95,
+        "vt": 553.34
+      },
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "2018-04-17",
+        "numero_nf": "3301",
+        "produto": "19.16.04",
+        "descricao": "Mandril de Alumínio",
+        "qtd": 144.0,
+        "vu": 6.94,
+        "vt": 999.36
+      }
+    ],
+    "VALVULA": [
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "2019-11-06",
+        "numero_nf": "3737",
+        "produto": "9008013",
+        "descricao": "VALVULA",
+        "qtd": 23.0,
+        "vu": 105.0,
+        "vt": 2415.0
+      },
+      {
+        "cnpj": "16.365.576/0001-92",
+        "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+        "data": "2019-03-01",
+        "numero_nf": "3558",
+        "produto": "9008008",
+        "descricao": "Valvula Normalmente Aberta",
+        "qtd": 50.0,
+        "vu": 50.0,
+        "vt": 2500.0
+      }
+    ]
+  }
+}

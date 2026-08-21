@@ -1,27 +1,27 @@
 ﻿import { Budget, Client, Machine, Material, CNCProgram } from '../types';
-import { ORCAMENTOS_EXEMPLO, CLIENTES_PADRAO, MAQUINAS_PADRAO, MATERIAIS_PADRAO, PROGRAMAS_CNC_EXEMPLO } from '../data/initialData';
+import { ORCAMENTOS_INICIAIS, CLIENTES_PADRAO, MAQUINAS_PADRAO, MATERIAIS_PADRAO, PROGRAMAS_CNC_PADRAO } from '../data/initialData';
 
 const KEYS = {
-  ORCAMENTOS: 'lasec_orcamentos_v1',
-  CLIENTES: 'lasec_clientes_v1',
-  MAQUINAS: 'lasec_maquinas_v1',
-  MATERIAIS: 'lasec_materiais_v1',
-  PROGRAMAS_CNC: 'lasec_cnc_programs_v1',
-  CONFIG: 'lasec_config_v1',
-  THEME: 'lasec_theme_v1'
+  ORCAMENTOS: 'lasec_orcamentos_v2',
+  CLIENTES: 'lasec_clientes_v2',
+  MAQUINAS: 'lasec_maquinas_v2',
+  MATERIAIS: 'lasec_materiais_v2',
+  PROGRAMAS_CNC: 'lasec_cnc_programs_v2',
+  CONFIG: 'lasec_config_v2',
+  THEME: 'lasec_theme_v2'
 };
 
 export const storage = {
   getOrcamentos(): Budget[] {
     const data = localStorage.getItem(KEYS.ORCAMENTOS);
     if (!data) {
-      this.saveOrcamentos(ORCAMENTOS_EXEMPLO);
-      return ORCAMENTOS_EXEMPLO;
+      this.saveOrcamentos(ORCAMENTOS_INICIAIS);
+      return ORCAMENTOS_INICIAIS;
     }
     try {
       return JSON.parse(data);
     } catch {
-      return ORCAMENTOS_EXEMPLO;
+      return ORCAMENTOS_INICIAIS;
     }
   },
 
@@ -99,13 +99,13 @@ export const storage = {
   getProgramasCNC(): CNCProgram[] {
     const data = localStorage.getItem(KEYS.PROGRAMAS_CNC);
     if (!data) {
-      this.saveProgramasCNC(PROGRAMAS_CNC_EXEMPLO);
-      return PROGRAMAS_CNC_EXEMPLO;
+      this.saveProgramasCNC(PROGRAMAS_CNC_PADRAO);
+      return PROGRAMAS_CNC_PADRAO;
     }
     try {
       return JSON.parse(data);
     } catch {
-      return PROGRAMAS_CNC_EXEMPLO;
+      return PROGRAMAS_CNC_PADRAO;
     }
   },
 
@@ -123,7 +123,8 @@ export const storage = {
 
   exportFullBackup(): string {
     const backup = {
-      empresa: 'LASEC USINAGEM',
+      empresa: 'LASEC USINAGEM & PCP',
+      versaoFormula: 'v2.0',
       exportadoEm: new Date().toISOString(),
       orcamentos: this.getOrcamentos(),
       clientes: this.getClientes(),

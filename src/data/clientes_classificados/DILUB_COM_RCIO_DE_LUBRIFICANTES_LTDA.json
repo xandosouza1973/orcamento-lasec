@@ -1,0 +1,77 @@
+{
+  "cnpj": "92.368.505/0001-21",
+  "razao_social": "DILUB COMÉRCIO DE LUBRIFICANTES LTDA",
+  "qt_nfes": 5,
+  "qt_itens": 5,
+  "faturamento_total": 10250.0,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 5,
+      "qt_total_pecas": 7,
+      "vu_min": 1350.0,
+      "vu_med": 1470.0,
+      "vu_max": 1600.0,
+      "faturamento": 10250.0
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "92.368.505/0001-21",
+        "razao": "DILUB COMÉRCIO DE LUBRIFICANTES LTDA",
+        "data": "2022-03-17",
+        "numero_nf": "4378",
+        "produto": "9001002",
+        "descricao": "Bomba Dosadora Oleo Soluvel",
+        "qtd": 1.0,
+        "vu": 1600.0,
+        "vt": 1600.0
+      },
+      {
+        "cnpj": "92.368.505/0001-21",
+        "razao": "DILUB COMÉRCIO DE LUBRIFICANTES LTDA",
+        "data": "2021-11-29",
+        "numero_nf": "4279",
+        "produto": "9001002",
+        "descricao": "Bomba Dosadora Oleo Soluvel",
+        "qtd": 3.0,
+        "vu": 1450.0,
+        "vt": 4350.0
+      },
+      {
+        "cnpj": "92.368.505/0001-21",
+        "razao": "DILUB COMÉRCIO DE LUBRIFICANTES LTDA",
+        "data": "2021-11-12",
+        "numero_nf": "4270",
+        "produto": "9001002",
+        "descricao": "Bomba Dosadora Oleo Soluvel",
+        "qtd": 1.0,
+        "vu": 1450.0,
+        "vt": 1450.0
+      },
+      {
+        "cnpj": "92.368.505/0001-21",
+        "razao": "DILUB COMÉRCIO DE LUBRIFICANTES LTDA",
+        "data": "2021-05-10",
+        "numero_nf": "4091",
+        "produto": "9001002",
+        "descricao": "Bomba Dosadora Oleo Soluvel",
+        "qtd": 1.0,
+        "vu": 1500.0,
+        "vt": 1500.0
+      },
+      {
+        "cnpj": "92.368.505/0001-21",
+        "razao": "DILUB COMÉRCIO DE LUBRIFICANTES LTDA",
+        "data": "2020-10-05",
+        "numero_nf": "3927",
+        "produto": "9001002",
+        "descricao": "Bomba Dosadora Oleo Soluvel",
+        "qtd": 1.0,
+        "vu": 1350.0,
+        "vt": 1350.0
+      }
+    ]
+  }
+}

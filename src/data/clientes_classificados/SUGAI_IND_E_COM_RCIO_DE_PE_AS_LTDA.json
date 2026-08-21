@@ -1,0 +1,231 @@
+{
+  "cnpj": "03.481.699/0001-47",
+  "razao_social": "SUGAI IND. E COMÉRCIO DE PEÇAS LTDA",
+  "qt_nfes": 7,
+  "qt_itens": 17,
+  "faturamento_total": 13700.81,
+  "resumo_por_tipo": [
+    {
+      "tipo": "TAMPA",
+      "qt_itens": 7,
+      "qt_total_pecas": 804,
+      "vu_min": 4.86,
+      "vu_med": 19.21,
+      "vu_max": 40.25,
+      "faturamento": 7848.47
+    },
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 6,
+      "qt_total_pecas": 613,
+      "vu_min": 5.82,
+      "vu_med": 10.76,
+      "vu_max": 17.26,
+      "faturamento": 5076.44
+    },
+    {
+      "tipo": "FLANGE",
+      "qt_itens": 4,
+      "qt_total_pecas": 16,
+      "vu_min": 44.75,
+      "vu_med": 47.75,
+      "vu_max": 50.74,
+      "faturamento": 775.9
+    }
+  ],
+  "itens_por_tipo": {
+    "TAMPA": [
+      {
+        "cnpj": "03.481.699/0001-47",
+        "razao": "SUGAI IND. E COMÉRCIO DE PEÇAS LTDA",
+        "data": "2022-01-05",
+        "numero_nf": "4306",
+        "produto": "03.04.100",
+        "descricao": "TAMPA ACIONAMENTO A CABO",
+        "qtd": 3.0,
+        "vu": 40.25,
+        "vt": 120.75
+      },
+      {
+        "cnpj": "03.481.699/0001-47",
+        "razao": "SUGAI IND. E COMÉRCIO DE PEÇAS LTDA",
+        "data": "2022-01-05",
+        "numero_nf": "4306",
+        "produto": "9025009",
+        "descricao": "TAMPA ACIONAMENTO A CABO",
+        "qtd": 3.0,
+        "vu": 40.24,
+        "vt": 120.72
+      },
+      {
+        "cnpj": "03.481.699/0001-47",
+        "razao": "SUGAI IND. E COMÉRCIO DE PEÇAS LTDA",
+        "data": "2020-11-24",
+        "numero_nf": "3980",
+        "produto": "01.01.081",
+        "descricao": "Tampa de Comando 112206 Bruto",
+        "qtd": 198.0,
+        "vu": 15.8,
+        "vt": 3128.4
+      },
+      {
+        "cnpj": "03.481.699/0001-47",
+        "razao": "SUGAI IND. E COMÉRCIO DE PEÇAS LTDA",
+        "data": "2020-11-24",
+        "numero_nf": "3980",
+        "produto": "9025004",
+        "descricao": "TAMPA DE COMANDO 112206 ACABADO",
+        "qtd": 198.0,
+        "vu": 12.5,
+        "vt": 2475.0
+      },
+      {
+        "cnpj": "03.481.699/0001-47",
+        "razao": "SUGAI IND. E COMÉRCIO DE PEÇAS LTDA",
+        "data": "2020-11-24",
+        "numero_nf": "3981",
+        "produto": "01.01.081",
+        "descricao": "Tampa de Comando 112206 Bruto",
+        "qtd": 2.0,
+        "vu": 15.8,
+        "vt": 31.6
+      },
+      {
+        "cnpj": "03.481.699/0001-47",
+        "razao": "SUGAI IND. E COMÉRCIO DE PEÇAS LTDA",
+        "data": "2020-11-06",
+        "numero_nf": "3961",
+        "produto": "9025001",
+        "descricao": "TAMPA DO CILINDRO 112211 ACABADO",
+        "qtd": 200.0,
+        "vu": 5.0,
+        "vt": 1000.0
+      },
+      {
+        "cnpj": "03.481.699/0001-47",
+        "razao": "SUGAI IND. E COMÉRCIO DE PEÇAS LTDA",
+        "data": "2020-11-06",
+        "numero_nf": "3961",
+        "produto": "01.01.083",
+        "descricao": "Tampa do Cilindro 112211 Bruto",
+        "qtd": 200.0,
+        "vu": 4.86,
+        "vt": 972.0
+      }
+    ],
+    "OUTROS": [
+      {
+        "cnpj": "03.481.699/0001-47",
+        "razao": "SUGAI IND. E COMÉRCIO DE PEÇAS LTDA",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9025005",
+        "descricao": "CORPO DO CILINDRO 112207 ACABADO",
+        "qtd": 200.0,
+        "vu": 9.2,
+        "vt": 1840.0
+      },
+      {
+        "cnpj": "03.481.699/0001-47",
+        "razao": "SUGAI IND. E COMÉRCIO DE PEÇAS LTDA",
+        "data": "2022-01-05",
+        "numero_nf": "4306",
+        "produto": "03.04.101",
+        "descricao": "CALÇO",
+        "qtd": 7.0,
+        "vu": 17.26,
+        "vt": 120.82
+      },
+      {
+        "cnpj": "03.481.699/0001-47",
+        "razao": "SUGAI IND. E COMÉRCIO DE PEÇAS LTDA",
+        "data": "2022-01-05",
+        "numero_nf": "4306",
+        "produto": "9025008",
+        "descricao": "CALÇO",
+        "qtd": 7.0,
+        "vu": 17.26,
+        "vt": 120.82
+      },
+      {
+        "cnpj": "03.481.699/0001-47",
+        "razao": "SUGAI IND. E COMÉRCIO DE PEÇAS LTDA",
+        "data": "2020-11-19",
+        "numero_nf": "3972",
+        "produto": "9025005",
+        "descricao": "CORPO DO CILINDRO 112207 ACABADO",
+        "qtd": 199.0,
+        "vu": 9.2,
+        "vt": 1830.8
+      },
+      {
+        "cnpj": "03.481.699/0001-47",
+        "razao": "SUGAI IND. E COMÉRCIO DE PEÇAS LTDA",
+        "data": "2020-11-19",
+        "numero_nf": "3972",
+        "produto": "01.01.082",
+        "descricao": "Corpo do Cilindro 112207 Bruto",
+        "qtd": 199.0,
+        "vu": 5.82,
+        "vt": 1158.18
+      },
+      {
+        "cnpj": "03.481.699/0001-47",
+        "razao": "SUGAI IND. E COMÉRCIO DE PEÇAS LTDA",
+        "data": "2020-11-19",
+        "numero_nf": "3973",
+        "produto": "01.01.082",
+        "descricao": "Corpo do Cilindro 112207 Bruto",
+        "qtd": 1.0,
+        "vu": 5.82,
+        "vt": 5.82
+      }
+    ],
+    "FLANGE": [
+      {
+        "cnpj": "03.481.699/0001-47",
+        "razao": "SUGAI IND. E COMÉRCIO DE PEÇAS LTDA",
+        "data": "2022-01-05",
+        "numero_nf": "4306",
+        "produto": "9025006",
+        "descricao": "FLANGE ADAPTAÇÃO TF 83",
+        "qtd": 3.0,
+        "vu": 44.75,
+        "vt": 134.25
+      },
+      {
+        "cnpj": "03.481.699/0001-47",
+        "razao": "SUGAI IND. E COMÉRCIO DE PEÇAS LTDA",
+        "data": "2022-01-05",
+        "numero_nf": "4306",
+        "produto": "03.04.102",
+        "descricao": "FLANGE ADAPTAÇÃO TF 83",
+        "qtd": 3.0,
+        "vu": 44.75,
+        "vt": 134.25
+      },
+      {
+        "cnpj": "03.481.699/0001-47",
+        "razao": "SUGAI IND. E COMÉRCIO DE PEÇAS LTDA",
+        "data": "2022-01-05",
+        "numero_nf": "4306",
+        "produto": "9025007",
+        "descricao": "FLANGE ADAPTAÇÃO TF 26",
+        "qtd": 5.0,
+        "vu": 50.74,
+        "vt": 253.7
+      },
+      {
+        "cnpj": "03.481.699/0001-47",
+        "razao": "SUGAI IND. E COMÉRCIO DE PEÇAS LTDA",
+        "data": "2022-01-05",
+        "numero_nf": "4306",
+        "produto": "03.04.103",
+        "descricao": "FLANGE ADAPTAÇÃO TF 26",
+        "qtd": 5.0,
+        "vu": 50.74,
+        "vt": 253.7
+      }
+    ]
+  }
+}

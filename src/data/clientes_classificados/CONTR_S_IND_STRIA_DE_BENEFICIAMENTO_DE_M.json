@@ -1,0 +1,110 @@
+{
+  "cnpj": "59.409.490/0001-27",
+  "razao_social": "Contrês Indústria de Beneficiamento de Metais Ltda EPP.",
+  "qt_nfes": 4,
+  "qt_itens": 7,
+  "faturamento_total": 20834.9,
+  "resumo_por_tipo": [
+    {
+      "tipo": "SUPORTE",
+      "qt_itens": 2,
+      "qt_total_pecas": 83,
+      "vu_min": 98.0,
+      "vu_med": 128.27,
+      "vu_max": 158.54,
+      "faturamento": 11282.08
+    },
+    {
+      "tipo": "FLANGE",
+      "qt_itens": 5,
+      "qt_total_pecas": 112,
+      "vu_min": 50.05,
+      "vu_med": 93.01,
+      "vu_max": 120.77,
+      "faturamento": 9552.82
+    }
+  ],
+  "itens_por_tipo": {
+    "SUPORTE": [
+      {
+        "cnpj": "59.409.490/0001-27",
+        "razao": "Contrês Indústria de Beneficiamento de Metais Ltda EPP.",
+        "data": "2021-06-16",
+        "numero_nf": "4130",
+        "produto": "9005386",
+        "descricao": "SUPORTE MONTAGEM W71-00 SS 056 RM PDR084",
+        "qtd": 52.0,
+        "vu": 158.54,
+        "vt": 8244.08
+      },
+      {
+        "cnpj": "59.409.490/0001-27",
+        "razao": "Contrês Indústria de Beneficiamento de Metais Ltda EPP.",
+        "data": "2021-05-11",
+        "numero_nf": "4092",
+        "produto": "9005386",
+        "descricao": "SUPORTE MONTAGEM W71-00 SS 056 RM PDR084",
+        "qtd": 31.0,
+        "vu": 98.0,
+        "vt": 3038.0
+      }
+    ],
+    "FLANGE": [
+      {
+        "cnpj": "59.409.490/0001-27",
+        "razao": "Contrês Indústria de Beneficiamento de Metais Ltda EPP.",
+        "data": "2021-10-18",
+        "numero_nf": "4241",
+        "produto": "9005391",
+        "descricao": "Flange Vertical W60-00 CPR137G",
+        "qtd": 6.0,
+        "vu": 120.77,
+        "vt": 724.62
+      },
+      {
+        "cnpj": "59.409.490/0001-27",
+        "razao": "Contrês Indústria de Beneficiamento de Metais Ltda EPP.",
+        "data": "2021-10-18",
+        "numero_nf": "4241",
+        "produto": "9005410",
+        "descricao": "Flange Horiz. Combiner W100-02 CPR90G",
+        "qtd": 20.0,
+        "vu": 100.0,
+        "vt": 2000.0
+      },
+      {
+        "cnpj": "59.409.490/0001-27",
+        "razao": "Contrês Indústria de Beneficiamento de Metais Ltda EPP.",
+        "data": "2021-10-18",
+        "numero_nf": "4241",
+        "produto": "9005389",
+        "descricao": "Flange Vertic. Combiner W100-02 CPR90G",
+        "qtd": 24.0,
+        "vu": 100.0,
+        "vt": 2400.0
+      },
+      {
+        "cnpj": "59.409.490/0001-27",
+        "razao": "Contrês Indústria de Beneficiamento de Metais Ltda EPP.",
+        "data": "2021-08-17",
+        "numero_nf": "4180",
+        "produto": "9005391",
+        "descricao": "Flange Vertical W60-00 CPR137G",
+        "qtd": 30.0,
+        "vu": 94.22,
+        "vt": 2826.6
+      },
+      {
+        "cnpj": "59.409.490/0001-27",
+        "razao": "Contrês Indústria de Beneficiamento de Metais Ltda EPP.",
+        "data": "2021-06-16",
+        "numero_nf": "4130",
+        "produto": "9005389",
+        "descricao": "Flange Vertic. Combiner W100-02 CPR90G",
+        "qtd": 32.0,
+        "vu": 50.05,
+        "vt": 1601.6
+      }
+    ]
+  }
+}

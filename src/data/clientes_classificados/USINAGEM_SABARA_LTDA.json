@@ -1,0 +1,330 @@
+{
+  "cnpj": "05.268.575/0001-03",
+  "razao_social": "USINAGEM SABARA LTDA",
+  "qt_nfes": 10,
+  "qt_itens": 23,
+  "faturamento_total": 20008.49,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 9,
+      "qt_total_pecas": 1014,
+      "vu_min": 4.95,
+      "vu_med": 7.46,
+      "vu_max": 11.45,
+      "faturamento": 7542.27
+    },
+    {
+      "tipo": "ENGRENAGEM",
+      "qt_itens": 6,
+      "qt_total_pecas": 338,
+      "vu_min": 1.0,
+      "vu_med": 17.1,
+      "vu_max": 36.09,
+      "faturamento": 4229.26
+    },
+    {
+      "tipo": "ANEL",
+      "qt_itens": 2,
+      "qt_total_pecas": 148,
+      "vu_min": 18.5,
+      "vu_med": 18.5,
+      "vu_max": 18.5,
+      "faturamento": 2738.0
+    },
+    {
+      "tipo": "ROLAMENTO",
+      "qt_itens": 1,
+      "qt_total_pecas": 103,
+      "vu_min": 23.71,
+      "vu_med": 23.71,
+      "vu_max": 23.71,
+      "faturamento": 2442.13
+    },
+    {
+      "tipo": "EIXO",
+      "qt_itens": 4,
+      "qt_total_pecas": 130,
+      "vu_min": 8.12,
+      "vu_med": 20.32,
+      "vu_max": 25.0,
+      "faturamento": 2286.83
+    },
+    {
+      "tipo": "COROA",
+      "qt_itens": 1,
+      "qt_total_pecas": 20,
+      "vu_min": 38.5,
+      "vu_med": 38.5,
+      "vu_max": 38.5,
+      "faturamento": 770.0
+    }
+  ],
+  "itens_por_tipo": {
+    "ANEL": [
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-09-18",
+        "numero_nf": "1943",
+        "produto": "9007007",
+        "descricao": "ANEL ESPAÇADOR",
+        "qtd": 118.0,
+        "vu": 18.5,
+        "vt": 2183.0
+      },
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-03-14",
+        "numero_nf": "1750",
+        "produto": "9007007",
+        "descricao": "ANEL ESPAÇADOR",
+        "qtd": 30.0,
+        "vu": 18.5,
+        "vt": 555.0
+      }
+    ],
+    "OUTROS": [
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-12-05",
+        "numero_nf": "2032",
+        "produto": "03.04.023",
+        "descricao": "Din 20MnCr5 Red. Lam 68.00x31",
+        "qtd": 108.0,
+        "vu": 6.5,
+        "vt": 702.0
+      },
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-12-05",
+        "numero_nf": "2032",
+        "produto": "03.04.024",
+        "descricao": "Din 20MnCr5 Red Lam 69.85x78",
+        "qtd": 125.0,
+        "vu": 5.7,
+        "vt": 712.5
+      },
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-12-05",
+        "numero_nf": "2032",
+        "produto": "03.04.025",
+        "descricao": "Din 20MnCr5 Red Lam 69.85 x 91",
+        "qtd": 145.0,
+        "vu": 5.7,
+        "vt": 826.5
+      },
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-11-04",
+        "numero_nf": "1993",
+        "produto": "03.04.020",
+        "descricao": "Aço Din 20 MN CR 5 Lam Red 152.400X0.036",
+        "qtd": 66.292,
+        "vu": 5.1,
+        "vt": 338.09
+      },
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-10-07",
+        "numero_nf": "1959",
+        "produto": "03.04.018",
+        "descricao": "AÇO SAE 52100 LAM ESF RED 82.550X5.660",
+        "qtd": 238.36,
+        "vu": 10.28,
+        "vt": 2450.34
+      },
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-09-19",
+        "numero_nf": "1945",
+        "produto": "03.04.017",
+        "descricao": "Tor. Compl. Conf. Des. - Aço din MNCR5 lam red",
+        "qtd": 74.575,
+        "vu": 4.95,
+        "vt": 369.15
+      },
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-09-18",
+        "numero_nf": "1943",
+        "produto": "9007008",
+        "descricao": "Tornear Completo Conforme Amostra Aço SAE 52100",
+        "qtd": 64.191,
+        "vu": 10.28,
+        "vt": 659.88
+      },
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-03-17",
+        "numero_nf": "1752",
+        "produto": "08.13.005",
+        "descricao": "TUBO MECANICO LAMINADO VMEC134AP 165 X 135",
+        "qtd": 170.0,
+        "vu": 7.2,
+        "vt": 1224.0
+      },
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-03-14",
+        "numero_nf": "1750",
+        "produto": "9007008",
+        "descricao": "AÇO SAE 52100 LAM ESF RED 101.600X0.350",
+        "qtd": 22.691,
+        "vu": 11.45,
+        "vt": 259.81
+      }
+    ],
+    "COROA": [
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-03-17",
+        "numero_nf": "1752",
+        "produto": "9007010",
+        "descricao": "COROA DO CARRIER",
+        "qtd": 20.0,
+        "vu": 38.5,
+        "vt": 770.0
+      }
+    ],
+    "EIXO": [
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-09-19",
+        "numero_nf": "1945",
+        "produto": "9007054",
+        "descricao": "EIXO SOLAR",
+        "qtd": 19.0,
+        "vu": 23.17,
+        "vt": 440.23
+      },
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-09-10",
+        "numero_nf": "1933",
+        "produto": "9007052",
+        "descricao": "Eixo",
+        "qtd": 1.0,
+        "vu": 25.0,
+        "vt": 25.0
+      },
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-09-08",
+        "numero_nf": "1932",
+        "produto": "9007052",
+        "descricao": "Eixo",
+        "qtd": 55.0,
+        "vu": 8.12,
+        "vt": 446.6
+      },
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-09-08",
+        "numero_nf": "1932",
+        "produto": "9007052",
+        "descricao": "Eixo",
+        "qtd": 55.0,
+        "vu": 25.0,
+        "vt": 1375.0
+      }
+    ],
+    "ROLAMENTO": [
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-10-07",
+        "numero_nf": "1959",
+        "produto": "9007055",
+        "descricao": "Capa de Rolamento",
+        "qtd": 103.0,
+        "vu": 23.71,
+        "vt": 2442.13
+      }
+    ],
+    "ENGRENAGEM": [
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-12-11",
+        "numero_nf": "2044",
+        "produto": "9004007",
+        "descricao": "ENGRENAGEM PARA TORNEARMENTO DO CANAL",
+        "qtd": 52.0,
+        "vu": 1.0,
+        "vt": 52.0
+      },
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-12-11",
+        "numero_nf": "2044",
+        "produto": "9004007",
+        "descricao": "ENGRENAGEM PARA TORNEARMENTO DO CANAL",
+        "qtd": 52.0,
+        "vu": 25.0,
+        "vt": 1300.0
+      },
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-12-05",
+        "numero_nf": "2032",
+        "produto": "9004004",
+        "descricao": "Engrenagem Satélite",
+        "qtd": 120.0,
+        "vu": 6.05,
+        "vt": 726.0
+      },
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-12-05",
+        "numero_nf": "2032",
+        "produto": "9004006",
+        "descricao": "Engrenagem Solar",
+        "qtd": 52.0,
+        "vu": 14.85,
+        "vt": 772.2
+      },
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-12-05",
+        "numero_nf": "2032",
+        "produto": "9004005",
+        "descricao": "Engrenagem Solar",
+        "qtd": 52.0,
+        "vu": 19.58,
+        "vt": 1018.16
+      },
+      {
+        "cnpj": "05.268.575/0001-03",
+        "razao": "USINAGEM SABARA LTDA",
+        "data": "2014-11-04",
+        "numero_nf": "1993",
+        "produto": "9007057",
+        "descricao": "Engrenagem",
+        "qtd": 10.0,
+        "vu": 36.09,
+        "vt": 360.9
+      }
+    ]
+  }
+}

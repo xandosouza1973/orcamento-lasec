@@ -1,0 +1,88 @@
+{
+  "cnpj": "12.105.175/0001-42",
+  "razao_social": "JD Tecnologia de Lubrificantes Ltda",
+  "qt_nfes": 5,
+  "qt_itens": 6,
+  "faturamento_total": 10825.0,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 6,
+      "qt_total_pecas": 5,
+      "vu_min": 1500.0,
+      "vu_med": 2054.17,
+      "vu_max": 2662.5,
+      "faturamento": 10825.0
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "12.105.175/0001-42",
+        "razao": "JD Tecnologia de Lubrificantes Ltda",
+        "data": "2025-12-09",
+        "numero_nf": "5243",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 2662.5,
+        "vt": 2662.5
+      },
+      {
+        "cnpj": "12.105.175/0001-42",
+        "razao": "JD Tecnologia de Lubrificantes Ltda",
+        "data": "2025-12-09",
+        "numero_nf": "5243",
+        "produto": "9001002",
+        "descricao": "Bomba Dosadora Oleo Soluvel",
+        "qtd": 1.0,
+        "vu": 2662.5,
+        "vt": 2662.5
+      },
+      {
+        "cnpj": "12.105.175/0001-42",
+        "razao": "JD Tecnologia de Lubrificantes Ltda",
+        "data": "2024-10-04",
+        "numero_nf": "4947",
+        "produto": "9001002",
+        "descricao": "Bomba Dosadora Oleo Soluvel",
+        "qtd": 1.0,
+        "vu": 2500.0,
+        "vt": 2500.0
+      },
+      {
+        "cnpj": "12.105.175/0001-42",
+        "razao": "JD Tecnologia de Lubrificantes Ltda",
+        "data": "2021-03-24",
+        "numero_nf": "4056",
+        "produto": "9001002",
+        "descricao": "DILUIDOR CX DE INOX",
+        "qtd": 0,
+        "vu": 1500.0,
+        "vt": 0.0
+      },
+      {
+        "cnpj": "12.105.175/0001-42",
+        "razao": "JD Tecnologia de Lubrificantes Ltda",
+        "data": "2021-03-24",
+        "numero_nf": "4057",
+        "produto": "9001002",
+        "descricao": "DILUIDOR CX DE INOX",
+        "qtd": 1.0,
+        "vu": 1500.0,
+        "vt": 1500.0
+      },
+      {
+        "cnpj": "12.105.175/0001-42",
+        "razao": "JD Tecnologia de Lubrificantes Ltda",
+        "data": "2020-01-07",
+        "numero_nf": "3768",
+        "produto": "9001002",
+        "descricao": "Bomba Dosadora Oleo Soluvel",
+        "qtd": 1.0,
+        "vu": 1500.0,
+        "vt": 1500.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "cnpj": "02.455.462/0001-29",
+  "razao_social": "Proturbo Usinagem de Precisão Ltda",
+  "qt_nfes": 5,
+  "qt_itens": 5,
+  "faturamento_total": 9500.0,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 5,
+      "qt_total_pecas": 5,
+      "vu_min": 1200.0,
+      "vu_med": 1900.0,
+      "vu_max": 2800.0,
+      "faturamento": 9500.0
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "02.455.462/0001-29",
+        "razao": "Proturbo Usinagem de Precisão Ltda",
+        "data": "2024-06-12",
+        "numero_nf": "4871",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 2800.0,
+        "vt": 2800.0
+      },
+      {
+        "cnpj": "02.455.462/0001-29",
+        "razao": "Proturbo Usinagem de Precisão Ltda",
+        "data": "2022-09-05",
+        "numero_nf": "4487",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 2500.0,
+        "vt": 2500.0
+      },
+      {
+        "cnpj": "02.455.462/0001-29",
+        "razao": "Proturbo Usinagem de Precisão Ltda",
+        "data": "2019-08-20",
+        "numero_nf": "3685",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 1500.0,
+        "vt": 1500.0
+      },
+      {
+        "cnpj": "02.455.462/0001-29",
+        "razao": "Proturbo Usinagem de Precisão Ltda",
+        "data": "2015-05-04",
+        "numero_nf": "2190",
+        "produto": "9001002",
+        "descricao": "Bomba Dosadora Oleo Soluvel",
+        "qtd": 1.0,
+        "vu": 1200.0,
+        "vt": 1200.0
+      },
+      {
+        "cnpj": "02.455.462/0001-29",
+        "razao": "Proturbo Usinagem de Precisão Ltda",
+        "data": "2015-03-10",
+        "numero_nf": "2132",
+        "produto": "9001002",
+        "descricao": "Bomba Dosadora Oleo Soluvel",
+        "qtd": 1.0,
+        "vu": 1500.0,
+        "vt": 1500.0
+      }
+    ]
+  }
+}

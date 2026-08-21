@@ -1,7 +1,34 @@
-import React, { useState, useMemo } from 'react';
-import { Plus, Trash2, FileText, Sliders, Save } from 'lucide-react';
-import { Budget, Client, Machine, Material, ShapeType, RawMaterialData, MachiningOperation, ExternalService } from '../../types';
-import { computeBudgetCalculations, formatBRL } from '../../lib/calculations';
+﻿import React, { useState, useEffect, useMemo } from 'react';
+import { 
+  Calculator, 
+  Layers, 
+  Cpu, 
+  Plus, 
+  Trash2, 
+  Save, 
+  TrendingUp, 
+  Clock, 
+  Sliders, 
+  Sparkles, 
+  AlertCircle,
+  HelpCircle,
+  HardHat,
+  Zap,
+  CheckCircle2
+} from 'lucide-react';
+import { 
+  Budget, 
+  Client, 
+  Machine, 
+  Material, 
+  ShapeType, 
+  TipologiaPeca,
+  PerfilCliente,
+  RawMaterialData, 
+  MachiningOperation, 
+  ExternalService 
+} from '../../types';
+import { calculateBudget, formatBRL } from '../../lib/calculations';
 import { storage } from '../../lib/storage';
 
 interface OrcamentoFormProps {
@@ -23,329 +50,410 @@ export const OrcamentoForm: React.FC<OrcamentoFormProps> = ({
   onCancel,
   onViewDocuments
 }) => {
-  const [numero, setNumero] = useState(initialBudget ? initialBudget.numero : storage.getNextNumeroOrcamento());
-  const [ano] = useState(new Date().getFullYear());
-  const [clienteId, setClienteId] = useState(initialBudget ? initialBudget.clienteId : (clients[0]?.id || ''));
-  const [codigoPeca, setCodigoPeca] = useState(initialBudget ? initialBudget.codigoPeca : '');
-  const [nomePeca, setNomePeca] = useState(initialBudget ? initialBudget.nomePeca : '');
-  const [desenhoNumero, setDesenhoNumero] = useState(initialBudget ? initialBudget.desenhoNumero : '');
-  const [revisaoDesenho, setRevisaoDesenho] = useState(initialBudget ? initialBudget.revisaoDesenho : 'Rev. 0');
-  const [quantidadeLote, setQuantidadeLote] = useState(initialBudget ? initialBudget.quantidadeLote : 100);
-  const [prazoEntregaDias, setPrazoEntregaDias] = useState(initialBudget ? initialBudget.prazoEntregaDias : 15);
-  const [formaPagamento, setFormaPagamento] = useState(initialBudget ? initialBudget.formaPagamento : '50% antecipado + 50% na entrega');
+  // Cabeçalho
+  const [numero] = useState(initialBudget?.numero || storage.getNextNumeroOrcamento());
+  const [clienteId, setClienteId] = useState(initialBudget?.clienteId || clients[0]?.id || 'CLI001');
+  const [perfilCliente, setPerfilCliente] = useState<PerfilCliente>(initialBudget?.perfilCliente || 'recorrente_padrao');
+  const [codigoPeca, setCodigoPeca] = useState(initialBudget?.codigoPeca || '');
+  const [nomePeca, setNomePeca] = useState(initialBudget?.nomePeca || '');
+  const [desenhoNumero, setDesenhoNumero] = useState(initialBudget?.desenhoNumero || '');
+  const [revisaoDesenho] = useState(initialBudget?.revisaoDesenho || 'Rev. 0');
+  const [tipologia, setTipologia] = useState<TipologiaPeca>(initialBudget?.tipologia || 'bucha_simples');
+  const [quantidadeLote, setQuantidadeLote] = useState(initialBudget?.quantidadeLote || 100);
+  const [entregaUrgente, setEntregaUrgente] = useState(initialBudget?.entregaUrgente || false);
+  const [prazoEntregaDias] = useState(initialBudget?.prazoEntregaDias || 15);
+  const [formaPagamento] = useState(initialBudget?.formaPagamento || '50% no pedido + 50% na entrega');
 
-  const defaultMat = materials[0] || { id: 'mat_1045', nome: 'Aço SAE 1045', densidade: 7.85, precoKgMedio: 16.50 };
-  const [materiaPrima, setMateriaPrima] = useState<RawMaterialData>(
-    initialBudget?.materiaPrima || {
-      shape: 'tarugo_redondo',
-      materialId: defaultMat.id,
-      materialNome: defaultMat.nome,
-      densidade: defaultMat.densidade,
-      fornecidoPeloCliente: false,
-      precoKg: defaultMat.precoKgMedio,
-      diametroBruto: 63.5,
-      comprimentoBruto: 75.0,
-      diametroAcabado: 58.0,
-      comprimentoAcabado: 68.0
-    }
-  );
+  // Engenharia (v2.0)
+  const [tempoProgH, setTempoProgH] = useState(initialBudget?.tempoProgramacaoHoras || 0.5);
+  const [tempoSetupH, setTempoSetupH] = useState(initialBudget?.tempoSetupHoras || 1.0);
+  const [tempoInspH, setTempoInspH] = useState(initialBudget?.tempoInspecaoHoras || 0.3);
 
+  // Matéria-Prima
+  const [shape, setShape] = useState<ShapeType>(initialBudget?.materiaPrima.shape || 'tarugo_redondo');
+  const [materialId, setMaterialId] = useState(initialBudget?.materiaPrima.materialId || materials[0]?.id || 'mat_1045');
+  const [fornecidoPeloCliente, setFornecidoPeloCliente] = useState(initialBudget?.materiaPrima.fornecidoPeloCliente || false);
+  const [precoKg, setPrecoKg] = useState(initialBudget?.materiaPrima.precoKg || 16.50);
+
+  // Dimensões
+  const [diametroBruto, setDiametroBruto] = useState(initialBudget?.materiaPrima.diametroBruto || 50.8);
+  const [diametroInterno, setDiametroInterno] = useState(initialBudget?.materiaPrima.diametroInterno || 25.4);
+  const [larguraBruta, setLarguraBruta] = useState(initialBudget?.materiaPrima.larguraBruta || 50.0);
+  const [alturaBruta, setAlturaBruta] = useState(initialBudget?.materiaPrima.alturaBruta || 50.0);
+  const [comprimentoBruto, setComprimentoBruto] = useState(initialBudget?.materiaPrima.comprimentoBruto || 80.0);
+
+  const [diametroAcabado, setDiametroAcabado] = useState(initialBudget?.materiaPrima.diametroAcabado || 45.0);
+  const [comprimentoAcabado, setComprimentoAcabado] = useState(initialBudget?.materiaPrima.comprimentoAcabado || 75.0);
+
+  // Operações
   const [operacoes, setOperacoes] = useState<MachiningOperation[]>(
     initialBudget?.operacoes || [
       {
         id: 'op_1',
-        nome: 'Corte de Tarugo',
-        maquinaId: machines[3]?.id || 'MAQ004',
-        maquinaNome: machines[3]?.nome || 'Serra Fita Automática Franho',
-        descricao: 'Corte de blank conforme dimensões',
-        tempoSetupMin: 15,
-        tempoCicloMin: 1.5,
-        taxaHoraria: 65.00
-      },
-      {
-        id: 'op_2',
         nome: 'Torneamento CNC',
         maquinaId: machines[0]?.id || 'MAQ001',
         maquinaNome: machines[0]?.nome || 'Torno CNC Romi GL280',
-        descricao: 'Faceamento, torneamento e acabamento',
+        descricao: 'Desbaste e acabamento dimensional conforme desenho',
         tempoSetupMin: 45,
-        tempoCicloMin: 8.0,
-        taxaHoraria: 120.00,
+        tempoCicloMin: 6.5,
+        taxaHoraria: 96.35,
         ferramentalRecomendado: 'Pastilhas Iscar IC8250 / IC807'
       }
     ]
   );
 
+  // Serviços Externos
   const [servicosExternos, setServicosExternos] = useState<ExternalService[]>(
     initialBudget?.servicosExternos || []
   );
 
-  const [margemLucroPct, setMargemLucroPct] = useState(initialBudget ? initialBudget.calculos.margemLucroPct : 15.0);
-  const [aliquotaSimplesPct, setAliquotaSimplesPct] = useState(initialBudget ? initialBudget.calculos.aliquotaSimplesPct : 8.5);
+  // Selecionar material e atualizar preço
+  const selectedMaterial = useMemo(() => {
+    return materials.find((m) => m.id === materialId) || materials[0];
+  }, [materials, materialId]);
 
   const selectedClient = useMemo(() => {
-    return clients.find(c => c.id === clienteId) || clients[0] || {
-      id: 'CLI001',
-      nome: 'Cliente Genérico',
-      nomeCurto: 'Cliente',
-      cnpj: '',
-      contato: '',
-      email: '',
-      telefone: '',
-      endereco: ''
-    };
+    return clients.find((c) => c.id === clienteId) || clients[0];
   }, [clients, clienteId]);
 
-  const handleMaterialChange = (matId: string) => {
-    const mat = materials.find(m => m.id === matId);
-    if (mat) {
-      setMateriaPrima(prev => ({
-        ...prev,
-        materialId: mat.id,
-        materialNome: mat.nome,
-        densidade: mat.densidade,
-        precoKg: mat.precoKgMedio
-      }));
+  useEffect(() => {
+    if (selectedMaterial && !initialBudget) {
+      setPrecoKg(selectedMaterial.precoKgMedio);
     }
-  };
+  }, [selectedMaterial, initialBudget]);
 
-  const handleAddOperacao = () => {
-    const defaultMaq = machines[0] || { id: 'MAQ001', nome: 'Torno CNC Romi GL280', taxaHorariaPadrao: 120 };
-    setOperacoes(prev => [...prev, {
-      id: 'op_' + Date.now(),
-      nome: 'Nova Operação CNC',
-      maquinaId: defaultMaq.id,
-      maquinaNome: defaultMaq.nome,
-      descricao: 'Usinagem de peças',
-      tempoSetupMin: 30,
-      tempoCicloMin: 5.0,
-      taxaHoraria: defaultMaq.taxaHorariaPadrao
-    }]);
-  };
+  useEffect(() => {
+    if (selectedClient?.nome) {
+      const cliLow = selectedClient.nome.toLowerCase();
+      if (cliLow.includes('haste')) setPerfilCliente('alto_giro');
+      else if (cliLow.includes('lubrisystem')) setPerfilCliente('boutique');
+      else if (cliLow.includes('microgear') || cliLow.includes('sohipren') || cliLow.includes('inova')) setPerfilCliente('recorrente_padrao');
+    }
+  }, [selectedClient]);
 
-  const handleRemoveOperacao = (id: string) => {
-    setOperacoes(prev => prev.filter(op => op.id !== id));
-  };
-
-  const handleUpdateOperacao = (id: string, field: keyof MachiningOperation, value: any) => {
-    setOperacoes(prev => prev.map(op => {
-      if (op.id === id) {
-        if (field === 'maquinaId') {
-          const maq = machines.find(m => m.id === value);
-          return {
-            ...op,
-            maquinaId: value,
-            maquinaNome: maq ? maq.nome : op.maquinaNome,
-            taxaHoraria: maq ? maq.taxaHorariaPadrao : op.taxaHoraria
-          };
-        }
-        return { ...op, [field]: value };
-      }
-      return op;
-    }));
-  };
-
-  const handleAddServicoExterno = () => {
-    setServicosExternos(prev => [...prev, {
-      id: 'srv_' + Date.now(),
-      descricao: 'Tratamento Térmico (Têmpera e Revenimento)',
-      tipoCusto: 'por_peca',
-      valorUnitario: 3.50
-    }]);
-  };
-
-  const handleRemoveServicoExterno = (id: string) => {
-    setServicosExternos(prev => prev.filter(s => s.id !== id));
-  };
-
+  // Cálculos v2.0
   const calculos = useMemo(() => {
-    return computeBudgetCalculations(
-      materiaPrima,
+    const rawData: RawMaterialData = {
+      shape,
+      materialId: selectedMaterial?.id || 'mat_1045',
+      materialNome: selectedMaterial?.nome || 'Aço 1045',
+      densidade: selectedMaterial?.densidade || 7.85,
+      fornecidoPeloCliente,
+      precoKg,
+      diametroBruto,
+      diametroInterno,
+      larguraBruta,
+      alturaBruta,
+      comprimentoBruto,
+      diametroAcabado,
+      comprimentoAcabado
+    };
+
+    return calculateBudget(
+      quantidadeLote,
+      rawData,
       operacoes,
       servicosExternos,
-      quantidadeLote,
-      margemLucroPct,
-      aliquotaSimplesPct,
-      2.5,
-      2.0
+      tipologia,
+      perfilCliente,
+      entregaUrgente,
+      tempoProgH,
+      tempoSetupH,
+      tempoInspH,
+      selectedClient?.nome || 'Cliente'
     );
-  }, [materiaPrima, operacoes, servicosExternos, quantidadeLote, margemLucroPct, aliquotaSimplesPct]);
-  const currentBudget: Budget = useMemo(() => {
-    return {
-      id: initialBudget?.id || 'orc_' + Date.now(),
+  }, [
+    quantidadeLote,
+    shape,
+    selectedMaterial,
+    fornecidoPeloCliente,
+    precoKg,
+    diametroBruto,
+    diametroInterno,
+    larguraBruta,
+    alturaBruta,
+    comprimentoBruto,
+    diametroAcabado,
+    comprimentoAcabado,
+    operacoes,
+    servicosExternos,
+    tipologia,
+    perfilCliente,
+    entregaUrgente,
+    tempoProgH,
+    tempoSetupH,
+    tempoInspH,
+    selectedClient
+  ]);  const handleAddOperacao = () => {
+    const newOp: MachiningOperation = {
+      id: `op_${Date.now()}`,
+      nome: 'Nova Operação CNC',
+      maquinaId: machines[0]?.id || 'MAQ001',
+      maquinaNome: machines[0]?.nome || 'Torno CNC Romi GL280',
+      descricao: 'Usinagem de apoio',
+      tempoSetupMin: 30,
+      tempoCicloMin: 3.0,
+      taxaHoraria: 96.35
+    };
+    setOperacoes([...operacoes, newOp]);
+  };
+
+  const handleRemoveOperacao = (index: number) => {
+    setOperacoes(operacoes.filter((_, i) => i !== index));
+  };
+
+  const handleAddServico = () => {
+    const newSrv: ExternalService = {
+      id: `srv_${Date.now()}`,
+      descricao: 'Tratamento Térmico / Superficial',
+      tipoCusto: 'por_peca',
+      valorUnitario: 3.50
+    };
+    setServicosExternos([...servicosExternos, newSrv]);
+  };
+
+  const handleRemoveServico = (index: number) => {
+    setServicosExternos(servicosExternos.filter((_, i) => i !== index));
+  };
+
+  const handleSaveBudget = () => {
+    const budget: Budget = {
+      id: initialBudget?.id || `orc_${Date.now()}`,
       numero,
-      ano,
+      ano: new Date().getFullYear(),
       dataCriacao: initialBudget?.dataCriacao || new Date().toISOString().split('T')[0],
       dataValidade: new Date(Date.now() + 15 * 86400000).toISOString().split('T')[0],
       status: initialBudget?.status || 'pendente',
-      clienteId: selectedClient.id,
-      clienteNome: selectedClient.nome,
-      clienteCnpj: selectedClient.cnpj,
-      clienteContato: selectedClient.contato || '',
-      clienteEmail: selectedClient.email || '',
-      clienteTelefone: selectedClient.telefone || '',
-      codigoPeca: codigoPeca || 'PECA-001',
-      nomePeca: nomePeca || 'PEÇA USINADA',
-      desenhoNumero: desenhoNumero || 'DES-001',
+      clienteId,
+      clienteNome: selectedClient?.nome || 'Cliente',
+      clienteCnpj: selectedClient?.cnpj || '',
+      clienteContato: selectedClient?.contato || '',
+      clienteEmail: selectedClient?.email || '',
+      clienteTelefone: selectedClient?.telefone || '',
+      perfilCliente,
+      codigoPeca,
+      nomePeca,
+      desenhoNumero,
       revisaoDesenho,
+      tipologia,
       quantidadeLote,
+      entregaUrgente,
+      tempoProgramacaoHoras: tempoProgH,
+      tempoSetupHoras: tempoSetupH,
+      tempoInspecaoHoras: tempoInspH,
       formaPagamento,
       prazoEntregaDias,
       tipoFrete: 'FOB (Cliente)',
       validadeDias: 15,
-      materiaPrima,
+      materiaPrima: {
+        shape,
+        materialId: selectedMaterial?.id || 'mat_1045',
+        materialNome: selectedMaterial?.nome || 'Aço 1045',
+        densidade: selectedMaterial?.densidade || 7.85,
+        fornecidoPeloCliente,
+        precoKg,
+        diametroBruto,
+        diametroInterno,
+        larguraBruta,
+        alturaBruta,
+        comprimentoBruto,
+        diametroAcabado,
+        comprimentoAcabado
+      },
       operacoes,
       servicosExternos,
       observacoesTecnicas: [
-        'Tolerâncias dimensionais e geométricas conforme desenho técnico.',
-        'Peças entregues desengraxadas, com proteção anticorrosiva e embalagem apropriada.',
-        'Primeira produção inclui validação dimensional de peça piloto.'
+        `Usinagem conforme desenho técnico ${desenhoNumero} (${revisaoDesenho}).`,
+        `Tipologia de fabricação classificada: ${tipologia}.`,
+        'Inspeção dimensional rigorosa e acabamento isento de rebarbas.'
       ],
       condicoesComerciais: [
-        'Validade do orçamento: 15 dias corridos a partir da data de emissão.',
-        'Condição de pagamento: ' + formaPagamento,
-        'Frete na modalidade FOB - Retirada na unidade LASEC em São Paulo/SP.',
-        'Faturamento emitido sob regime Simples Nacional (Anexo II).'
+        'Validade da proposta: 15 dias corridos.',
+        'Frete FOB - Retira unidade LASEC em São Paulo/SP.',
+        `Condição de Pagamento: ${formaPagamento}.`
       ],
       calculos
     };
-  }, [initialBudget, numero, ano, selectedClient, codigoPeca, nomePeca, desenhoNumero, revisaoDesenho, quantidadeLote, formaPagamento, prazoEntregaDias, materiaPrima, operacoes, servicosExternos, calculos]);
+
+    onSave(budget);
+  };
 
   return (
     <div className="space-y-6 p-6">
+      {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 border-b border-zinc-200 pb-4 dark:border-zinc-800">
         <div>
           <div className="flex items-center gap-2">
             <span className="rounded-md bg-amber-500/10 px-2 py-0.5 text-xs font-bold text-amber-600 dark:bg-amber-500/20 dark:text-amber-400">
-              ORÇAMENTO #{numero}
+              MOTOR DE CÁLCULO v2.0
             </span>
-            <span className="text-xs text-zinc-500 dark:text-zinc-400">Ano {ano}</span>
+            <span className="text-xs text-zinc-500 dark:text-zinc-400">
+              Orçamento #{numero}
+            </span>
           </div>
           <h1 className="mt-1 text-2xl font-black tracking-tight text-zinc-900 dark:text-white">
-            Calculadora & Estudo de Usinagem CNC
+            {initialBudget ? 'Editar Orçamento Técnico' : 'Novo Orçamento de Usinagem CNC'}
           </h1>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
           <button
             onClick={onCancel}
-            className="rounded-lg border border-zinc-300 bg-white px-4 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-700"
+            className="rounded-xl border border-zinc-200 bg-white px-4 py-2 text-xs font-semibold text-zinc-700 hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300"
           >
-            Voltar
+            Cancelar
           </button>
           <button
-            onClick={() => onViewDocuments(currentBudget)}
-            className="flex items-center gap-2 rounded-lg border border-amber-500/40 bg-amber-500/10 px-4 py-2 text-sm font-bold text-amber-700 hover:bg-amber-500/20 dark:text-amber-300"
-          >
-            <FileText className="h-4 w-4" />
-            <span>Ver 3 Documentos</span>
-          </button>
-          <button
-            onClick={() => onSave(currentBudget)}
-            className="flex items-center gap-2 rounded-lg bg-amber-500 px-5 py-2 text-sm font-bold text-zinc-950 shadow-sm hover:bg-amber-400 active:scale-95"
+            onClick={handleSaveBudget}
+            className="flex items-center gap-2 rounded-xl bg-amber-500 px-5 py-2 text-xs font-bold text-zinc-950 shadow-sm hover:bg-amber-400 active:scale-95"
           >
             <Save className="h-4 w-4" />
-            <span>Salvar Orçamento</span>
+            <span>Salvar & Emitir 3 Documentos</span>
           </button>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-        <div className="lg:col-span-2 space-y-6">
-          {/* Card 1: Cliente e Peça */}
+      {/* Main 2-Column Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        {/* Left Column: Form Controls */}
+        <div className="lg:col-span-7 space-y-6">
+          
+          {/* Card 1: Cliente & Dados da Peça */}
           <div className="rounded-xl border border-zinc-200 bg-white p-5 shadow-xs dark:border-zinc-800 dark:bg-zinc-900">
-            <h2 className="text-sm font-bold uppercase tracking-wider text-zinc-900 dark:text-white flex items-center gap-2">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-amber-500 text-xs font-black text-zinc-950">1</span>
-              <span>Cliente & Identificação da Peça</span>
+            <h2 className="text-sm font-black uppercase tracking-wider text-zinc-900 dark:text-white border-b border-zinc-100 pb-2 mb-4 dark:border-zinc-800">
+              1. Identificação do Cliente & Peça
             </h2>
 
-            <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
               <div>
-                <label className="block text-xs font-semibold text-zinc-700 dark:text-zinc-300">Cliente Cadastrado</label>
+                <label className="font-bold text-zinc-700 dark:text-zinc-300">Cliente:</label>
                 <select
                   value={clienteId}
                   onChange={(e) => setClienteId(e.target.value)}
-                  className="mt-1 w-full rounded-lg border border-zinc-300 bg-white p-2.5 text-sm text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
+                  className="mt-1 w-full rounded-lg border border-zinc-200 bg-zinc-50 p-2 font-medium text-zinc-900 dark:border-zinc-800 dark:bg-zinc-800 dark:text-white"
                 >
-                  {clients.map(c => (
-                    <option key={c.id} value={c.id}>{c.nomeCurto} - {c.nome}</option>
+                  {clients.map((cli) => (
+                    <option key={cli.id} value={cli.id}>
+                      {cli.nomeCurto} - {cli.nome}
+                    </option>
                   ))}
                 </select>
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-zinc-700 dark:text-zinc-300">Código / Part Number</label>
-                <input
-                  type="text"
-                  placeholder="Ex: 1.34.12.710 ou EIXO-042"
-                  value={codigoPeca}
-                  onChange={(e) => setCodigoPeca(e.target.value)}
-                  className="mt-1 w-full rounded-lg border border-zinc-300 bg-white p-2.5 text-sm text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
-                />
+                <label className="font-bold text-zinc-700 dark:text-zinc-300">Perfil de Preço / Markup:</label>
+                <select
+                  value={perfilCliente}
+                  onChange={(e) => setPerfilCliente(e.target.value as PerfilCliente)}
+                  className="mt-1 w-full rounded-lg border border-zinc-200 bg-zinc-50 p-2 font-medium text-zinc-900 dark:border-zinc-800 dark:bg-zinc-800 dark:text-white"
+                >
+                  <option value="alto_giro">Alto Giro / Haste (1.28)</option>
+                  <option value="recorrente_padrao">Recorrente Padrão / Microgear / Sohipren (1.40)</option>
+                  <option value="boutique">Boutique / Lubrisystem (1.50)</option>
+                  <option value="novo">Cliente Novo (1.30)</option>
+                </select>
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-zinc-700 dark:text-zinc-300">Nome / Descrição da Peça</label>
+                <label className="font-bold text-zinc-700 dark:text-zinc-300">Nome da Peça:</label>
                 <input
                   type="text"
                   placeholder="Ex: Bucha Guia Temperada"
                   value={nomePeca}
                   onChange={(e) => setNomePeca(e.target.value)}
-                  className="mt-1 w-full rounded-lg border border-zinc-300 bg-white p-2.5 text-sm text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
+                  className="mt-1 w-full rounded-lg border border-zinc-200 bg-zinc-50 p-2 font-medium text-zinc-900 dark:border-zinc-800 dark:bg-zinc-800 dark:text-white"
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-2">
-                <div>
-                  <label className="block text-xs font-semibold text-zinc-700 dark:text-zinc-300">Desenho / Doc</label>
-                  <input
-                    type="text"
-                    placeholder="Ex: DES-1045"
-                    value={desenhoNumero}
-                    onChange={(e) => setDesenhoNumero(e.target.value)}
-                    className="mt-1 w-full rounded-lg border border-zinc-300 bg-white p-2.5 text-sm text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
-                  />
-                </div>
-                <div>
-                  <label className="block text-xs font-semibold text-zinc-700 dark:text-zinc-300">Lote Orçado (un)</label>
+              <div>
+                <label className="font-bold text-zinc-700 dark:text-zinc-300">Código / Desenho:</label>
+                <input
+                  type="text"
+                  placeholder="Ex: 1.34.12.710"
+                  value={codigoPeca}
+                  onChange={(e) => {
+                    setCodigoPeca(e.target.value);
+                    if (!desenhoNumero) setDesenhoNumero('DES-' + e.target.value);
+                  }}
+                  className="mt-1 w-full rounded-lg border border-zinc-200 bg-zinc-50 p-2 font-medium text-zinc-900 dark:border-zinc-800 dark:bg-zinc-800 dark:text-white"
+                />
+              </div>
+
+              <div>
+                <label className="font-bold text-zinc-700 dark:text-zinc-300">Tipologia / Complexidade (v2.0):</label>
+                <select
+                  value={tipologia}
+                  onChange={(e) => setTipologia(e.target.value as TipologiaPeca)}
+                  className="mt-1 w-full rounded-lg border border-zinc-200 bg-zinc-50 p-2 font-bold text-amber-600 dark:border-zinc-800 dark:bg-zinc-800 dark:text-amber-400"
+                >
+                  <option value="bucha_simples">Bucha simples / anel reto (1.00)</option>
+                  <option value="eixo_simples">Eixo simples 1-2 Ø (1.00)</option>
+                  <option value="flange">Flange tornear + furar (1.05)</option>
+                  <option value="eixo_escalonado">Eixo escalonado 3+ Ø (1.15)</option>
+                  <option value="eixo_chaveta_furacao">Eixo + chaveta + furação (1.25)</option>
+                  <option value="carcaca_tampa">Carcaça / tampa de bomba (1.30)</option>
+                  <option value="eixo_tolerancia_n7">Eixo escalonado + tol. N7 (1.30)</option>
+                  <option value="pinhao_engrenagem">Pinhão / engrenagem (1.40)</option>
+                  <option value="coroa_conica">Coroa cônica / helicoidal (1.50)</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="font-bold text-zinc-700 dark:text-zinc-300">Tamanho do Lote:</label>
+                <div className="mt-1 flex items-center gap-2">
                   <input
                     type="number"
                     min="1"
                     value={quantidadeLote}
-                    onChange={(e) => setQuantidadeLote(Math.max(1, parseInt(e.target.value) || 1))}
-                    className="mt-1 w-full rounded-lg border border-zinc-300 bg-white p-2.5 text-sm font-bold text-amber-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-amber-400"
+                    onChange={(e) => setQuantidadeLote(Math.max(1, Number(e.target.value)))}
+                    className="w-full rounded-lg border border-zinc-200 bg-zinc-50 p-2 font-bold text-zinc-900 dark:border-zinc-800 dark:bg-zinc-800 dark:text-white"
                   />
+                  <span className="text-xs text-zinc-500">peças</span>
                 </div>
+              </div>
+
+              <div className="sm:col-span-2 flex items-center gap-2 pt-1">
+                <input
+                  type="checkbox"
+                  id="urgente"
+                  checked={entregaUrgente}
+                  onChange={(e) => setEntregaUrgente(e.target.checked)}
+                  className="rounded border-zinc-300 text-amber-500"
+                />
+                <label htmlFor="urgente" className="font-bold text-amber-700 dark:text-amber-400 cursor-pointer flex items-center gap-1">
+                  <Zap className="h-3.5 w-3.5" /> Entrega Expressa / Urgência (+0.10 no Markup)
+                </label>
               </div>
             </div>
           </div>
 
-          {/* Card 2: Matéria-Prima */}
+          {/* Card 2: Matéria-Prima & Blank */}
           <div className="rounded-xl border border-zinc-200 bg-white p-5 shadow-xs dark:border-zinc-800 dark:bg-zinc-900">
-            <div className="flex items-center justify-between flex-wrap gap-2">
-              <h2 className="text-sm font-bold uppercase tracking-wider text-zinc-900 dark:text-white flex items-center gap-2">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-amber-500 text-xs font-black text-zinc-950">2</span>
-                <span>Calculadora de Matéria-Prima & Blank</span>
+            <div className="flex justify-between items-center border-b border-zinc-100 pb-2 mb-4 dark:border-zinc-800">
+              <h2 className="text-sm font-black uppercase tracking-wider text-zinc-900 dark:text-white">
+                2. Matéria-Prima & Geometria do Blank
               </h2>
-
-              <label className="flex items-center gap-2 text-xs font-semibold text-zinc-700 dark:text-zinc-300 cursor-pointer">
+              <div className="flex items-center gap-2">
                 <input
                   type="checkbox"
-                  checked={materiaPrima.fornecidoPeloCliente}
-                  onChange={(e) => setMateriaPrima(prev => ({ ...prev, fornecidoPeloCliente: e.target.checked }))}
-                  className="rounded border-zinc-300 text-amber-500 focus:ring-amber-400"
+                  id="fornecido"
+                  checked={fornecidoPeloCliente}
+                  onChange={(e) => setFornecidoPeloCliente(e.target.checked)}
+                  className="rounded border-zinc-300 text-amber-500"
                 />
-                <span>Material Fornecido pelo Cliente (Custo = R$ 0)</span>
-              </label>
+                <label htmlFor="fornecido" className="text-xs font-bold text-zinc-600 dark:text-zinc-300 cursor-pointer">
+                  Material Fornecido pelo Cliente
+                </label>
+              </div>
             </div>
 
-            <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
               <div>
-                <label className="block text-xs font-semibold text-zinc-700 dark:text-zinc-300">Formato do Blank</label>
+                <label className="font-bold text-zinc-700 dark:text-zinc-300">Perfil / Geometria:</label>
                 <select
-                  value={materiaPrima.shape}
-                  onChange={(e) => setMateriaPrima(prev => ({ ...prev, shape: e.target.value as ShapeType }))}
-                  className="mt-1 w-full rounded-lg border border-zinc-300 bg-white p-2.5 text-sm text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
+                  value={shape}
+                  onChange={(e) => setShape(e.target.value as ShapeType)}
+                  className="mt-1 w-full rounded-lg border border-zinc-200 bg-zinc-50 p-2 font-medium text-zinc-900 dark:border-zinc-800 dark:bg-zinc-800 dark:text-white"
                 >
                   <option value="tarugo_redondo">Tarugo Redondo (Barra)</option>
                   <option value="tubo_mecanico">Tubo Mecânico / Anel</option>
@@ -355,359 +463,243 @@ export const OrcamentoForm: React.FC<OrcamentoFormProps> = ({
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-zinc-700 dark:text-zinc-300">Material / Liga</label>
+                <label className="font-bold text-zinc-700 dark:text-zinc-300">Material / Liga:</label>
                 <select
-                  value={materiaPrima.materialId}
-                  onChange={(e) => handleMaterialChange(e.target.value)}
-                  className="mt-1 w-full rounded-lg border border-zinc-300 bg-white p-2.5 text-sm text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
+                  value={materialId}
+                  onChange={(e) => setMaterialId(e.target.value)}
+                  className="mt-1 w-full rounded-lg border border-zinc-200 bg-zinc-50 p-2 font-medium text-zinc-900 dark:border-zinc-800 dark:bg-zinc-800 dark:text-white"
                 >
-                  {materials.map(m => (
-                    <option key={m.id} value={m.id}>{m.nome} (d: {m.densidade} g/cm³)</option>
+                  {materials.map((m) => (
+                    <option key={m.id} value={m.id}>
+                      {m.nome} (Fator: {m.fatorMaterialV2 || 1.0})
+                    </option>
                   ))}
                 </select>
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-zinc-700 dark:text-zinc-300">Preço Matéria-Prima (R$/kg)</label>
+                <label className="font-bold text-zinc-700 dark:text-zinc-300">Preço / kg (R$):</label>
                 <input
                   type="number"
-                  step="0.10"
-                  disabled={materiaPrima.fornecidoPeloCliente}
-                  value={materiaPrima.precoKg}
-                  onChange={(e) => setMateriaPrima(prev => ({ ...prev, precoKg: parseFloat(e.target.value) || 0 }))}
-                  className="mt-1 w-full rounded-lg border border-zinc-300 bg-white p-2.5 text-sm text-zinc-900 disabled:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:disabled:bg-zinc-800/40"
+                  step="0.1"
+                  disabled={fornecidoPeloCliente}
+                  value={precoKg}
+                  onChange={(e) => setPrecoKg(Number(e.target.value))}
+                  className="mt-1 w-full rounded-lg border border-zinc-200 bg-zinc-50 p-2 font-bold text-zinc-900 disabled:opacity-50 dark:border-zinc-800 dark:bg-zinc-800 dark:text-white"
                 />
               </div>
-            </div>
 
-            <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-4 rounded-lg bg-zinc-50 p-4 dark:bg-zinc-800/40 border border-zinc-100 dark:border-zinc-800">
-              {materiaPrima.shape !== 'bloco_retangular' ? (
-                <div>
-                  <label className="block text-xs font-medium text-zinc-600 dark:text-zinc-400">Ø Bruto (mm)</label>
-                  <input
-                    type="number"
-                    step="0.5"
-                    value={materiaPrima.diametroBruto || 0}
-                    onChange={(e) => setMateriaPrima(prev => ({ ...prev, diametroBruto: parseFloat(e.target.value) || 0 }))}
-                    className="mt-1 w-full rounded border border-zinc-300 bg-white p-2 text-sm text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
-                  />
-                </div>
-              ) : (
-                <>
-                  <div>
-                    <label className="block text-xs font-medium text-zinc-600 dark:text-zinc-400">Largura (mm)</label>
-                    <input
-                      type="number"
-                      step="0.5"
-                      value={materiaPrima.larguraBruta || 0}
-                      onChange={(e) => setMateriaPrima(prev => ({ ...prev, larguraBruta: parseFloat(e.target.value) || 0 }))}
-                      className="mt-1 w-full rounded border border-zinc-300 bg-white p-2 text-sm text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-xs font-medium text-zinc-600 dark:text-zinc-400">Altura (mm)</label>
-                    <input
-                      type="number"
-                      step="0.5"
-                      value={materiaPrima.alturaBruta || 0}
-                      onChange={(e) => setMateriaPrima(prev => ({ ...prev, alturaBruta: parseFloat(e.target.value) || 0 }))}
-                      className="mt-1 w-full rounded border border-zinc-300 bg-white p-2 text-sm text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
-                    />
-                  </div>
-                </>
-              )}
-
-              {materiaPrima.shape === 'tubo_mecanico' && (
-                <div>
-                  <label className="block text-xs font-medium text-zinc-600 dark:text-zinc-400">Ø Interno (mm)</label>
-                  <input
-                    type="number"
-                    step="0.5"
-                    value={materiaPrima.diametroInterno || 0}
-                    onChange={(e) => setMateriaPrima(prev => ({ ...prev, diametroInterno: parseFloat(e.target.value) || 0 }))}
-                    className="mt-1 w-full rounded border border-zinc-300 bg-white p-2 text-sm text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
-                  />
-                </div>
-              )}
+              {/* Dimensões */}
+              <div>
+                <label className="font-bold text-zinc-700 dark:text-zinc-300">Ø Bruto (mm):</label>
+                <input
+                  type="number"
+                  value={diametroBruto}
+                  onChange={(e) => setDiametroBruto(Number(e.target.value))}
+                  className="mt-1 w-full rounded-lg border border-zinc-200 bg-zinc-50 p-2 dark:border-zinc-800 dark:bg-zinc-800 dark:text-white"
+                />
+              </div>
 
               <div>
-                <label className="block text-xs font-medium text-zinc-600 dark:text-zinc-400">Comprimento (mm)</label>
+                <label className="font-bold text-zinc-700 dark:text-zinc-300">Comprimento Bruto (mm):</label>
                 <input
                   type="number"
-                  step="0.5"
-                  value={materiaPrima.comprimentoBruto || 0}
-                  onChange={(e) => setMateriaPrima(prev => ({ ...prev, comprimentoBruto: parseFloat(e.target.value) || 0 }))}
-                  className="mt-1 w-full rounded border border-zinc-300 bg-white p-2 text-sm text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
+                  value={comprimentoBruto}
+                  onChange={(e) => setComprimentoBruto(Number(e.target.value))}
+                  className="mt-1 w-full rounded-lg border border-zinc-200 bg-zinc-50 p-2 dark:border-zinc-800 dark:bg-zinc-800 dark:text-white"
                 />
               </div>
 
-              <div className="flex flex-col justify-center rounded-lg bg-amber-500/10 p-2.5 dark:bg-amber-500/20 border border-amber-500/20">
-                <span className="text-[11px] font-bold text-amber-700 dark:text-amber-300">Peso Calculado:</span>
-                <span className="text-base font-black text-amber-900 dark:text-amber-100">
-                  {calculos.pesoBrutoKg} kg / un
-                </span>
-                <span className="text-[10px] text-zinc-500 dark:text-zinc-400">
-                  Total: {(calculos.pesoBrutoKg * quantidadeLote).toFixed(1)} kg
-                </span>
+              <div className="rounded-lg bg-zinc-50 p-2 dark:bg-zinc-800/60 border border-zinc-200 dark:border-zinc-800">
+                <span className="text-[10px] text-zinc-400">Peso Bruto Calculado</span>
+                <p className="text-sm font-black text-zinc-900 dark:text-white">{calculos.pesoBrutoKg} kg</p>
+                <p className="text-[10px] text-zinc-400">Perda cavaco: {calculos.perdaCavacoPct}%</p>
               </div>
             </div>
           </div>
 
-          {/* Card 3: Roteiro de Usinagem */}
+          {/* Card 3: Engenharia & Operações */}
           <div className="rounded-xl border border-zinc-200 bg-white p-5 shadow-xs dark:border-zinc-800 dark:bg-zinc-900">
-            <div className="flex items-center justify-between">
-              <h2 className="text-sm font-bold uppercase tracking-wider text-zinc-900 dark:text-white flex items-center gap-2">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-amber-500 text-xs font-black text-zinc-950">3</span>
-                <span>Roteiro de Operações & Tempos</span>
+            <div className="flex justify-between items-center border-b border-zinc-100 pb-2 mb-4 dark:border-zinc-800">
+              <h2 className="text-sm font-black uppercase tracking-wider text-zinc-900 dark:text-white">
+                3. Operações CNC & Tempos de Engenharia
               </h2>
-
               <button
-                type="button"
                 onClick={handleAddOperacao}
-                className="flex items-center gap-1.5 rounded-lg bg-zinc-900 px-3 py-1.5 text-xs font-bold text-white hover:bg-zinc-800 dark:bg-zinc-800 dark:hover:bg-zinc-700"
+                className="flex items-center gap-1 text-xs font-bold text-amber-600 hover:text-amber-500"
               >
-                <Plus className="h-3.5 w-3.5" />
-                <span>Adicionar Operação</span>
+                <Plus className="h-3.5 w-3.5" /> Adicionar Operação
               </button>
             </div>
 
-            <div className="mt-4 space-y-3">
+            {/* Horas fixas de engenharia */}
+            <div className="grid grid-cols-3 gap-3 mb-4 rounded-lg bg-zinc-50 p-3 text-xs dark:bg-zinc-800/50">
+              <div>
+                <label className="font-bold text-zinc-600 dark:text-zinc-400">Programação (Prog_h):</label>
+                <input
+                  type="number"
+                  step="0.1"
+                  min="0.5"
+                  value={tempoProgH}
+                  onChange={(e) => setTempoProgH(Number(e.target.value))}
+                  className="mt-1 w-full rounded border border-zinc-200 p-1 font-bold dark:border-zinc-700 dark:bg-zinc-800"
+                />
+              </div>
+              <div>
+                <label className="font-bold text-zinc-600 dark:text-zinc-400">Setup Máquina (Setup_h):</label>
+                <input
+                  type="number"
+                  step="0.5"
+                  min="1.0"
+                  value={tempoSetupH}
+                  onChange={(e) => setTempoSetupH(Number(e.target.value))}
+                  className="mt-1 w-full rounded border border-zinc-200 p-1 font-bold dark:border-zinc-700 dark:bg-zinc-800"
+                />
+              </div>
+              <div>
+                <label className="font-bold text-zinc-600 dark:text-zinc-400">Inspeção (Insp_h):</label>
+                <input
+                  type="number"
+                  step="0.1"
+                  min="0.3"
+                  value={tempoInspH}
+                  onChange={(e) => setTempoInspH(Number(e.target.value))}
+                  className="mt-1 w-full rounded border border-zinc-200 p-1 font-bold dark:border-zinc-700 dark:bg-zinc-800"
+                />
+              </div>
+            </div>
+
+            {/* Lista de operações */}
+            <div className="space-y-3">
               {operacoes.map((op, idx) => (
-                <div 
-                  key={op.id}
-                  className="relative rounded-lg border border-zinc-200 p-4 transition dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-800/30"
-                >
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-bold text-zinc-700 dark:text-zinc-300">
-                      Operação #{idx + 1}: {op.nome}
-                    </span>
-                    <button
-                      type="button"
-                      onClick={() => handleRemoveOperacao(op.id)}
-                      className="text-zinc-400 hover:text-red-500 dark:text-zinc-500"
-                      title="Excluir Operação"
-                    >
-                      <Trash2 className="h-4 w-4" />
-                    </button>
+                <div key={op.id} className="flex items-center gap-3 rounded-lg border border-zinc-200 p-3 text-xs dark:border-zinc-800">
+                  <span className="font-black text-zinc-400">Op {(idx + 1) * 10}</span>
+                  <div className="flex-1">
+                    <input
+                      type="text"
+                      value={op.descricao}
+                      onChange={(e) => {
+                        const updated = [...operacoes];
+                        updated[idx].descricao = e.target.value;
+                        setOperacoes(updated);
+                      }}
+                      className="w-full font-semibold text-zinc-900 dark:text-white bg-transparent border-b border-zinc-200 dark:border-zinc-700 pb-1"
+                    />
                   </div>
-
-                  <div className="grid grid-cols-1 gap-3 sm:grid-cols-4">
-                    <div className="sm:col-span-2">
-                      <label className="block text-[11px] font-medium text-zinc-600 dark:text-zinc-400">Máquina / Posto</label>
-                      <select
-                        value={op.maquinaId}
-                        onChange={(e) => handleUpdateOperacao(op.id, 'maquinaId', e.target.value)}
-                        className="mt-1 w-full rounded border border-zinc-300 bg-white p-2 text-xs text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
-                      >
-                        {machines.map(m => (
-                          <option key={m.id} value={m.id}>{m.nome} (R$ {m.taxaHorariaPadrao.toFixed(2)}/h)</option>
-                        ))}
-                      </select>
-                    </div>
-
-                    <div>
-                      <label className="block text-[11px] font-medium text-zinc-600 dark:text-zinc-400">Setup (min)</label>
-                      <input
-                        type="number"
-                        min="0"
-                        value={op.tempoSetupMin}
-                        onChange={(e) => handleUpdateOperacao(op.id, 'tempoSetupMin', parseFloat(e.target.value) || 0)}
-                        className="mt-1 w-full rounded border border-zinc-300 bg-white p-2 text-xs text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-[11px] font-medium text-zinc-600 dark:text-zinc-400">Ciclo (min)</label>
-                      <input
-                        type="number"
-                        step="0.1"
-                        min="0.1"
-                        value={op.tempoCicloMin}
-                        onChange={(e) => handleUpdateOperacao(op.id, 'tempoCicloMin', parseFloat(e.target.value) || 0)}
-                        className="mt-1 w-full rounded border border-zinc-300 bg-white p-2 text-xs font-bold text-amber-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-amber-400"
-                      />
-                    </div>
+                  <div className="w-24">
+                    <label className="text-[10px] text-zinc-400">Ciclo (min):</label>
+                    <input
+                      type="number"
+                      step="0.1"
+                      value={op.tempoCicloMin}
+                      onChange={(e) => {
+                        const updated = [...operacoes];
+                        updated[idx].tempoCicloMin = Number(e.target.value);
+                        setOperacoes(updated);
+                      }}
+                      className="w-full rounded border border-zinc-200 p-1 font-bold dark:border-zinc-700 dark:bg-zinc-800 text-right"
+                    />
                   </div>
+                  <button
+                    onClick={() => handleRemoveOperacao(idx)}
+                    className="text-zinc-400 hover:text-red-500 p-1"
+                  >
+                    <Trash2 className="h-4 w-4" />
+                  </button>
                 </div>
               ))}
             </div>
           </div>
-
-          {/* Card 4: Serviços Externos */}
-          <div className="rounded-xl border border-zinc-200 bg-white p-5 shadow-xs dark:border-zinc-800 dark:bg-zinc-900">
-            <div className="flex items-center justify-between">
-              <h2 className="text-sm font-bold uppercase tracking-wider text-zinc-900 dark:text-white flex items-center gap-2">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-amber-500 text-xs font-black text-zinc-950">4</span>
-                <span>Serviços Externos / Tratamentos</span>
-              </h2>
-
-              <button
-                type="button"
-                onClick={handleAddServicoExterno}
-                className="flex items-center gap-1.5 rounded-lg border border-zinc-300 px-3 py-1.5 text-xs font-semibold text-zinc-700 hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800"
-              >
-                <Plus className="h-3.5 w-3.5" />
-                <span>Adicionar Tratamento</span>
-              </button>
-            </div>
-
-            {servicosExternos.length === 0 ? (
-              <p className="mt-3 text-xs text-zinc-500 dark:text-zinc-400 italic">
-                Nenhum tratamento térmico ou superficial terceirizado adicionado.
-              </p>
-            ) : (
-              <div className="mt-3 space-y-2">
-                {servicosExternos.map((srv) => (
-                  <div key={srv.id} className="flex items-center gap-3 rounded-lg border border-zinc-200 p-2.5 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800/40">
-                    <input
-                      type="text"
-                      placeholder="Descrição do serviço (ex: Têmpera e Revenimento)"
-                      value={srv.descricao}
-                      onChange={(e) => setServicosExternos(prev => prev.map(s => s.id === srv.id ? { ...s, descricao: e.target.value } : s))}
-                      className="flex-1 rounded border border-zinc-300 bg-white p-1.5 text-xs text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
-                    />
-                    <div className="w-28">
-                      <input
-                        type="number"
-                        step="0.10"
-                        placeholder="R$ Unitário"
-                        value={srv.valorUnitario}
-                        onChange={(e) => setServicosExternos(prev => prev.map(s => s.id === srv.id ? { ...s, valorUnitario: parseFloat(e.target.value) || 0 } : s))}
-                        className="w-full rounded border border-zinc-300 bg-white p-1.5 text-xs text-zinc-900 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white font-bold"
-                      />
-                    </div>
-                    <button
-                      type="button"
-                      onClick={() => handleRemoveServicoExterno(srv.id)}
-                      className="text-zinc-400 hover:text-red-500"
-                    >
-                      <Trash2 className="h-4 w-4" />
-                    </button>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
         </div>
 
-        {/* Right 1 Column: Live BDI Simulator */}
-        <div className="space-y-6">
-          <div className="sticky top-20 rounded-xl border border-amber-500/30 bg-white p-5 shadow-lg dark:border-amber-500/20 dark:bg-zinc-900">
-            <div className="flex items-center justify-between border-b border-zinc-100 pb-3 dark:border-zinc-800">
-              <h2 className="text-sm font-black uppercase tracking-wider text-zinc-900 dark:text-white flex items-center gap-2">
-                <Sliders className="h-4 w-4 text-amber-500" />
-                <span>Simulador de Preço & BDI</span>
-              </h2>
-              <span className="rounded-md bg-emerald-500/10 px-2 py-0.5 text-[11px] font-bold text-emerald-600 dark:bg-emerald-500/20 dark:text-emerald-400">
-                Tempo Real
+        {/* Right Column: Live Executive Pricing & Calibration */}
+        <div className="lg:col-span-5 space-y-6">
+          
+          {/* Main Price Card */}
+          <div className="rounded-2xl border border-zinc-200 bg-zinc-900 p-6 text-white shadow-xl dark:border-zinc-800">
+            <div className="flex items-center justify-between border-b border-zinc-800 pb-3">
+              <div>
+                <span className="text-[10px] uppercase tracking-wider font-bold text-amber-400">Fórmula LASEC v2.0</span>
+                <h3 className="text-lg font-black">Preço de Venda Sugerido</h3>
+              </div>
+              <span className="rounded-full bg-amber-500/20 px-3 py-1 text-xs font-bold text-amber-400">
+                Markup {calculos.markupCliente}x
               </span>
             </div>
 
-            <div className="mt-4 space-y-2">
-              <div className="flex items-center justify-between">
-                <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300">
-                  Margem de Lucro Líquida:
-                </label>
-                <span className="text-sm font-black text-amber-600 dark:text-amber-400">
-                  {margemLucroPct}%
-                </span>
-              </div>
-              <input
-                type="range"
-                min="5"
-                max="35"
-                step="1"
-                value={margemLucroPct}
-                onChange={(e) => setMargemLucroPct(parseFloat(e.target.value))}
-                className="h-2 w-full cursor-pointer accent-amber-500 rounded-lg bg-zinc-200 dark:bg-zinc-700"
-              />
-              <div className="flex justify-between text-[10px] text-zinc-400 font-semibold">
-                <span>5% (Mínimo)</span>
-                <span>15% (Padrão LASEC)</span>
-                <span>35% (Premium)</span>
-              </div>
-            </div>
-
-            <div className="mt-5 space-y-2.5 text-xs">
-              <div className="flex justify-between text-zinc-600 dark:text-zinc-400">
-                <span>Matéria-Prima:</span>
-                <span className="font-semibold text-zinc-900 dark:text-white">{formatBRL(calculos.custoMateriaPrimaUnitario)}</span>
-              </div>
-              <div className="flex justify-between text-zinc-600 dark:text-zinc-400">
-                <span>Mão de Obra Direta (MOD):</span>
-                <span className="font-semibold text-zinc-900 dark:text-white">{formatBRL(calculos.custoModUnitario)}</span>
-              </div>
-              <div className="flex justify-between text-zinc-600 dark:text-zinc-400">
-                <span>Custos Indiretos (58% sobre MOD):</span>
-                <span className="font-semibold text-zinc-900 dark:text-white">{formatBRL(calculos.custosIndiretosUnitario)}</span>
-              </div>
-              {calculos.custoServicosExternosUnitario > 0 && (
-                <div className="flex justify-between text-zinc-600 dark:text-zinc-400">
-                  <span>Tratamentos / Terceiros:</span>
-                  <span className="font-semibold text-zinc-900 dark:text-white">{formatBRL(calculos.custoServicosExternosUnitario)}</span>
-                </div>
-              )}
-              
-              <div className="border-t border-dashed border-zinc-200 pt-2 dark:border-zinc-800 flex justify-between font-bold text-zinc-800 dark:text-zinc-200">
-                <span>Custo Fabril Total:</span>
-                <span>{formatBRL(calculos.custoFabrilTotalUnitario)}</span>
-              </div>
-
-              <div className="flex justify-between text-[11px] text-zinc-500 dark:text-zinc-400">
-                <span>Deduções (Simples 8.5% + Comissões):</span>
-                <span>{calculos.totalDeducoesPct}%</span>
-              </div>
-            </div>
-
-            <div className="mt-5 rounded-xl bg-amber-500/15 p-4 border border-amber-500/30 text-center">
-              <span className="text-xs font-bold uppercase tracking-wider text-amber-800 dark:text-amber-300">
-                Preço de Venda Sugerido
-              </span>
-              <div className="mt-1 text-3xl font-black text-amber-600 dark:text-amber-400">
+            <div className="my-6 text-center">
+              <div className="text-4xl font-black text-amber-400">
                 {formatBRL(calculos.precoVendaSugeridoUnitario)}
-                <span className="text-xs font-normal text-zinc-600 dark:text-zinc-400"> / un</span>
+                <span className="text-xs text-zinc-400 font-normal"> / un</span>
               </div>
-              <div className="mt-2 text-xs font-semibold text-zinc-700 dark:text-zinc-300">
-                Total do Lote ({quantidadeLote} un): <span className="font-black text-zinc-900 dark:text-white">{formatBRL(calculos.precoVendaTotalLote)}</span>
-              </div>
-            </div>
-
-            <div className="mt-5">
-              <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-2">
-                Escala de Lotes Sugerida
-              </h3>
-              <div className="overflow-hidden rounded-lg border border-zinc-200 dark:border-zinc-800 text-[11px]">
-                <table className="w-full text-left">
-                  <thead className="bg-zinc-100 dark:bg-zinc-800 font-bold text-zinc-700 dark:text-zinc-300">
-                    <tr>
-                      <th className="p-1.5">Qtd</th>
-                      <th className="p-1.5">Unitário</th>
-                      <th className="p-1.5 text-right">Total</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-zinc-100 dark:divide-zinc-800">
-                    {calculos.tabelaLotes.slice(0, 4).map((lote) => (
-                      <tr key={lote.quantidade} className={lote.quantidade === quantidadeLote ? 'bg-amber-500/10 font-bold' : ''}>
-                        <td className="p-1.5">{lote.quantidade} un</td>
-                        <td className="p-1.5">{formatBRL(lote.precoSugeridoUnitario)}</td>
-                        <td className="p-1.5 text-right">{formatBRL(lote.precoTotal)}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+              <div className="mt-1 text-xs text-zinc-400">
+                Total do Lote ({quantidadeLote} un): <strong className="text-white font-bold">{formatBRL(calculos.precoVendaTotalLote)}</strong>
               </div>
             </div>
 
-            <div className="mt-5 space-y-2">
-              <button
-                type="button"
-                onClick={() => onSave(currentBudget)}
-                className="flex w-full items-center justify-center gap-2 rounded-xl bg-amber-500 py-3 text-sm font-bold text-zinc-950 shadow-md shadow-amber-500/20 hover:bg-amber-400 active:scale-95"
-              >
-                <Save className="h-4 w-4" />
-                <span>Salvar & Gerar Documentos</span>
-              </button>
+            {/* Calibração Histórica */}
+            <div className={`rounded-xl p-3.5 text-xs border ${
+              calculos.calibracao.status === 'ok' ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-300' :
+              calculos.calibracao.status === 'caro' ? 'bg-amber-500/10 border-amber-500/30 text-amber-300' :
+              calculos.calibracao.status === 'barato' ? 'bg-blue-500/10 border-blue-500/30 text-blue-300' :
+              'bg-zinc-800 border-zinc-700 text-zinc-400'
+            }`}>
+              <div className="font-bold mb-1 flex items-center gap-1.5">
+                <Sparkles className="h-4 w-4" /> Calibração Histórica LASEC:
+              </div>
+              <p className="text-[11px] leading-relaxed">{calculos.calibracao.mensagem}</p>
             </div>
+
+            {/* Breakdown v2.0 */}
+            <div className="mt-5 space-y-2 text-xs border-t border-zinc-800 pt-4 text-zinc-300">
+              <div className="flex justify-between">
+                <span>1. Fixos de Engenharia (diluído):</span>
+                <span className="font-mono">{formatBRL(calculos.custoFixosUnitario)}</span>
+              </div>
+              <div className="flex justify-between">
+                <span>2. MOD (Ciclo x Máquina x Fatores):</span>
+                <span className="font-mono">{formatBRL(calculos.custoModUnitario)}</span>
+              </div>
+              <div className="flex justify-between">
+                <span>3. CIF (25% sobre Fixos+MOD):</span>
+                <span className="font-mono">{formatBRL(calculos.custoCifUnitario)}</span>
+              </div>
+              <div className="flex justify-between">
+                <span>4. Matéria-Prima / Blank:</span>
+                <span className="font-mono">{formatBRL(calculos.custoMateriaPrimaUnitario)}</span>
+              </div>
+              <div className="flex justify-between border-t border-zinc-800 pt-2 font-bold text-white">
+                <span>Custo Fabril Total:</span>
+                <span className="font-mono text-amber-400">{formatBRL(calculos.custoFabrilTotalUnitario)}</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Tabela de Lotes */}
+          <div className="rounded-xl border border-zinc-200 bg-white p-5 shadow-xs dark:border-zinc-800 dark:bg-zinc-900">
+            <h3 className="text-xs font-black uppercase tracking-wider text-zinc-900 dark:text-white mb-3">
+              Escala de Preço por Faixa de Lote
+            </h3>
+            <table className="w-full text-xs text-left">
+              <thead>
+                <tr className="text-zinc-400 border-b pb-1">
+                  <th className="pb-1">Lote</th>
+                  <th className="pb-1 text-right">Unitário</th>
+                  <th className="pb-1 text-right">Total</th>
+                  <th className="pb-1 text-center">Prazo</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-zinc-100 dark:divide-zinc-800 font-medium">
+                {calculos.tabelaLotes.map((l) => (
+                  <tr key={l.quantidade} className={l.quantidade === quantidadeLote ? 'font-bold text-amber-600 dark:text-amber-400' : ''}>
+                    <td className="py-1.5">{l.quantidade} un</td>
+                    <td className="py-1.5 text-right">{formatBRL(l.precoSugeridoUnitario)}</td>
+                    <td className="py-1.5 text-right">{formatBRL(l.precoTotal)}</td>
+                    <td className="py-1.5 text-center">{l.prazoDias}d</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

@@ -1,0 +1,99 @@
+{
+  "cnpj": "501.555.078-26",
+  "razao_social": "JOÃO PEDRO DE OLIVEIRA SOUZA",
+  "qt_nfes": 2,
+  "qt_itens": 7,
+  "faturamento_total": 3593.41,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 7,
+      "qt_total_pecas": 116,
+      "vu_min": 15.0,
+      "vu_med": 36.15,
+      "vu_max": 53.2,
+      "faturamento": 3593.41
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "501.555.078-26",
+        "razao": "JOÃO PEDRO DE OLIVEIRA SOUZA",
+        "data": "2022-12-16",
+        "numero_nf": "4554",
+        "produto": "02.01.018",
+        "descricao": "Tubo Red. LT 1/4\" X 0,79mm",
+        "qtd": 13.794,
+        "vu": 49.85,
+        "vt": 687.63
+      },
+      {
+        "cnpj": "501.555.078-26",
+        "razao": "JOÃO PEDRO DE OLIVEIRA SOUZA",
+        "data": "2022-12-16",
+        "numero_nf": "4554",
+        "produto": "02.01.019",
+        "descricao": "Vergalhão Ø TL 5,56 mm",
+        "qtd": 9.27,
+        "vu": 53.2,
+        "vt": 493.16
+      },
+      {
+        "cnpj": "501.555.078-26",
+        "razao": "JOÃO PEDRO DE OLIVEIRA SOUZA",
+        "data": "2022-12-16",
+        "numero_nf": "4554",
+        "produto": "02.01.079",
+        "descricao": "Tubo Red. LT 3/16\" X 0,79mm",
+        "qtd": 2.727,
+        "vu": 49.85,
+        "vt": 135.94
+      },
+      {
+        "cnpj": "501.555.078-26",
+        "razao": "JOÃO PEDRO DE OLIVEIRA SOUZA",
+        "data": "2022-12-16",
+        "numero_nf": "4554",
+        "produto": "02.01.020",
+        "descricao": "Tubo 1'' X 0,79mm",
+        "qtd": 24.6,
+        "vu": 49.85,
+        "vt": 1226.31
+      },
+      {
+        "cnpj": "501.555.078-26",
+        "razao": "JOÃO PEDRO DE OLIVEIRA SOUZA",
+        "data": "2022-12-13",
+        "numero_nf": "4550",
+        "produto": "01.01.011",
+        "descricao": "Tubo Alum. redondo 7/8\" x 1,25 mm",
+        "qtd": 16.83,
+        "vu": 17.21,
+        "vt": 289.64
+      },
+      {
+        "cnpj": "501.555.078-26",
+        "razao": "JOÃO PEDRO DE OLIVEIRA SOUZA",
+        "data": "2022-12-13",
+        "numero_nf": "4550",
+        "produto": "01.01.061",
+        "descricao": "Tubo Alum redondo 1'' Parede 1,5mm",
+        "qtd": 7.656,
+        "vu": 18.11,
+        "vt": 138.65
+      },
+      {
+        "cnpj": "501.555.078-26",
+        "razao": "JOÃO PEDRO DE OLIVEIRA SOUZA",
+        "data": "2022-12-13",
+        "numero_nf": "4550",
+        "produto": "01.01.027",
+        "descricao": "Tubo Alum. redondo 1/2 x Parede 3,17 mm",
+        "qtd": 41.472,
+        "vu": 15.0,
+        "vt": 622.08
+      }
+    ]
+  }
+}

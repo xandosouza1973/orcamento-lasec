@@ -1,0 +1,319 @@
+{
+  "cnpj": "05.396.034/0001-60",
+  "razao_social": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+  "qt_nfes": 11,
+  "qt_itens": 27,
+  "faturamento_total": 3560.0,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 27,
+      "qt_total_pecas": 47,
+      "vu_min": 10.0,
+      "vu_med": 94.81,
+      "vu_max": 400.0,
+      "faturamento": 3560.0
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2023-10-26",
+        "numero_nf": "4741",
+        "produto": "21.23.010",
+        "descricao": "ELECTRONIC OUTSIDE MICROMETER 0-25mm 0.001mm",
+        "qtd": 1.0,
+        "vu": 400.0,
+        "vt": 400.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2023-10-26",
+        "numero_nf": "4741",
+        "produto": "21.23.001",
+        "descricao": "PAQUIMETRO DIGITAL",
+        "qtd": 2.0,
+        "vu": 50.0,
+        "vt": 100.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2023-08-28",
+        "numero_nf": "4699",
+        "produto": "21.23.001",
+        "descricao": "PAQUIMETRO DIGITAL",
+        "qtd": 5.0,
+        "vu": 50.0,
+        "vt": 250.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2023-08-28",
+        "numero_nf": "4699",
+        "produto": "21.23.002",
+        "descricao": "RELOGIO APALPADOR",
+        "qtd": 1.0,
+        "vu": 100.0,
+        "vt": 100.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2023-08-28",
+        "numero_nf": "4699",
+        "produto": "21.23.006",
+        "descricao": "RELOGIO APALPADOR - 121.340",
+        "qtd": 1.0,
+        "vu": 100.0,
+        "vt": 100.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2023-08-28",
+        "numero_nf": "4698",
+        "produto": "21.23.001",
+        "descricao": "PAQUIMETRO DIGITAL",
+        "qtd": 5.0,
+        "vu": 50.0,
+        "vt": 250.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2023-08-28",
+        "numero_nf": "4698",
+        "produto": "21.23.002",
+        "descricao": "RELOGIO APALPADOR",
+        "qtd": 1.0,
+        "vu": 100.0,
+        "vt": 100.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2023-08-28",
+        "numero_nf": "4698",
+        "produto": "21.23.006",
+        "descricao": "RELOGIO APALPADOR - 121.340",
+        "qtd": 0,
+        "vu": 100.0,
+        "vt": 0.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2023-08-23",
+        "numero_nf": "4696",
+        "produto": "21.23.010",
+        "descricao": "ELECTRONIC OUTSIDE MICROMETER 0-25mm 0.001mm",
+        "qtd": 1.0,
+        "vu": 400.0,
+        "vt": 400.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2021-07-28",
+        "numero_nf": "4167",
+        "produto": "21.23.005",
+        "descricao": "PAQUIMETRO DIGITAL 150",
+        "qtd": 1.0,
+        "vu": 10.0,
+        "vt": 10.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2021-07-28",
+        "numero_nf": "4167",
+        "produto": "21.23.006",
+        "descricao": "RELOGIO APALPADOR - 121.340",
+        "qtd": 1.0,
+        "vu": 100.0,
+        "vt": 100.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2021-06-28",
+        "numero_nf": "4140",
+        "produto": "21.23.005",
+        "descricao": "PAQUIMETRO DIGITAL 150",
+        "qtd": 2.0,
+        "vu": 50.0,
+        "vt": 100.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2021-06-22",
+        "numero_nf": "4133",
+        "produto": "21.23.010",
+        "descricao": "Micrometro Externo Digital 25-50mm",
+        "qtd": 1.0,
+        "vu": 70.0,
+        "vt": 70.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2021-06-14",
+        "numero_nf": "4126",
+        "produto": "21.23.005",
+        "descricao": "PAQUIMETRO DIGITAL 150",
+        "qtd": 3.0,
+        "vu": 50.0,
+        "vt": 150.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2019-03-13",
+        "numero_nf": "3564",
+        "produto": "21.23.006",
+        "descricao": "RELOGIO APALPADOR - 121.340",
+        "qtd": 2.0,
+        "vu": 100.0,
+        "vt": 200.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2019-03-13",
+        "numero_nf": "3564",
+        "produto": "21.23.009",
+        "descricao": "Comparador de Diametro Interno 18 - 35",
+        "qtd": 1.0,
+        "vu": 100.0,
+        "vt": 100.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2019-03-13",
+        "numero_nf": "3564",
+        "produto": "21.23.001",
+        "descricao": "PAQUIMETRO DIGITAL",
+        "qtd": 6.0,
+        "vu": 50.0,
+        "vt": 300.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2019-03-13",
+        "numero_nf": "3564",
+        "produto": "21.23.008",
+        "descricao": "TORRE - TRACADOR DE ALTURA",
+        "qtd": 1.0,
+        "vu": 100.0,
+        "vt": 100.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2019-03-13",
+        "numero_nf": "3564",
+        "produto": "21.23.007",
+        "descricao": "MICROMETRO DE PROFUNDIDADE",
+        "qtd": 1.0,
+        "vu": 100.0,
+        "vt": 100.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2017-03-16",
+        "numero_nf": "2907",
+        "produto": "21.23.001",
+        "descricao": "PAQUIMETRO DIGITAL",
+        "qtd": 2.0,
+        "vu": 50.0,
+        "vt": 100.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2017-03-16",
+        "numero_nf": "2907",
+        "produto": "21.23.002",
+        "descricao": "RELOGIO APALPADOR",
+        "qtd": 1.0,
+        "vu": 100.0,
+        "vt": 100.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2017-03-16",
+        "numero_nf": "2907",
+        "produto": "21.23.003",
+        "descricao": "PAQUIMETRO DIGITAL METAL DURO",
+        "qtd": 1.0,
+        "vu": 70.0,
+        "vt": 70.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2017-03-16",
+        "numero_nf": "2907",
+        "produto": "21.23.004",
+        "descricao": "Electronic Outside Micrometer 25-50mm",
+        "qtd": 1.0,
+        "vu": 30.0,
+        "vt": 30.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2017-03-16",
+        "numero_nf": "2907",
+        "produto": "21.23.005",
+        "descricao": "PAQUIMETRO DIGITAL",
+        "qtd": 1.0,
+        "vu": 10.0,
+        "vt": 10.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2016-02-01",
+        "numero_nf": "2450",
+        "produto": "21.23.001",
+        "descricao": "PAQUIMETRO DIGITAL",
+        "qtd": 3.0,
+        "vu": 50.0,
+        "vt": 150.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2016-02-01",
+        "numero_nf": "2450",
+        "produto": "21.23.002",
+        "descricao": "RELOGIO APALPADOR",
+        "qtd": 1.0,
+        "vu": 100.0,
+        "vt": 100.0
+      },
+      {
+        "cnpj": "05.396.034/0001-60",
+        "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+        "data": "2016-02-01",
+        "numero_nf": "2450",
+        "produto": "21.23.003",
+        "descricao": "PAQUIMETRO DIGITAL METAL DURO",
+        "qtd": 1.0,
+        "vu": 70.0,
+        "vt": 70.0
+      }
+    ]
+  }
+}

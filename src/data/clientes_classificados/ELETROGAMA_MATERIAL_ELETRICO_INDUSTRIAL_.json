@@ -1,0 +1,88 @@
+{
+  "cnpj": "01.575.165/0001-54",
+  "razao_social": "ELETROGAMA MATERIAL ELETRICO INDUSTRIAL LTDA",
+  "qt_nfes": 3,
+  "qt_itens": 6,
+  "faturamento_total": 6052.0,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 6,
+      "qt_total_pecas": 8,
+      "vu_min": 13.0,
+      "vu_med": 756.5,
+      "vu_max": 1500.0,
+      "faturamento": 6052.0
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "01.575.165/0001-54",
+        "razao": "ELETROGAMA MATERIAL ELETRICO INDUSTRIAL LTDA",
+        "data": "2016-03-07",
+        "numero_nf": "2485",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 2.0,
+        "vu": 1500.0,
+        "vt": 3000.0
+      },
+      {
+        "cnpj": "01.575.165/0001-54",
+        "razao": "ELETROGAMA MATERIAL ELETRICO INDUSTRIAL LTDA",
+        "data": "2016-03-07",
+        "numero_nf": "2485",
+        "produto": "9001004",
+        "descricao": "Rodinho Ponteira do aspirador a vácuo",
+        "qtd": 2.0,
+        "vu": 13.0,
+        "vt": 26.0
+      },
+      {
+        "cnpj": "01.575.165/0001-54",
+        "razao": "ELETROGAMA MATERIAL ELETRICO INDUSTRIAL LTDA",
+        "data": "2016-02-15",
+        "numero_nf": "2464",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 1500.0,
+        "vt": 1500.0
+      },
+      {
+        "cnpj": "01.575.165/0001-54",
+        "razao": "ELETROGAMA MATERIAL ELETRICO INDUSTRIAL LTDA",
+        "data": "2016-02-15",
+        "numero_nf": "2464",
+        "produto": "9001004",
+        "descricao": "Rodinho Ponteira do aspirador a vácuo",
+        "qtd": 1.0,
+        "vu": 13.0,
+        "vt": 13.0
+      },
+      {
+        "cnpj": "01.575.165/0001-54",
+        "razao": "ELETROGAMA MATERIAL ELETRICO INDUSTRIAL LTDA",
+        "data": "2016-01-19",
+        "numero_nf": "2435",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 1500.0,
+        "vt": 1500.0
+      },
+      {
+        "cnpj": "01.575.165/0001-54",
+        "razao": "ELETROGAMA MATERIAL ELETRICO INDUSTRIAL LTDA",
+        "data": "2016-01-19",
+        "numero_nf": "2435",
+        "produto": "9001004",
+        "descricao": "Rodinho Ponteira do aspirador a vácuo",
+        "qtd": 1.0,
+        "vu": 13.0,
+        "vt": 13.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "cnpj": "49.486.665/0001-46",
+  "razao_social": "ALKALLIS BRASIL IND.COM.PRODS QUÍMICOS LTDA",
+  "qt_nfes": 5,
+  "qt_itens": 5,
+  "faturamento_total": 8215.0,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 5,
+      "qt_total_pecas": 5,
+      "vu_min": 1425.0,
+      "vu_med": 1643.0,
+      "vu_max": 2500.0,
+      "faturamento": 8215.0
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "49.486.665/0001-46",
+        "razao": "ALKALLIS BRASIL IND.COM.PRODS QUÍMICOS LTDA",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 1425.0,
+        "vt": 1425.0
+      },
+      {
+        "cnpj": "49.486.665/0001-46",
+        "razao": "ALKALLIS BRASIL IND.COM.PRODS QUÍMICOS LTDA",
+        "data": "2025-02-06",
+        "numero_nf": "5016",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 2500.0,
+        "vt": 2500.0
+      },
+      {
+        "cnpj": "49.486.665/0001-46",
+        "razao": "ALKALLIS BRASIL IND.COM.PRODS QUÍMICOS LTDA",
+        "data": "2016-11-28",
+        "numero_nf": "2804",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 1440.0,
+        "vt": 1440.0
+      },
+      {
+        "cnpj": "49.486.665/0001-46",
+        "razao": "ALKALLIS BRASIL IND.COM.PRODS QUÍMICOS LTDA",
+        "data": "2015-12-10",
+        "numero_nf": "2408",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 1425.0,
+        "vt": 1425.0
+      },
+      {
+        "cnpj": "49.486.665/0001-46",
+        "razao": "ALKALLIS BRASIL IND.COM.PRODS QUÍMICOS LTDA",
+        "data": "2015-10-02",
+        "numero_nf": "2340",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 1425.0,
+        "vt": 1425.0
+      }
+    ]
+  }
+}

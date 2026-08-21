@@ -1,0 +1,110 @@
+{
+  "cnpj": "48.265.003/0001-83",
+  "razao_social": "TORVEL Equipamentos Hidraulicos Ltda",
+  "qt_nfes": 5,
+  "qt_itens": 8,
+  "faturamento_total": 11147.01,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 8,
+      "qt_total_pecas": 346,
+      "vu_min": 16.8,
+      "vu_med": 60.96,
+      "vu_max": 300.0,
+      "faturamento": 11147.01
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "48.265.003/0001-83",
+        "razao": "TORVEL Equipamentos Hidraulicos Ltda",
+        "data": "2021-02-09",
+        "numero_nf": "4019",
+        "produto": "03.01.009",
+        "descricao": "TARUGO DE 4340 DIAMETRO DE 2.1/2x41",
+        "qtd": 6.0,
+        "vu": 16.8,
+        "vt": 100.8
+      },
+      {
+        "cnpj": "48.265.003/0001-83",
+        "razao": "TORVEL Equipamentos Hidraulicos Ltda",
+        "data": "2021-02-08",
+        "numero_nf": "4018",
+        "produto": "03.01.009",
+        "descricao": "TARUGO DE 4340 DIAMETRO DE 2.1/2x41",
+        "qtd": 38.0,
+        "vu": 16.8,
+        "vt": 638.4
+      },
+      {
+        "cnpj": "48.265.003/0001-83",
+        "razao": "TORVEL Equipamentos Hidraulicos Ltda",
+        "data": "2021-02-08",
+        "numero_nf": "4018",
+        "produto": "9006001",
+        "descricao": "ACENTO DE CARGA D 1500",
+        "qtd": 38.0,
+        "vu": 43.5,
+        "vt": 1653.0
+      },
+      {
+        "cnpj": "48.265.003/0001-83",
+        "razao": "TORVEL Equipamentos Hidraulicos Ltda",
+        "data": "2020-11-03",
+        "numero_nf": "3957",
+        "produto": "9009001",
+        "descricao": "GUIA DO PISTÃO DA PT-39",
+        "qtd": 161.0,
+        "vu": 24.64,
+        "vt": 3967.04
+      },
+      {
+        "cnpj": "48.265.003/0001-83",
+        "razao": "TORVEL Equipamentos Hidraulicos Ltda",
+        "data": "2020-11-03",
+        "numero_nf": "3957",
+        "produto": "03.04.043",
+        "descricao": "BARRA SAE 1045 1.1/8\"X 800",
+        "qtd": 7.0,
+        "vu": 300.0,
+        "vt": 2100.0
+      },
+      {
+        "cnpj": "48.265.003/0001-83",
+        "razao": "TORVEL Equipamentos Hidraulicos Ltda",
+        "data": "2020-10-27",
+        "numero_nf": "3947",
+        "produto": "03.01.009",
+        "descricao": "ACENTO DE CARGA D 1500",
+        "qtd": 47.0,
+        "vu": 30.0,
+        "vt": 1410.0
+      },
+      {
+        "cnpj": "48.265.003/0001-83",
+        "razao": "TORVEL Equipamentos Hidraulicos Ltda",
+        "data": "2020-10-27",
+        "numero_nf": "3947",
+        "produto": "9006001",
+        "descricao": "ACENTO DE CARGA D 1500",
+        "qtd": 47.0,
+        "vu": 25.91,
+        "vt": 1217.77
+      },
+      {
+        "cnpj": "48.265.003/0001-83",
+        "razao": "TORVEL Equipamentos Hidraulicos Ltda",
+        "data": "2020-10-27",
+        "numero_nf": "3948",
+        "produto": "03.01.009",
+        "descricao": "ACENTO DE CARGA D 1500",
+        "qtd": 2.0,
+        "vu": 30.0,
+        "vt": 60.0
+      }
+    ]
+  }
+}

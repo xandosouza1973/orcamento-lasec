@@ -1,0 +1,484 @@
+{
+  "cnpj": "69.056.372/0001-36",
+  "razao_social": "Nipo - Tec Ind. e Com. Ltda",
+  "qt_nfes": 5,
+  "qt_itens": 41,
+  "faturamento_total": 687.51,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 40,
+      "qt_total_pecas": 65,
+      "vu_min": 1.0,
+      "vu_med": 13.07,
+      "vu_max": 43.2,
+      "faturamento": 686.51
+    },
+    {
+      "tipo": "ANEL",
+      "qt_itens": 1,
+      "qt_total_pecas": 1,
+      "vu_min": 1.0,
+      "vu_med": 1.0,
+      "vu_max": 1.0,
+      "faturamento": 1.0
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "FERRAMENTAS NIPO-TEC IND. E COM. LTDA",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "",
+        "descricao": "",
+        "qtd": 0,
+        "vu": 0,
+        "vt": 0
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "FERRAMENTAS NIPO-TEC IND. E COM. LTDA",
+        "data": "2017-04-25",
+        "numero_nf": "2963",
+        "produto": "08.12.010",
+        "descricao": "Broca MD Ø9",
+        "qtd": 4.0,
+        "vu": 15.0,
+        "vt": 60.0
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "FERRAMENTAS NIPO-TEC IND. E COM. LTDA",
+        "data": "2017-04-25",
+        "numero_nf": "2963",
+        "produto": "08.12.009",
+        "descricao": "Broca MD Ø8.9",
+        "qtd": 2.0,
+        "vu": 13.0,
+        "vt": 26.0
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "FERRAMENTAS NIPO-TEC IND. E COM. LTDA",
+        "data": "2017-04-25",
+        "numero_nf": "2963",
+        "produto": "08.12.002",
+        "descricao": "Broca MD Ø8.5",
+        "qtd": 1.0,
+        "vu": 10.0,
+        "vt": 10.0
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "FERRAMENTAS NIPO-TEC IND. E COM. LTDA",
+        "data": "2017-04-25",
+        "numero_nf": "2963",
+        "produto": "08.12.030",
+        "descricao": "Broca MD Ø3.3",
+        "qtd": 1.0,
+        "vu": 10.0,
+        "vt": 10.0
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "FERRAMENTAS NIPO-TEC IND. E COM. LTDA",
+        "data": "2017-04-25",
+        "numero_nf": "2963",
+        "produto": "08.11.007",
+        "descricao": "Fresa Topo Ø10mm 2 corte Aço",
+        "qtd": 1.0,
+        "vu": 14.0,
+        "vt": 14.0
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "FERRAMENTAS NIPO-TEC IND. E COM. LTDA",
+        "data": "2017-04-25",
+        "numero_nf": "2963",
+        "produto": "08.11.016",
+        "descricao": "Fresa Ø8 4 corte Inox",
+        "qtd": 1.0,
+        "vu": 43.2,
+        "vt": 43.2
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "FERRAMENTAS NIPO-TEC IND. E COM. LTDA",
+        "data": "2017-04-25",
+        "numero_nf": "2963",
+        "produto": "08.11.035",
+        "descricao": "Fresa Topo Ø10 4 corte Aço Serrilhada",
+        "qtd": 1.0,
+        "vu": 25.0,
+        "vt": 25.0
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "FERRAMENTAS NIPO-TEC IND. E COM. LTDA",
+        "data": "2017-04-25",
+        "numero_nf": "2963",
+        "produto": "08.11.015",
+        "descricao": "Fresa Ø5 3 corte Inox",
+        "qtd": 1.0,
+        "vu": 34.37,
+        "vt": 34.37
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "FERRAMENTAS NIPO-TEC IND. E COM. LTDA",
+        "data": "2017-04-25",
+        "numero_nf": "2963",
+        "produto": "08.11.074",
+        "descricao": "Fresa Topo Ø4 2 corte Inox",
+        "qtd": 1.0,
+        "vu": 27.0,
+        "vt": 27.0
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "FERRAMENTAS NIPO-TEC IND. E COM. LTDA",
+        "data": "2017-04-25",
+        "numero_nf": "2963",
+        "produto": "08.11.072",
+        "descricao": "Fresa Topo Ø2mm 2 corte Aço",
+        "qtd": 1.0,
+        "vu": 20.0,
+        "vt": 20.0
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "FERRAMENTAS NIPO-TEC IND. E COM. LTDA",
+        "data": "2017-04-25",
+        "numero_nf": "2963",
+        "produto": "08.12.006",
+        "descricao": "Broca MD Ø10.5",
+        "qtd": 1.0,
+        "vu": 30.0,
+        "vt": 30.0
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "FERRAMENTAS NIPO-TEC IND. E COM. LTDA",
+        "data": "2017-04-25",
+        "numero_nf": "2963",
+        "produto": "08.12.045",
+        "descricao": "Braca Escariadora 16.5 90 Graus",
+        "qtd": 2.0,
+        "vu": 25.0,
+        "vt": 50.0
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-09-18",
+        "numero_nf": "1944",
+        "produto": "08.11.016",
+        "descricao": "Fresa Ø8 4 corte Inox",
+        "qtd": 1.0,
+        "vu": 1.5,
+        "vt": 1.5
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-09-18",
+        "numero_nf": "1944",
+        "produto": "08.11.015",
+        "descricao": "Fresa Ø5 3 corte Inox",
+        "qtd": 2.0,
+        "vu": 1.5,
+        "vt": 3.0
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-09-18",
+        "numero_nf": "1944",
+        "produto": "08.11.017",
+        "descricao": "Fresa Topo Ø2 3 corte Inox",
+        "qtd": 1.0,
+        "vu": 1.5,
+        "vt": 1.5
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-09-18",
+        "numero_nf": "1944",
+        "produto": "08.11.014",
+        "descricao": "Fresa Topo Ø3 3 corte inox",
+        "qtd": 1.0,
+        "vu": 1.5,
+        "vt": 1.5
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-09-18",
+        "numero_nf": "1944",
+        "produto": "08.12.015",
+        "descricao": "Broca de centro B 4.0x10",
+        "qtd": 1.0,
+        "vu": 1.5,
+        "vt": 1.5
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-09-18",
+        "numero_nf": "1944",
+        "produto": "08.12.009",
+        "descricao": "Broca MD Ø8.9",
+        "qtd": 1.0,
+        "vu": 1.5,
+        "vt": 1.5
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-09-18",
+        "numero_nf": "1944",
+        "produto": "08.12.019",
+        "descricao": "Broca MD Ø6.8",
+        "qtd": 1.0,
+        "vu": 1.5,
+        "vt": 1.5
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-09-18",
+        "numero_nf": "1944",
+        "produto": "08.12.023",
+        "descricao": "Broca MD Ø12",
+        "qtd": 1.0,
+        "vu": 1.5,
+        "vt": 1.5
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-09-18",
+        "numero_nf": "1944",
+        "produto": "08.12.007",
+        "descricao": "Broca MD Ø12.3",
+        "qtd": 1.0,
+        "vu": 1.5,
+        "vt": 1.5
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-09-18",
+        "numero_nf": "1944",
+        "produto": "08.06.072",
+        "descricao": "Broca de Aço Rapido Ø1/2''",
+        "qtd": 2.0,
+        "vu": 1.5,
+        "vt": 3.0
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-09-18",
+        "numero_nf": "1944",
+        "produto": "08.06.052",
+        "descricao": "Broca de Aço Rapido Ø4.6mm",
+        "qtd": 5.0,
+        "vu": 1.5,
+        "vt": 7.5
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-09-18",
+        "numero_nf": "1944",
+        "produto": "08.11.061",
+        "descricao": "Fresa Ø5 4 corte Aluminio",
+        "qtd": 1.0,
+        "vu": 1.5,
+        "vt": 1.5
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-09-18",
+        "numero_nf": "1944",
+        "produto": "08.11.033",
+        "descricao": "Fresa Topo Ø8 2 corte Aço",
+        "qtd": 1.0,
+        "vu": 1.5,
+        "vt": 1.5
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-06-25",
+        "numero_nf": "1847",
+        "produto": "08.11.014",
+        "descricao": "Fresa Topo Ø3 3 corte inox",
+        "qtd": 8.0,
+        "vu": 1.5,
+        "vt": 12.0
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-06-25",
+        "numero_nf": "1847",
+        "produto": "08.11.004",
+        "descricao": "Fresa Topo Ø4x8 3 corte Inox",
+        "qtd": 4.0,
+        "vu": 1.5,
+        "vt": 6.0
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-06-25",
+        "numero_nf": "1847",
+        "produto": "08.11.013",
+        "descricao": "Fresa Topo Ø6 4 corte Inox",
+        "qtd": 1.0,
+        "vu": 1.5,
+        "vt": 1.5
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-06-25",
+        "numero_nf": "1847",
+        "produto": "08.12.026",
+        "descricao": "Broca MD Ø3.4 FNT2275.025",
+        "qtd": 1.0,
+        "vu": 1.0,
+        "vt": 1.0
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-06-25",
+        "numero_nf": "1847",
+        "produto": "08.12.009",
+        "descricao": "Broca MD Ø8.9",
+        "qtd": 4.0,
+        "vu": 1.0,
+        "vt": 4.0
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-06-25",
+        "numero_nf": "1847",
+        "produto": "08.12.004",
+        "descricao": "Broca MD Ø5.5",
+        "qtd": 1.0,
+        "vu": 1.0,
+        "vt": 1.0
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-06-25",
+        "numero_nf": "1847",
+        "produto": "08.12.023",
+        "descricao": "Broca MD Ø12",
+        "qtd": 1.0,
+        "vu": 1.0,
+        "vt": 1.0
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-06-25",
+        "numero_nf": "1847",
+        "produto": "08.12.024",
+        "descricao": "Broca MD Ø11",
+        "qtd": 1.0,
+        "vu": 1.0,
+        "vt": 1.0
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "FERRAMENTAS NIPO-TEC IND. E COM. LTDA",
+        "data": "2014-03-07",
+        "numero_nf": "1744",
+        "produto": "08.11.011",
+        "descricao": "Fresa Ø4 3 corte Inox",
+        "qtd": 1.0,
+        "vu": 32.51,
+        "vt": 32.51
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "FERRAMENTAS NIPO-TEC IND. E COM. LTDA",
+        "data": "2014-03-07",
+        "numero_nf": "1744",
+        "produto": "08.11.012",
+        "descricao": "Fresa Ø6 3 corte Inox",
+        "qtd": 2.0,
+        "vu": 34.37,
+        "vt": 68.74
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "FERRAMENTAS NIPO-TEC IND. E COM. LTDA",
+        "data": "2014-03-07",
+        "numero_nf": "1744",
+        "produto": "08.11.013",
+        "descricao": "Fresa Ø6 4 corte Inox",
+        "qtd": 1.0,
+        "vu": 37.1,
+        "vt": 37.1
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "FERRAMENTAS NIPO-TEC IND. E COM. LTDA",
+        "data": "2014-03-07",
+        "numero_nf": "1744",
+        "produto": "08.11.014",
+        "descricao": "Fresa Ø3 3 corte inox",
+        "qtd": 2.0,
+        "vu": 32.51,
+        "vt": 65.02
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "FERRAMENTAS NIPO-TEC IND. E COM. LTDA",
+        "data": "2014-03-07",
+        "numero_nf": "1744",
+        "produto": "08.11.015",
+        "descricao": "Fresa Ø5 3 corte Inox",
+        "qtd": 1.0,
+        "vu": 34.37,
+        "vt": 34.37
+      },
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "FERRAMENTAS NIPO-TEC IND. E COM. LTDA",
+        "data": "2014-03-07",
+        "numero_nf": "1744",
+        "produto": "08.11.016",
+        "descricao": "Fresa Ø8 4 corte Inox",
+        "qtd": 1.0,
+        "vu": 43.2,
+        "vt": 43.2
+      }
+    ],
+    "ANEL": [
+      {
+        "cnpj": "69.056.372/0001-36",
+        "razao": "Nipo - Tec Ind. e Com. Ltda",
+        "data": "2014-06-25",
+        "numero_nf": "1847",
+        "produto": "08.06.002",
+        "descricao": "Broca Ø2.05 c/anel",
+        "qtd": 1.0,
+        "vu": 1.0,
+        "vt": 1.0
+      }
+    ]
+  }
+}

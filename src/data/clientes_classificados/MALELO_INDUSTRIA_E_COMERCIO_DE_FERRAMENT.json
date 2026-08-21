@@ -1,0 +1,726 @@
+{
+  "cnpj": "07.047.619/0001-09",
+  "razao_social": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+  "qt_nfes": 18,
+  "qt_itens": 59,
+  "faturamento_total": 82662.58,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 41,
+      "qt_total_pecas": 1066,
+      "vu_min": 1.31,
+      "vu_med": 1354.42,
+      "vu_max": 10793.27,
+      "faturamento": 66272.24
+    },
+    {
+      "tipo": "TAMPA",
+      "qt_itens": 8,
+      "qt_total_pecas": 1113,
+      "vu_min": 3.78,
+      "vu_med": 5.58,
+      "vu_max": 6.51,
+      "faturamento": 5698.78
+    },
+    {
+      "tipo": "PLACA",
+      "qt_itens": 4,
+      "qt_total_pecas": 229,
+      "vu_min": 13.38,
+      "vu_med": 20.15,
+      "vu_max": 22.41,
+      "faturamento": 3732.24
+    },
+    {
+      "tipo": "PARAFUSO",
+      "qt_itens": 4,
+      "qt_total_pecas": 200,
+      "vu_min": 0.34,
+      "vu_med": 4.85,
+      "vu_max": 15.89,
+      "faturamento": 2814.76
+    },
+    {
+      "tipo": "PORCA",
+      "qt_itens": 1,
+      "qt_total_pecas": 176,
+      "vu_min": 15.89,
+      "vu_med": 15.89,
+      "vu_max": 15.89,
+      "faturamento": 2796.64
+    },
+    {
+      "tipo": "SUPORTE",
+      "qt_itens": 1,
+      "qt_total_pecas": 203,
+      "vu_min": 6.64,
+      "vu_med": 6.64,
+      "vu_max": 6.64,
+      "faturamento": 1347.92
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "19.16.27",
+        "descricao": "AO2B 0286 J818 POLAR COORDINATE CMMAN VL.",
+        "qtd": 1.0,
+        "vu": 3867.9,
+        "vt": 3867.9
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "19.16.28",
+        "descricao": "AO2B 0286 J893 (OPCIONAL COORDINATE SYST VL.",
+        "qtd": 1.0,
+        "vu": 2585.46,
+        "vt": 2585.46
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2025-10-27",
+        "numero_nf": "5206",
+        "produto": "03.04.003",
+        "descricao": "2.12.00.218 Aço SAE 4140H",
+        "qtd": 267.0,
+        "vu": 10.0,
+        "vt": 2670.0
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2022-02-03",
+        "numero_nf": "4329",
+        "produto": "9004144",
+        "descricao": "TOMA.BO.B8",
+        "qtd": 27.0,
+        "vu": 52.1,
+        "vt": 1406.7
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2022-02-03",
+        "numero_nf": "4329",
+        "produto": "03.04.088",
+        "descricao": "MP.TOMA.BO.B8",
+        "qtd": 27.0,
+        "vu": 18.0,
+        "vt": 486.0
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2020-11-18",
+        "numero_nf": "3969",
+        "produto": "06.01.006",
+        "descricao": "Tarugo de Polimetilm. PMMA 120mm",
+        "qtd": 0.6,
+        "vu": 1362.98,
+        "vt": 817.79
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2020-11-18",
+        "numero_nf": "3969",
+        "produto": "06.04.011",
+        "descricao": "TARUGO DE POLIMETILM. PMMA 30mm",
+        "qtd": 1.04,
+        "vu": 135.93,
+        "vt": 141.37
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2020-11-18",
+        "numero_nf": "3969",
+        "produto": "06.04.014",
+        "descricao": "Tarugo de Polimetilm PMMA 55mm",
+        "qtd": 0.255,
+        "vu": 295.55,
+        "vt": 75.37
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2020-11-18",
+        "numero_nf": "3969",
+        "produto": "06.04.017",
+        "descricao": "TARUGO REXOLITE 1422 1\"1/4 - 25GHz(31,75)",
+        "qtd": 1.04,
+        "vu": 103.87,
+        "vt": 108.02
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2020-11-18",
+        "numero_nf": "3969",
+        "produto": "06.01.003",
+        "descricao": "REXOLITE 1422 DIA 1.1/2''(38,1MM)",
+        "qtd": 2.331,
+        "vu": 265.67,
+        "vt": 619.28
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2020-11-18",
+        "numero_nf": "3969",
+        "produto": "06.01.026",
+        "descricao": "Tarugo de Polimetilm PMMA 60mm",
+        "qtd": 0.111,
+        "vu": 384.53,
+        "vt": 42.68
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2020-11-18",
+        "numero_nf": "3969",
+        "produto": "06.01.023",
+        "descricao": "TARUGO DE POLIMETILM. PMMA 80mm",
+        "qtd": 0.78,
+        "vu": 510.58,
+        "vt": 398.25
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2020-11-18",
+        "numero_nf": "3969",
+        "produto": "06.01.005",
+        "descricao": "TARUGO DE POLIMETILM. PMMA 100mm",
+        "qtd": 0.302,
+        "vu": 738.2,
+        "vt": 222.94
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2020-11-18",
+        "numero_nf": "3969",
+        "produto": "06.01.002",
+        "descricao": "TARUGO REXOLITE 1422 dia 2'' (50,8mm)",
+        "qtd": 1.0,
+        "vu": 451.04,
+        "vt": 451.04
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2020-11-18",
+        "numero_nf": "3969",
+        "produto": "06.01.002",
+        "descricao": "TARUGO REXOLITE 1422 dia 2'' (50,8mm)",
+        "qtd": 0.23,
+        "vu": 450.87,
+        "vt": 103.7
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2020-11-18",
+        "numero_nf": "3969",
+        "produto": "06.04.013",
+        "descricao": "Tarugo de Polimetilm PMMA 65mm",
+        "qtd": 2.0,
+        "vu": 681.54,
+        "vt": 1363.08
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2018-03-16",
+        "numero_nf": "3273",
+        "produto": "9005019",
+        "descricao": "Transição BF W60-00 R070",
+        "qtd": 105.0,
+        "vu": 15.79,
+        "vt": 1657.95
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2017-12-07",
+        "numero_nf": "3201",
+        "produto": "19.16.25",
+        "descricao": "Unidade Basica CNC Reparado vl.aprox. trib:2914,18",
+        "qtd": 1.0,
+        "vu": 10793.27,
+        "vt": 10793.27
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2017-12-05",
+        "numero_nf": "3194",
+        "produto": "19.16.30",
+        "descricao": "TUBO PLASTICO AR 8 X 1 MM VL. APROX. TRIB: 19,60",
+        "qtd": 8.0,
+        "vu": 10.65,
+        "vt": 85.2
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2017-12-05",
+        "numero_nf": "3195",
+        "produto": "19.16.31",
+        "descricao": "TUBO PNEUMÁTICO 6MM AZUL VL. APROX. TRIB: 20,24",
+        "qtd": 10.0,
+        "vu": 8.8,
+        "vt": 88.0
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2017-11-23",
+        "numero_nf": "3178",
+        "produto": "19.16.29",
+        "descricao": "CABO I/O LINK CARTÃO 1 CARTÃO 2 VL.",
+        "qtd": 1.0,
+        "vu": 517.22,
+        "vt": 517.22
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2017-11-21",
+        "numero_nf": "3171",
+        "produto": "19.16.26",
+        "descricao": "SOFTWARE THREAD CUTTING, SYNHONOUS CUT VL.",
+        "qtd": 1.0,
+        "vu": 2639.13,
+        "vt": 2639.13
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2017-11-21",
+        "numero_nf": "3173",
+        "produto": "19.16.27",
+        "descricao": "AO2B 0286 J818 POLAR COORDINATE CMMAN VL.",
+        "qtd": 1.0,
+        "vu": 3867.9,
+        "vt": 3867.9
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2017-11-21",
+        "numero_nf": "3173",
+        "produto": "19.16.28",
+        "descricao": "AO2B 0286 J893 (OPCIONAL COORDINATE SYST VL.",
+        "qtd": 1.0,
+        "vu": 2585.46,
+        "vt": 2585.46
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2017-11-16",
+        "numero_nf": "3167",
+        "produto": "19.16.25",
+        "descricao": "Unidade Basica CNC Reparado vl.aprox. trib:2914,18",
+        "qtd": 1.0,
+        "vu": 10793.27,
+        "vt": 10793.27
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2017-11-15",
+        "numero_nf": "3067",
+        "produto": "19.16.25",
+        "descricao": "Unidade Basica CNC Reparado vl.aprox. trib:2914,18",
+        "qtd": 1.0,
+        "vu": 10793.27,
+        "vt": 10793.27
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2017-08-09",
+        "numero_nf": "3066",
+        "produto": "19.16.23",
+        "descricao": "UNIDADE DE FRENAGEM VL. APROX. TRIB: 479.64",
+        "qtd": 1.0,
+        "vu": 1453.46,
+        "vt": 1453.46
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-12",
+        "numero_nf": "1937",
+        "produto": "9003008",
+        "descricao": "Mont reser arref - (golf)",
+        "qtd": 19.0,
+        "vu": 6.51,
+        "vt": 123.69
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-12",
+        "numero_nf": "1937",
+        "produto": "9003008",
+        "descricao": "Mont reser arref - (golf)",
+        "qtd": 21.0,
+        "vu": 6.51,
+        "vt": 136.71
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-12",
+        "numero_nf": "1937",
+        "produto": "9003046",
+        "descricao": "Mont reser arrefec - (fiat)",
+        "qtd": 82.0,
+        "vu": 6.51,
+        "vt": 533.82
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-12",
+        "numero_nf": "1937",
+        "produto": "9003043",
+        "descricao": "Bomba de Alumínio Sa-1000",
+        "qtd": 18.0,
+        "vu": 19.27,
+        "vt": 346.86
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-12",
+        "numero_nf": "1937",
+        "produto": "9003046",
+        "descricao": "Mont reser arrefec - (fiat)",
+        "qtd": 180.0,
+        "vu": 6.51,
+        "vt": 1171.8
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-04",
+        "numero_nf": "1928",
+        "produto": "9003041",
+        "descricao": "Barra do TVPA9000",
+        "qtd": 26.0,
+        "vu": 4.36,
+        "vt": 113.36
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-04",
+        "numero_nf": "1928",
+        "produto": "9003169",
+        "descricao": "Saida Vácuo",
+        "qtd": 3.0,
+        "vu": 4.15,
+        "vt": 12.45
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-04",
+        "numero_nf": "1928",
+        "produto": "9003027",
+        "descricao": "Mont/Corpo mcd2000",
+        "qtd": 10.0,
+        "vu": 34.18,
+        "vt": 341.8
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-04",
+        "numero_nf": "1928",
+        "produto": "9003009",
+        "descricao": "Mont sext alum tvp4000",
+        "qtd": 90.0,
+        "vu": 5.46,
+        "vt": 491.4
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-04",
+        "numero_nf": "1928",
+        "produto": "9003041",
+        "descricao": "Barra do TVPA9000",
+        "qtd": 66.0,
+        "vu": 4.36,
+        "vt": 287.76
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-04",
+        "numero_nf": "1928",
+        "produto": "9003088",
+        "descricao": "Montag.Adapt. M14 x 1/8''",
+        "qtd": 2.0,
+        "vu": 2.83,
+        "vt": 5.66
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-04",
+        "numero_nf": "1928",
+        "produto": "9003159",
+        "descricao": "Mont. Usinagem Adapt Olhal Bomba VE x 1/8''",
+        "qtd": 3.0,
+        "vu": 2.83,
+        "vt": 8.49
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-04",
+        "numero_nf": "1928",
+        "produto": "19.19.19",
+        "descricao": "Cotovelo Latão Rosca Esp HP300",
+        "qtd": 23.0,
+        "vu": 1.31,
+        "vt": 30.13
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-04",
+        "numero_nf": "1928",
+        "produto": "9003031",
+        "descricao": "Corpo do Injetor de Contraste",
+        "qtd": 60.0,
+        "vu": 33.91,
+        "vt": 2034.6
+      }
+    ],
+    "PARAFUSO": [
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2018-03-16",
+        "numero_nf": "3273",
+        "produto": "9005251",
+        "descricao": "PARAFUSO S/CAB.FENDA M20X20 DIN551 LATÃO",
+        "qtd": 176.0,
+        "vu": 15.89,
+        "vt": 2796.64
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2017-11-16",
+        "numero_nf": "3168",
+        "produto": "19.16.24",
+        "descricao": "Parafuso cab abl sx in m3X10mm vl.aprox. trib:0.95",
+        "qtd": 10.0,
+        "vu": 0.34,
+        "vt": 3.4
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2017-11-15",
+        "numero_nf": "3068",
+        "produto": "19.16.24",
+        "descricao": "Parafuso cab abl sx in m3X10mm vl.aprox. trib:0.95",
+        "qtd": 10.0,
+        "vu": 0.34,
+        "vt": 3.4
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-04",
+        "numero_nf": "1928",
+        "produto": "9003087",
+        "descricao": "Mont.Usinagem Parafuso Adapt.MB S900 M14 x 1/8",
+        "qtd": 4.0,
+        "vu": 2.83,
+        "vt": 11.32
+      }
+    ],
+    "TAMPA": [
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-12",
+        "numero_nf": "1937",
+        "produto": "9003051",
+        "descricao": "Mont tampa do reser. (GM)",
+        "qtd": 33.0,
+        "vu": 6.51,
+        "vt": 214.83
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-12",
+        "numero_nf": "1937",
+        "produto": "9003051",
+        "descricao": "Mont tampa do reser. (GM)",
+        "qtd": 7.0,
+        "vu": 6.51,
+        "vt": 45.57
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-12",
+        "numero_nf": "1937",
+        "produto": "9003174",
+        "descricao": "Mont Tampa Reserv. Arrefecimento - (ford)",
+        "qtd": 49.0,
+        "vu": 6.51,
+        "vt": 318.99
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-12",
+        "numero_nf": "1937",
+        "produto": "9003174",
+        "descricao": "Mont Tampa Reserv. Arrefecimento - (ford)",
+        "qtd": 74.0,
+        "vu": 6.51,
+        "vt": 481.74
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-12",
+        "numero_nf": "1937",
+        "produto": "9003007",
+        "descricao": "Tampa do reservatorio - golf G3",
+        "qtd": 143.0,
+        "vu": 3.78,
+        "vt": 540.54
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-12",
+        "numero_nf": "1937",
+        "produto": "9003052",
+        "descricao": "Mont tampa c/ rosca res.M1-sg2000",
+        "qtd": 303.0,
+        "vu": 5.51,
+        "vt": 1669.53
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-12",
+        "numero_nf": "1937",
+        "produto": "9003053",
+        "descricao": "Mont tampa c/ rosca do res.M2 - sg2000",
+        "qtd": 302.0,
+        "vu": 5.51,
+        "vt": 1664.02
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2014-09-12",
+        "numero_nf": "1937",
+        "produto": "9003047",
+        "descricao": "Tampa do reservatorio - fiat",
+        "qtd": 202.0,
+        "vu": 3.78,
+        "vt": 763.56
+      }
+    ],
+    "PLACA": [
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2018-03-16",
+        "numero_nf": "3273",
+        "produto": "9005215",
+        "descricao": "Placa de Montagem W60 EVO AWY",
+        "qtd": 2.0,
+        "vu": 22.41,
+        "vt": 44.82
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2018-03-16",
+        "numero_nf": "3273",
+        "produto": "9005215",
+        "descricao": "Placa de Montagem W60 EVO AWY",
+        "qtd": 17.0,
+        "vu": 22.41,
+        "vt": 380.97
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2018-03-16",
+        "numero_nf": "3273",
+        "produto": "9005104",
+        "descricao": "Placa de Interface W60-01 EVO 055MM",
+        "qtd": 155.0,
+        "vu": 13.38,
+        "vt": 2073.9
+      },
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2018-03-16",
+        "numero_nf": "3273",
+        "produto": "9005215",
+        "descricao": "Placa de Montagem W60 EVO AWY",
+        "qtd": 55.0,
+        "vu": 22.41,
+        "vt": 1232.55
+      }
+    ],
+    "SUPORTE": [
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2018-03-16",
+        "numero_nf": "3273",
+        "produto": "9005152",
+        "descricao": "Suporte de Interface W71 EVO 055 MM",
+        "qtd": 203.0,
+        "vu": 6.64,
+        "vt": 1347.92
+      }
+    ],
+    "PORCA": [
+      {
+        "cnpj": "07.047.619/0001-09",
+        "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+        "data": "2018-03-16",
+        "numero_nf": "3273",
+        "produto": "9005252",
+        "descricao": "PORCA SEXTAVADA M20x1DIN439 LATÃO",
+        "qtd": 176.0,
+        "vu": 15.89,
+        "vt": 2796.64
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "cnpj": "14.646.267/0001-65",
+  "razao_social": "LUBNORTE COMÉRCIO DE EQUIPAMENTOS DE LUBRIFICAÇÃO LTDA",
+  "qt_nfes": 5,
+  "qt_itens": 6,
+  "faturamento_total": 12795.0,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 6,
+      "qt_total_pecas": 9,
+      "vu_min": 1365.0,
+      "vu_med": 1427.5,
+      "vu_max": 1500.0,
+      "faturamento": 12795.0
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "14.646.267/0001-65",
+        "razao": "LUBNORTE COMÉRCIO DE EQUIPAMENTOS DE LUBRIFICAÇÃO LTDA",
+        "data": "2019-01-16",
+        "numero_nf": "3515",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 2.0,
+        "vu": 1500.0,
+        "vt": 3000.0
+      },
+      {
+        "cnpj": "14.646.267/0001-65",
+        "razao": "LUBNORTE COMÉRCIO DE EQUIPAMENTOS DE LUBRIFICAÇÃO LTDA",
+        "data": "2018-10-09",
+        "numero_nf": "3456",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 1500.0,
+        "vt": 1500.0
+      },
+      {
+        "cnpj": "14.646.267/0001-65",
+        "razao": "LUBNORTE COMÉRCIO DE EQUIPAMENTOS DE LUBRIFICAÇÃO LTDA",
+        "data": "2016-09-05",
+        "numero_nf": "2705",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 1400.0,
+        "vt": 1400.0
+      },
+      {
+        "cnpj": "14.646.267/0001-65",
+        "razao": "LUBNORTE COMÉRCIO DE EQUIPAMENTOS DE LUBRIFICAÇÃO LTDA",
+        "data": "2016-09-05",
+        "numero_nf": "2705",
+        "produto": "9001002",
+        "descricao": "Bomba Dosadora Oleo Soluvel",
+        "qtd": 1.0,
+        "vu": 1400.0,
+        "vt": 1400.0
+      },
+      {
+        "cnpj": "14.646.267/0001-65",
+        "razao": "LUBNORTE COMÉRCIO DE EQUIPAMENTOS DE LUBRIFICAÇÃO LTDA",
+        "data": "2016-08-25",
+        "numero_nf": "2697",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 1400.0,
+        "vt": 1400.0
+      },
+      {
+        "cnpj": "14.646.267/0001-65",
+        "razao": "LUBNORTE COMÉRCIO DE EQUIPAMENTOS DE LUBRIFICAÇÃO LTDA",
+        "data": "2015-11-09",
+        "numero_nf": "2378",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 3.0,
+        "vu": 1365.0,
+        "vt": 4095.0
+      }
+    ]
+  }
+}

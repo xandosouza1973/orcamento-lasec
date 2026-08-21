@@ -1,0 +1,382 @@
+{
+  "gerado_em": "2026-04-07",
+  "total_clientes": 47,
+  "clientes": [
+    {
+      "cnpj": "44.040.707/0001-05",
+      "razao": "RFS BRASIL TELECOMUNICAÇÕES LTDA",
+      "nfes": 1245,
+      "itens": 6649,
+      "faturamento": 9590662.1,
+      "arquivo": "RFS_BRASIL_TELECOMUNICA_ES_LTDA.json"
+    },
+    {
+      "cnpj": "00.566.906/0001-78",
+      "razao": "HASTE TECNOLOGIA LTDA",
+      "nfes": 675,
+      "itens": 5935,
+      "faturamento": 4054295.82,
+      "arquivo": "HASTE_TECNOLOGIA_LTDA.json"
+    },
+    {
+      "cnpj": "63.073.670/0001-58",
+      "razao": "MICROGEAR INDÚSTRIA DE PEÇAS LTDA",
+      "nfes": 530,
+      "itens": 1116,
+      "faturamento": 2236647.43,
+      "arquivo": "MICROGEAR_IND_STRIA_DE_PE_AS_LTDA.json"
+    },
+    {
+      "cnpj": "11.593.204/0001-08",
+      "razao": "SOHIPREN DO BRASIL COMERCIAL E INDUSTRIAL LTDA. - LIVENZA",
+      "nfes": 283,
+      "itens": 875,
+      "faturamento": 1318129.32,
+      "arquivo": "SOHIPREN_DO_BRASIL_COMERCIAL_E_INDUSTRIA.json"
+    },
+    {
+      "cnpj": "44.040.707/0004-40",
+      "razao": "RFS BRASIL TELECOMUNICAÇÕES LTDA",
+      "nfes": 43,
+      "itens": 193,
+      "faturamento": 474602.49,
+      "arquivo": "RFS_BRASIL_TELECOMUNICA_ES_LTDA.json"
+    },
+    {
+      "cnpj": "60.421.153/0001-34",
+      "razao": "GALVANOTECNICA ARTEGA LTDA",
+      "nfes": 83,
+      "itens": 150,
+      "faturamento": 427021.75,
+      "arquivo": "GALVANOTECNICA_ARTEGA_LTDA.json"
+    },
+    {
+      "cnpj": "03.281.625/0001-67",
+      "razao": "BOZZA JUNIOR INDUSTRIA E COMERCIO EIRELI",
+      "nfes": 33,
+      "itens": 67,
+      "faturamento": 315140.8,
+      "arquivo": "BOZZA_JUNIOR_INDUSTRIA_E_COMERCIO_EIRELI.json"
+    },
+    {
+      "cnpj": "05.985.391/0001-64",
+      "razao": "ALGCOM Industria e Serviços em Telecomuniações Ltda",
+      "nfes": 34,
+      "itens": 168,
+      "faturamento": 284742.41,
+      "arquivo": "ALGCOM_INDUSTRIA_E_SERVI_OS_EM_TELECOMUN.json"
+    },
+    {
+      "cnpj": "23.038.220/0001-00",
+      "razao": "Inova Pro Com.de Produtos Odontologicos Ltda-ME",
+      "nfes": 77,
+      "itens": 305,
+      "faturamento": 234547.02,
+      "arquivo": "INOVA_PRO_COM_DE_PRODUTOS_ODONTOLOGICOS_.json"
+    },
+    {
+      "cnpj": "09.301.373/0001-77",
+      "razao": "CENTRO DE TORNEAMENTO MICROGEAR LTDA",
+      "nfes": 103,
+      "itens": 215,
+      "faturamento": 213895.9,
+      "arquivo": "CENTRO_DE_TORNEAMENTO_MICROGEAR_LTDA.json"
+    },
+    {
+      "cnpj": "01.645.809/0001-33",
+      "razao": "Lubrisystem Ltda. epp.",
+      "nfes": 22,
+      "itens": 77,
+      "faturamento": 208868.5,
+      "arquivo": "LUBRISYSTEM_LTDA_EPP.json"
+    },
+    {
+      "cnpj": "03.102.205/0001-76",
+      "razao": "ITW CHEMICAL PRODUCTS LTDA",
+      "nfes": 42,
+      "itens": 43,
+      "faturamento": 184755.5,
+      "arquivo": "ITW_CHEMICAL_PRODUCTS_LTDA.json"
+    },
+    {
+      "cnpj": "07.047.619/0001-09",
+      "razao": "Malelo Industria e Comercio de Ferramentas - Soc Ldta - ME",
+      "nfes": 18,
+      "itens": 59,
+      "faturamento": 82662.58,
+      "arquivo": "MALELO_INDUSTRIA_E_COMERCIO_DE_FERRAMENT.json"
+    },
+    {
+      "cnpj": "50.859.446/0001-44",
+      "razao": "Fresadora Santana Ltda",
+      "nfes": 2,
+      "itens": 8,
+      "faturamento": 48211.24,
+      "arquivo": "FRESADORA_SANTANA_LTDA.json"
+    },
+    {
+      "cnpj": "26.206.114/0001-86",
+      "razao": "SOUL Ferragens e Componentes para Vidros Eireli - EPP",
+      "nfes": 11,
+      "itens": 20,
+      "faturamento": 44243.49,
+      "arquivo": "SOUL_FERRAGENS_E_COMPONENTES_PARA_VIDROS.json"
+    },
+    {
+      "cnpj": "56.720.428/0014-88",
+      "razao": "INDUSTRIAS ROMI S.A.",
+      "nfes": 13,
+      "itens": 14,
+      "faturamento": 43800.78,
+      "arquivo": "INDUSTRIAS_ROMI_S_A.json"
+    },
+    {
+      "cnpj": "37.072.192/0001-51",
+      "razao": "VIVIANE BRITO PINHEIRO DAVID 12307155767",
+      "nfes": 6,
+      "itens": 31,
+      "faturamento": 41931.32,
+      "arquivo": "VIVIANE_BRITO_PINHEIRO_DAVID_12307155767.json"
+    },
+    {
+      "cnpj": "56.057.672/0001-98",
+      "razao": "INOX-PAR IND. E COM. LTDA",
+      "nfes": 5,
+      "itens": 5,
+      "faturamento": 38910.2,
+      "arquivo": "INOX_PAR_IND_E_COM_LTDA.json"
+    },
+    {
+      "cnpj": "16.365.576/0001-92",
+      "razao": "ENGEPLAST Ind. de Embalagens e Serviços Ltda ME",
+      "nfes": 14,
+      "itens": 21,
+      "faturamento": 38790.12,
+      "arquivo": "ENGEPLAST_IND_DE_EMBALAGENS_E_SERVI_OS_L.json"
+    },
+    {
+      "cnpj": "50.632.017/0001-30",
+      "razao": "Alfa Instrumentos Eletronicos Ltda",
+      "nfes": 15,
+      "itens": 18,
+      "faturamento": 36198.97,
+      "arquivo": "ALFA_INSTRUMENTOS_ELETRONICOS_LTDA.json"
+    },
+    {
+      "cnpj": "32.203.909/0001-33",
+      "razao": "HGS INDUSTRIAL LTDA",
+      "nfes": 8,
+      "itens": 12,
+      "faturamento": 27080.0,
+      "arquivo": "HGS_INDUSTRIAL_LTDA.json"
+    },
+    {
+      "cnpj": "60.476.884/0015-82",
+      "razao": "MAHLE Metal Leve S/A",
+      "nfes": 9,
+      "itens": 9,
+      "faturamento": 25350.5,
+      "arquivo": "MAHLE_METAL_LEVE_S_A.json"
+    },
+    {
+      "cnpj": "59.409.490/0001-27",
+      "razao": "Contrês Indústria de Beneficiamento de Metais Ltda EPP.",
+      "nfes": 4,
+      "itens": 7,
+      "faturamento": 20834.9,
+      "arquivo": "CONTR_S_IND_STRIA_DE_BENEFICIAMENTO_DE_M.json"
+    },
+    {
+      "cnpj": "05.268.575/0001-03",
+      "razao": "USINAGEM SABARA LTDA",
+      "nfes": 10,
+      "itens": 23,
+      "faturamento": 20008.49,
+      "arquivo": "USINAGEM_SABARA_LTDA.json"
+    },
+    {
+      "cnpj": "29.582.039/0001-46",
+      "razao": "NANQUIM INJEÇÃO PLÁTICA E MONTAGENS EIRELI.",
+      "nfes": 3,
+      "itens": 18,
+      "faturamento": 17429.44,
+      "arquivo": "NANQUIM_INJE_O_PL_TICA_E_MONTAGENS_EIREL.json"
+    },
+    {
+      "cnpj": "49.656.192/0001-88",
+      "razao": "CINPAL CIA INDL PEÇAS PARA AUTOMOVEIS",
+      "nfes": 6,
+      "itens": 8,
+      "faturamento": 16154.0,
+      "arquivo": "CINPAL_CIA_INDL_PE_AS_PARA_AUTOMOVEIS.json"
+    },
+    {
+      "cnpj": "14.172.163/0001-66",
+      "razao": "VOL IMPORTS COMERCIO IMPORTAÇÃO E EXP. LTDA",
+      "nfes": 9,
+      "itens": 14,
+      "faturamento": 15540.13,
+      "arquivo": "VOL_IMPORTS_COMERCIO_IMPORTA_O_E_EXP_LTD.json"
+    },
+    {
+      "cnpj": "03.481.699/0001-47",
+      "razao": "SUGAI IND. E COMÉRCIO DE PEÇAS LTDA",
+      "nfes": 7,
+      "itens": 17,
+      "faturamento": 13700.81,
+      "arquivo": "SUGAI_IND_E_COM_RCIO_DE_PE_AS_LTDA.json"
+    },
+    {
+      "cnpj": "14.646.267/0001-65",
+      "razao": "LUBNORTE COMÉRCIO DE EQUIPAMENTOS DE LUBRIFICAÇÃO LTDA",
+      "nfes": 5,
+      "itens": 6,
+      "faturamento": 12795.0,
+      "arquivo": "LUBNORTE_COM_RCIO_DE_EQUIPAMENTOS_DE_LUB.json"
+    },
+    {
+      "cnpj": "48.265.003/0001-83",
+      "razao": "TORVEL Equipamentos Hidraulicos Ltda",
+      "nfes": 5,
+      "itens": 8,
+      "faturamento": 11147.01,
+      "arquivo": "TORVEL_EQUIPAMENTOS_HIDRAULICOS_LTDA.json"
+    },
+    {
+      "cnpj": "12.105.175/0001-42",
+      "razao": "JD Tecnologia de Lubrificantes Ltda",
+      "nfes": 5,
+      "itens": 6,
+      "faturamento": 10825.0,
+      "arquivo": "JD_TECNOLOGIA_DE_LUBRIFICANTES_LTDA.json"
+    },
+    {
+      "cnpj": "72.982.481/0001-99",
+      "razao": "Steelblue Ind e Com Ltda",
+      "nfes": 1,
+      "itens": 10,
+      "faturamento": 10594.6,
+      "arquivo": "STEELBLUE_IND_E_COM_LTDA.json"
+    },
+    {
+      "cnpj": "92.368.505/0001-21",
+      "razao": "DILUB COMÉRCIO DE LUBRIFICANTES LTDA",
+      "nfes": 5,
+      "itens": 5,
+      "faturamento": 10250.0,
+      "arquivo": "DILUB_COM_RCIO_DE_LUBRIFICANTES_LTDA.json"
+    },
+    {
+      "cnpj": "02.455.462/0001-29",
+      "razao": "Proturbo Usinagem de Precisão Ltda",
+      "nfes": 5,
+      "itens": 5,
+      "faturamento": 9500.0,
+      "arquivo": "PROTURBO_USINAGEM_DE_PRECIS_O_LTDA.json"
+    },
+    {
+      "cnpj": "25.158.340/0001-76",
+      "razao": "ENGEPLAST SERVIÇOS EIRELI - ME",
+      "nfes": 3,
+      "itens": 6,
+      "faturamento": 9444.9,
+      "arquivo": "ENGEPLAST_SERVI_OS_EIRELI_ME.json"
+    },
+    {
+      "cnpj": "42.049.229/0001-60",
+      "razao": "PEPANTTI AUTOMAÇÃO LTDA EPP",
+      "nfes": 2,
+      "itens": 6,
+      "faturamento": 9399.48,
+      "arquivo": "PEPANTTI_AUTOMA_O_LTDA_EPP.json"
+    },
+    {
+      "cnpj": "49.486.665/0001-46",
+      "razao": "ALKALLIS BRASIL IND.COM.PRODS QUÍMICOS LTDA",
+      "nfes": 5,
+      "itens": 5,
+      "faturamento": 8215.0,
+      "arquivo": "ALKALLIS_BRASIL_IND_COM_PRODS_QU_MICOS_L.json"
+    },
+    {
+      "cnpj": "01.575.165/0001-54",
+      "razao": "ELETROGAMA MATERIAL ELETRICO INDUSTRIAL LTDA",
+      "nfes": 3,
+      "itens": 6,
+      "faturamento": 6052.0,
+      "arquivo": "ELETROGAMA_MATERIAL_ELETRICO_INDUSTRIAL_.json"
+    },
+    {
+      "cnpj": "65.798.589/0001-60",
+      "razao": "Kentucky Industria e Comercio Ltda - EPP",
+      "nfes": 4,
+      "itens": 5,
+      "faturamento": 5755.21,
+      "arquivo": "KENTUCKY_INDUSTRIA_E_COMERCIO_LTDA_EPP.json"
+    },
+    {
+      "cnpj": "63.930.770/0001-53",
+      "razao": "Quadrant Solidur do Brasil Ltda",
+      "nfes": 2,
+      "itens": 8,
+      "faturamento": 4260.0,
+      "arquivo": "QUADRANT_SOLIDUR_DO_BRASIL_LTDA.json"
+    },
+    {
+      "cnpj": "501.555.078-26",
+      "razao": "JOÃO PEDRO DE OLIVEIRA SOUZA",
+      "nfes": 2,
+      "itens": 7,
+      "faturamento": 3593.41,
+      "arquivo": "JO_O_PEDRO_DE_OLIVEIRA_SOUZA.json"
+    },
+    {
+      "cnpj": "05.396.034/0001-60",
+      "razao": "DIGIMESS INSTRUMENTOS DE PRECISÃO LTDA",
+      "nfes": 11,
+      "itens": 27,
+      "faturamento": 3560.0,
+      "arquivo": "DIGIMESS_INSTRUMENTOS_DE_PRECIS_O_LTDA.json"
+    },
+    {
+      "cnpj": "07.410.726/0001-41",
+      "razao": "Impaktto Plasticos de Engenharia",
+      "nfes": 1,
+      "itens": 5,
+      "faturamento": 3419.0,
+      "arquivo": "IMPAKTTO_PLASTICOS_DE_ENGENHARIA.json"
+    },
+    {
+      "cnpj": "04.306.120/0001-72",
+      "razao": "TAEGUTEC DO BRASIL LTDA",
+      "nfes": 5,
+      "itens": 6,
+      "faturamento": 2004.0,
+      "arquivo": "TAEGUTEC_DO_BRASIL_LTDA.json"
+    },
+    {
+      "cnpj": "25.160.086/0001-40",
+      "razao": "IDEAL INDUSTRIA E COMERCIO DE ANTENAS LTDA",
+      "nfes": 1,
+      "itens": 11,
+      "faturamento": 856.6,
+      "arquivo": "IDEAL_INDUSTRIA_E_COMERCIO_DE_ANTENAS_LT.json"
+    },
+    {
+      "cnpj": "69.056.372/0001-36",
+      "razao": "Nipo - Tec Ind. e Com. Ltda",
+      "nfes": 5,
+      "itens": 41,
+      "faturamento": 687.51,
+      "arquivo": "NIPO_TEC_IND_E_COM_LTDA.json"
+    },
+    {
+      "cnpj": "71.774.004/0001-75",
+      "razao": "ADDN Assistência Técnica Indús",
+      "nfes": 3,
+      "itens": 10,
+      "faturamento": 490.0,
+      "arquivo": "ADDN_ASSIST_NCIA_T_CNICA_IND_S.json"
+    }
+  ]
+}

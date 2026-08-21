@@ -1,0 +1,143 @@
+{
+  "cnpj": "72.982.481/0001-99",
+  "razao_social": "Steelblue Ind e Com Ltda",
+  "qt_nfes": 1,
+  "qt_itens": 10,
+  "faturamento_total": 10594.6,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 9,
+      "qt_total_pecas": 1966,
+      "vu_min": 2.5,
+      "vu_med": 4.48,
+      "vu_max": 5.0,
+      "faturamento": 9154.6
+    },
+    {
+      "tipo": "PINO",
+      "qt_itens": 1,
+      "qt_total_pecas": 240,
+      "vu_min": 6.0,
+      "vu_med": 6.0,
+      "vu_max": 6.0,
+      "faturamento": 1440.0
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "72.982.481/0001-99",
+        "razao": "Steelblue Ind e Com Ltda",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9006010",
+        "descricao": "Base da vela media 2\"",
+        "qtd": 23.0,
+        "vu": 4.5,
+        "vt": 103.5
+      },
+      {
+        "cnpj": "72.982.481/0001-99",
+        "razao": "Steelblue Ind e Com Ltda",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9006010",
+        "descricao": "Base da vela media 2\"",
+        "qtd": 283.0,
+        "vu": 4.5,
+        "vt": 1273.5
+      },
+      {
+        "cnpj": "72.982.481/0001-99",
+        "razao": "Steelblue Ind e Com Ltda",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9006014",
+        "descricao": "BASE DA VELA MINI 1.1/2\"",
+        "qtd": 252.0,
+        "vu": 4.8,
+        "vt": 1209.6
+      },
+      {
+        "cnpj": "72.982.481/0001-99",
+        "razao": "Steelblue Ind e Com Ltda",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9006009",
+        "descricao": "Base da vela grande 2 1/4\"",
+        "qtd": 360.0,
+        "vu": 5.0,
+        "vt": 1800.0
+      },
+      {
+        "cnpj": "72.982.481/0001-99",
+        "razao": "Steelblue Ind e Com Ltda",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9006010",
+        "descricao": "Base da vela media 2\"",
+        "qtd": 480.0,
+        "vu": 4.5,
+        "vt": 2160.0
+      },
+      {
+        "cnpj": "72.982.481/0001-99",
+        "razao": "Steelblue Ind e Com Ltda",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9006015",
+        "descricao": "BASE DA VELA AJUSTE PELO TUBO",
+        "qtd": 40.0,
+        "vu": 2.5,
+        "vt": 100.0
+      },
+      {
+        "cnpj": "72.982.481/0001-99",
+        "razao": "Steelblue Ind e Com Ltda",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9006009",
+        "descricao": "Base da vela grande 2 1/4\"",
+        "qtd": 13.0,
+        "vu": 5.0,
+        "vt": 65.0
+      },
+      {
+        "cnpj": "72.982.481/0001-99",
+        "razao": "Steelblue Ind e Com Ltda",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9006010",
+        "descricao": "Base da vela media 2\"",
+        "qtd": 264.0,
+        "vu": 4.5,
+        "vt": 1188.0
+      },
+      {
+        "cnpj": "72.982.481/0001-99",
+        "razao": "Steelblue Ind e Com Ltda",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9006009",
+        "descricao": "Base da vela grande 2 1/4\"",
+        "qtd": 251.0,
+        "vu": 5.0,
+        "vt": 1255.0
+      }
+    ],
+    "PINO": [
+      {
+        "cnpj": "72.982.481/0001-99",
+        "razao": "Steelblue Ind e Com Ltda",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "9006013",
+        "descricao": "PINO QUADRADO DA VELA",
+        "qtd": 240.0,
+        "vu": 6.0,
+        "vt": 1440.0
+      }
+    ]
+  }
+}

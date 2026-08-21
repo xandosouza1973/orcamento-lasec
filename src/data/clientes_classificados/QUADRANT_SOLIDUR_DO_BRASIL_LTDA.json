@@ -1,0 +1,110 @@
+{
+  "cnpj": "63.930.770/0001-53",
+  "razao_social": "Quadrant Solidur do Brasil Ltda",
+  "qt_nfes": 2,
+  "qt_itens": 8,
+  "faturamento_total": 4260.0,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 8,
+      "qt_total_pecas": 121,
+      "vu_min": 1.0,
+      "vu_med": 343.5,
+      "vu_max": 1300.0,
+      "faturamento": 4260.0
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "63.930.770/0001-53",
+        "razao": "Quadrant Solidur do Brasil Ltda",
+        "data": "2014-05-12",
+        "numero_nf": "1803",
+        "produto": "9008001",
+        "descricao": "Mancal Inferior Traseiro",
+        "qtd": 20.0,
+        "vu": 1.0,
+        "vt": 20.0
+      },
+      {
+        "cnpj": "63.930.770/0001-53",
+        "razao": "Quadrant Solidur do Brasil Ltda",
+        "data": "2014-05-12",
+        "numero_nf": "1803",
+        "produto": "9008006",
+        "descricao": "Mancal Superoir Traseiro",
+        "qtd": 20.0,
+        "vu": 1.0,
+        "vt": 20.0
+      },
+      {
+        "cnpj": "63.930.770/0001-53",
+        "razao": "Quadrant Solidur do Brasil Ltda",
+        "data": "2014-05-12",
+        "numero_nf": "1803",
+        "produto": "06.04.008",
+        "descricao": "Chapa Poliacetal Natural 50X1000X1000",
+        "qtd": 0.5,
+        "vu": 1300.0,
+        "vt": 650.0
+      },
+      {
+        "cnpj": "63.930.770/0001-53",
+        "razao": "Quadrant Solidur do Brasil Ltda",
+        "data": "2014-04-30",
+        "numero_nf": "1788",
+        "produto": "9008003",
+        "descricao": "Ombro Frontal Esquerdo",
+        "qtd": 20.0,
+        "vu": 35.0,
+        "vt": 700.0
+      },
+      {
+        "cnpj": "63.930.770/0001-53",
+        "razao": "Quadrant Solidur do Brasil Ltda",
+        "data": "2014-04-30",
+        "numero_nf": "1788",
+        "produto": "9008004",
+        "descricao": "Ombro Traseiro Direito",
+        "qtd": 20.0,
+        "vu": 38.0,
+        "vt": 760.0
+      },
+      {
+        "cnpj": "63.930.770/0001-53",
+        "razao": "Quadrant Solidur do Brasil Ltda",
+        "data": "2014-04-30",
+        "numero_nf": "1788",
+        "produto": "9008005",
+        "descricao": "Ombro Frontal Direito",
+        "qtd": 20.0,
+        "vu": 38.0,
+        "vt": 760.0
+      },
+      {
+        "cnpj": "63.930.770/0001-53",
+        "razao": "Quadrant Solidur do Brasil Ltda",
+        "data": "2014-04-30",
+        "numero_nf": "1788",
+        "produto": "9008002",
+        "descricao": "Ombro Traseiro Esquerdo",
+        "qtd": 20.0,
+        "vu": 35.0,
+        "vt": 700.0
+      },
+      {
+        "cnpj": "63.930.770/0001-53",
+        "razao": "Quadrant Solidur do Brasil Ltda",
+        "data": "2014-04-30",
+        "numero_nf": "1788",
+        "produto": "06.04.008",
+        "descricao": "Chapa Poliacetal Natural 50X1000X1000",
+        "qtd": 0.5,
+        "vu": 1300.0,
+        "vt": 650.0
+      }
+    ]
+  }
+}

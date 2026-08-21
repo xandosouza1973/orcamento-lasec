@@ -1,0 +1,187 @@
+{
+  "cnpj": "56.720.428/0014-88",
+  "razao_social": "INDUSTRIAS ROMI S.A.",
+  "qt_nfes": 13,
+  "qt_itens": 14,
+  "faturamento_total": 43800.78,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 13,
+      "qt_total_pecas": 38,
+      "vu_min": 8.8,
+      "vu_med": 3346.75,
+      "vu_max": 10793.27,
+      "faturamento": 43797.38
+    },
+    {
+      "tipo": "PARAFUSO",
+      "qt_itens": 1,
+      "qt_total_pecas": 10,
+      "vu_min": 0.34,
+      "vu_med": 0.34,
+      "vu_max": 0.34,
+      "faturamento": 3.4
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "56.720.428/0014-88",
+        "razao": "INDUSTRIAS ROMI S.A.",
+        "data": "\\N",
+        "numero_nf": "\\N",
+        "produto": "19.16.25",
+        "descricao": "Unidade Basica CNC Reparado vl.aprox. trib:2914,18",
+        "qtd": 1.0,
+        "vu": 10793.27,
+        "vt": 10793.27
+      },
+      {
+        "cnpj": "56.720.428/0014-88",
+        "razao": "INDUSTRIAS ROMI S.A.",
+        "data": "2022-04-07",
+        "numero_nf": "4394",
+        "produto": "19.16.37",
+        "descricao": "MOLA HEL COMPRESSÃO DE6,00XDW1,20X32MM",
+        "qtd": 4.0,
+        "vu": 15.1,
+        "vt": 60.4
+      },
+      {
+        "cnpj": "56.720.428/0014-88",
+        "razao": "INDUSTRIAS ROMI S.A.",
+        "data": "2022-03-29",
+        "numero_nf": "4385",
+        "produto": "19.16.37",
+        "descricao": "MOLA HEL COMPRESSÃO DE6,00XDW1,20X32MM",
+        "qtd": 4.0,
+        "vu": 15.1,
+        "vt": 60.4
+      },
+      {
+        "cnpj": "56.720.428/0014-88",
+        "razao": "INDUSTRIAS ROMI S.A.",
+        "data": "2022-03-04",
+        "numero_nf": "4368",
+        "produto": "19.16.37",
+        "descricao": "MOLA HEL COMPRESSÃO DE6,00XDW1,20X32MM",
+        "qtd": 4.0,
+        "vu": 15.1,
+        "vt": 60.4
+      },
+      {
+        "cnpj": "56.720.428/0014-88",
+        "razao": "INDUSTRIAS ROMI S.A.",
+        "data": "2017-12-07",
+        "numero_nf": "3202",
+        "produto": "19.16.25",
+        "descricao": "Unidade Basica CNC Reparado vl.aprox. trib:2914,18",
+        "qtd": 1.0,
+        "vu": 10793.27,
+        "vt": 10793.27
+      },
+      {
+        "cnpj": "56.720.428/0014-88",
+        "razao": "INDUSTRIAS ROMI S.A.",
+        "data": "2017-12-06",
+        "numero_nf": "3196",
+        "produto": "19.16.30",
+        "descricao": "TUBO PLASTICO AR 8 X 1 MM VL. APROX. TRIB: 19,60",
+        "qtd": 8.0,
+        "vu": 10.65,
+        "vt": 85.2
+      },
+      {
+        "cnpj": "56.720.428/0014-88",
+        "razao": "INDUSTRIAS ROMI S.A.",
+        "data": "2017-12-06",
+        "numero_nf": "3197",
+        "produto": "19.16.31",
+        "descricao": "TUBO PNEUMÁTICO 6MM AZUL VL. APROX. TRIB: 20,24",
+        "qtd": 10.0,
+        "vu": 8.8,
+        "vt": 88.0
+      },
+      {
+        "cnpj": "56.720.428/0014-88",
+        "razao": "INDUSTRIAS ROMI S.A.",
+        "data": "2017-11-23",
+        "numero_nf": "3179",
+        "produto": "19.16.29",
+        "descricao": "CABO I/O LINK CARTÃO 1 CARTÃO 2 VL.",
+        "qtd": 1.0,
+        "vu": 517.22,
+        "vt": 517.22
+      },
+      {
+        "cnpj": "56.720.428/0014-88",
+        "razao": "INDUSTRIAS ROMI S.A.",
+        "data": "2017-11-21",
+        "numero_nf": "3172",
+        "produto": "19.16.26",
+        "descricao": "SOFTWARE THREAD CUTTING, SYNHONOUS CUT VL.",
+        "qtd": 1.0,
+        "vu": 2639.13,
+        "vt": 2639.13
+      },
+      {
+        "cnpj": "56.720.428/0014-88",
+        "razao": "INDUSTRIAS ROMI S.A.",
+        "data": "2017-11-21",
+        "numero_nf": "3174",
+        "produto": "19.16.27",
+        "descricao": "AO2B 0286 J818 POLAR COORDINATE CMMAN VL.",
+        "qtd": 1.0,
+        "vu": 3867.9,
+        "vt": 3867.9
+      },
+      {
+        "cnpj": "56.720.428/0014-88",
+        "razao": "INDUSTRIAS ROMI S.A.",
+        "data": "2017-11-21",
+        "numero_nf": "3174",
+        "produto": "19.16.28",
+        "descricao": "AO2B 0286 J893 (OPCIONAL COORDINATE SYST VL.",
+        "qtd": 1.0,
+        "vu": 2585.46,
+        "vt": 2585.46
+      },
+      {
+        "cnpj": "56.720.428/0014-88",
+        "razao": "INDUSTRIAS ROMI S.A.",
+        "data": "2017-11-17",
+        "numero_nf": "3170",
+        "produto": "19.16.25",
+        "descricao": "Unidade Basica CNC Reparado vl.aprox. trib:2914,18",
+        "qtd": 1.0,
+        "vu": 10793.27,
+        "vt": 10793.27
+      },
+      {
+        "cnpj": "56.720.428/0014-88",
+        "razao": "INDUSTRIAS ROMI S.A.",
+        "data": "2017-08-09",
+        "numero_nf": "3067",
+        "produto": "19.16.23",
+        "descricao": "UNIDADE DE FRENAGEM VL. APROX. TRIB: 479.64",
+        "qtd": 1.0,
+        "vu": 1453.46,
+        "vt": 1453.46
+      }
+    ],
+    "PARAFUSO": [
+      {
+        "cnpj": "56.720.428/0014-88",
+        "razao": "INDUSTRIAS ROMI S.A.",
+        "data": "2017-11-17",
+        "numero_nf": "3169",
+        "produto": "19.16.24",
+        "descricao": "Parafuso cab abl sx in m3X10mm vl.aprox. trib:0.95",
+        "qtd": 10.0,
+        "vu": 0.34,
+        "vt": 3.4
+      }
+    ]
+  }
+}

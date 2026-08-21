@@ -1,0 +1,121 @@
+{
+  "cnpj": "60.476.884/0015-82",
+  "razao_social": "MAHLE Metal Leve S/A",
+  "qt_nfes": 9,
+  "qt_itens": 9,
+  "faturamento_total": 25350.5,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 9,
+      "qt_total_pecas": 10,
+      "vu_min": 1450.0,
+      "vu_med": 2505.61,
+      "vu_max": 4050.0,
+      "faturamento": 25350.5
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "60.476.884/0015-82",
+        "razao": "MAHLE Metal Leve S/A",
+        "data": "2025-07-11",
+        "numero_nf": "5132",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 4050.0,
+        "vt": 4050.0
+      },
+      {
+        "cnpj": "60.476.884/0015-82",
+        "razao": "MAHLE Metal Leve S/A",
+        "data": "2023-07-05",
+        "numero_nf": "4658",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 2800.0,
+        "vt": 2800.0
+      },
+      {
+        "cnpj": "60.476.884/0015-82",
+        "razao": "MAHLE Metal Leve S/A",
+        "data": "2023-03-10",
+        "numero_nf": "4587",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 2.0,
+        "vu": 2800.0,
+        "vt": 5600.0
+      },
+      {
+        "cnpj": "60.476.884/0015-82",
+        "razao": "MAHLE Metal Leve S/A",
+        "data": "2023-01-26",
+        "numero_nf": "4564",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 2800.0,
+        "vt": 2800.0
+      },
+      {
+        "cnpj": "60.476.884/0015-82",
+        "razao": "MAHLE Metal Leve S/A",
+        "data": "2021-07-01",
+        "numero_nf": "4145",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 2700.0,
+        "vt": 2700.0
+      },
+      {
+        "cnpj": "60.476.884/0015-82",
+        "razao": "MAHLE Metal Leve S/A",
+        "data": "2021-03-16",
+        "numero_nf": "4050",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 2700.0,
+        "vt": 2700.0
+      },
+      {
+        "cnpj": "60.476.884/0015-82",
+        "razao": "MAHLE Metal Leve S/A",
+        "data": "2017-07-03",
+        "numero_nf": "3032",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 1550.5,
+        "vt": 1550.5
+      },
+      {
+        "cnpj": "60.476.884/0015-82",
+        "razao": "MAHLE Metal Leve S/A",
+        "data": "2015-10-22",
+        "numero_nf": "2363",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 1700.0,
+        "vt": 1700.0
+      },
+      {
+        "cnpj": "60.476.884/0015-82",
+        "razao": "MAHLE Metal Leve S/A",
+        "data": "2014-12-16",
+        "numero_nf": "2053",
+        "produto": "9001001",
+        "descricao": "Aspirador Pneumático à Vácuo",
+        "qtd": 1.0,
+        "vu": 1450.0,
+        "vt": 1450.0
+      }
+    ]
+  }
+}

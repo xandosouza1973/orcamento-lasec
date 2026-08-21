@@ -1,0 +1,132 @@
+{
+  "cnpj": "71.774.004/0001-75",
+  "razao_social": "ADDN Assistência Técnica Indús",
+  "qt_nfes": 3,
+  "qt_itens": 10,
+  "faturamento_total": 490.0,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 10,
+      "qt_total_pecas": 19,
+      "vu_min": 20.0,
+      "vu_med": 25.0,
+      "vu_max": 30.0,
+      "faturamento": 490.0
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "71.774.004/0001-75",
+        "razao": "ADDN Assistência Técnica Indús",
+        "data": "2017-10-20",
+        "numero_nf": "3142",
+        "produto": "9001003",
+        "descricao": "Curva Branca do Tambor",
+        "qtd": 2.0,
+        "vu": 30.0,
+        "vt": 60.0
+      },
+      {
+        "cnpj": "71.774.004/0001-75",
+        "razao": "ADDN Assistência Técnica Indús",
+        "data": "2017-10-20",
+        "numero_nf": "3142",
+        "produto": "9001004",
+        "descricao": "Mangueira Sanfonada",
+        "qtd": 3.0,
+        "vu": 25.0,
+        "vt": 75.0
+      },
+      {
+        "cnpj": "71.774.004/0001-75",
+        "razao": "ADDN Assistência Técnica Indús",
+        "data": "2017-10-20",
+        "numero_nf": "3142",
+        "produto": "9001004",
+        "descricao": "Mangueira Sanfonada",
+        "qtd": 3.0,
+        "vu": 25.0,
+        "vt": 75.0
+      },
+      {
+        "cnpj": "71.774.004/0001-75",
+        "razao": "ADDN Assistência Técnica Indús",
+        "data": "2017-10-20",
+        "numero_nf": "3142",
+        "produto": "9001005",
+        "descricao": "Bico para cantos",
+        "qtd": 1.0,
+        "vu": 20.0,
+        "vt": 20.0
+      },
+      {
+        "cnpj": "71.774.004/0001-75",
+        "razao": "ADDN Assistência Técnica Indús",
+        "data": "2017-05-30",
+        "numero_nf": "3001",
+        "produto": "9001004",
+        "descricao": "Rodinho Ponteira do aspirador a vácuo",
+        "qtd": 2.0,
+        "vu": 25.0,
+        "vt": 50.0
+      },
+      {
+        "cnpj": "71.774.004/0001-75",
+        "razao": "ADDN Assistência Técnica Indús",
+        "data": "2017-05-30",
+        "numero_nf": "3001",
+        "produto": "9001002",
+        "descricao": "Bico para cantos",
+        "qtd": 1.0,
+        "vu": 20.0,
+        "vt": 20.0
+      },
+      {
+        "cnpj": "71.774.004/0001-75",
+        "razao": "ADDN Assistência Técnica Indús",
+        "data": "2017-05-30",
+        "numero_nf": "3001",
+        "produto": "9001003",
+        "descricao": "Curva Branca do Tambor",
+        "qtd": 2.0,
+        "vu": 30.0,
+        "vt": 60.0
+      },
+      {
+        "cnpj": "71.774.004/0001-75",
+        "razao": "ADDN Assistência Técnica Indús",
+        "data": "2017-05-30",
+        "numero_nf": "3002",
+        "produto": "9001004",
+        "descricao": "Mangueira Sanfonada",
+        "qtd": 2.0,
+        "vu": 25.0,
+        "vt": 50.0
+      },
+      {
+        "cnpj": "71.774.004/0001-75",
+        "razao": "ADDN Assistência Técnica Indús",
+        "data": "2017-05-30",
+        "numero_nf": "3002",
+        "produto": "9001002",
+        "descricao": "Bico para cantos",
+        "qtd": 1.0,
+        "vu": 20.0,
+        "vt": 20.0
+      },
+      {
+        "cnpj": "71.774.004/0001-75",
+        "razao": "ADDN Assistência Técnica Indús",
+        "data": "2017-05-30",
+        "numero_nf": "3002",
+        "produto": "9001003",
+        "descricao": "Curva Branca do Tambor",
+        "qtd": 2.0,
+        "vu": 30.0,
+        "vt": 60.0
+      }
+    ]
+  }
+}

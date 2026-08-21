@@ -1,0 +1,77 @@
+{
+  "cnpj": "65.798.589/0001-60",
+  "razao_social": "Kentucky Industria e Comercio Ltda - EPP",
+  "qt_nfes": 4,
+  "qt_itens": 5,
+  "faturamento_total": 5755.21,
+  "resumo_por_tipo": [
+    {
+      "tipo": "OUTROS",
+      "qt_itens": 5,
+      "qt_total_pecas": 352,
+      "vu_min": 15.2,
+      "vu_med": 16.08,
+      "vu_max": 18.0,
+      "faturamento": 5755.21
+    }
+  ],
+  "itens_por_tipo": {
+    "OUTROS": [
+      {
+        "cnpj": "65.798.589/0001-60",
+        "razao": "Kentucky Industria e Comercio Ltda - EPP",
+        "data": "2019-07-25",
+        "numero_nf": "3666",
+        "produto": "01.01.026",
+        "descricao": "VERG. ALUM. RED. 3\u001f 1/2'' LIGA 6351",
+        "qtd": 100.0,
+        "vu": 18.0,
+        "vt": 1800.0
+      },
+      {
+        "cnpj": "65.798.589/0001-60",
+        "razao": "Kentucky Industria e Comercio Ltda - EPP",
+        "data": "2018-05-15",
+        "numero_nf": "3323",
+        "produto": "01.01.024",
+        "descricao": "Vergalhão Redondo 3 1/4'' ( 82,553mm) Liga 6351",
+        "qtd": 87.4,
+        "vu": 15.74,
+        "vt": 1375.68
+      },
+      {
+        "cnpj": "65.798.589/0001-60",
+        "razao": "Kentucky Industria e Comercio Ltda - EPP",
+        "data": "2018-05-15",
+        "numero_nf": "3323",
+        "produto": "01.01.021",
+        "descricao": "Vergalhão Redondo 4'' ( 101,60 mm ) Liga 6351",
+        "qtd": 89.6,
+        "vu": 15.74,
+        "vt": 1410.3
+      },
+      {
+        "cnpj": "65.798.589/0001-60",
+        "razao": "Kentucky Industria e Comercio Ltda - EPP",
+        "data": "2018-05-15",
+        "numero_nf": "3324",
+        "produto": "01.01.024",
+        "descricao": "Vergalhão Redondo 3 1/4'' ( 82,553mm) Liga 6351",
+        "qtd": 28.8,
+        "vu": 15.74,
+        "vt": 453.31
+      },
+      {
+        "cnpj": "65.798.589/0001-60",
+        "razao": "Kentucky Industria e Comercio Ltda - EPP",
+        "data": "2017-06-22",
+        "numero_nf": "3021",
+        "produto": "01.01.026",
+        "descricao": "VERG. ALUM. RED. 3\u001f 1/2'' LIGA 6351",
+        "qtd": 47.1,
+        "vu": 15.2,
+        "vt": 715.92
+      }
+    ]
+  }
+}
