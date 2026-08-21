@@ -14,7 +14,12 @@ import {
   HelpCircle,
   HardHat,
   Zap,
-  CheckCircle2
+  CheckCircle2,
+  FileCode2,
+  Bot,
+  ArrowRight,
+  UploadCloud,
+  FileText
 } from 'lucide-react';
 import { 
   Budget, 
@@ -29,6 +34,7 @@ import {
   ExternalService 
 } from '../../types';
 import { calculateBudget, formatBRL } from '../../lib/calculations';
+import { analisarDesenhoEProporProcesso, ProcessProposal } from '../../lib/processAI';
 import { storage } from '../../lib/storage';
 
 interface OrcamentoFormProps {
@@ -50,9 +56,14 @@ export const OrcamentoForm: React.FC<OrcamentoFormProps> = ({
   onCancel,
   onViewDocuments
 }) => {
+  // Estado do Assistente IA de Desenho
+  const [promptDesenho, setPromptDesenho] = useState('');
+  const [propostaIA, setPropostaIA] = useState<ProcessProposal | null>(null);
+  const [analisandoIA, setAnalisandoIA] = useState(false);
+
   // Cabeçalho
   const [numero] = useState(initialBudget?.numero || storage.getNextNumeroOrcamento());
-  const [clienteId, setClienteId] = useState(initialBudget?.clienteId || clients[0]?.id || 'CLI001');
+  const [clienteId, setClienteId] = useState(initialBudget?.clienteId || clients[0]?.id || 'CLI_MICROGEAR');
   const [perfilCliente, setPerfilCliente] = useState<PerfilCliente>(initialBudget?.perfilCliente || 'recorrente_padrao');
   const [codigoPeca, setCodigoPeca] = useState(initialBudget?.codigoPeca || '');
   const [nomePeca, setNomePeca] = useState(initialBudget?.nomePeca || '');
@@ -91,12 +102,12 @@ export const OrcamentoForm: React.FC<OrcamentoFormProps> = ({
       {
         id: 'op_1',
         nome: 'Torneamento CNC',
-        maquinaId: machines[0]?.id || 'MAQ001',
-        maquinaNome: machines[0]?.nome || 'Torno CNC Romi GL280',
-        descricao: 'Desbaste e acabamento dimensional conforme desenho',
+        maquinaId: machines[0]?.id || 'MAQ_ROMI_GL280',
+        maquinaNome: machines[0]?.nome || 'Romi GL 280M (Centro de Torneamento)',
+        descricao: 'Facear, tornear externo, furar e acabamento Ra 0.8',
         tempoSetupMin: 45,
         tempoCicloMin: 6.5,
-        taxaHoraria: 96.35,
+        taxaHoraria: 86.86,
         ferramentalRecomendado: 'Pastilhas Iscar IC8250 / IC807'
       }
     ]
@@ -107,7 +118,6 @@ export const OrcamentoForm: React.FC<OrcamentoFormProps> = ({
     initialBudget?.servicosExternos || []
   );
 
-  // Selecionar material e atualizar preço
   const selectedMaterial = useMemo(() => {
     return materials.find((m) => m.id === materialId) || materials[0];
   }, [materials, materialId]);
@@ -130,6 +140,42 @@ export const OrcamentoForm: React.FC<OrcamentoFormProps> = ({
       else if (cliLow.includes('microgear') || cliLow.includes('sohipren') || cliLow.includes('inova')) setPerfilCliente('recorrente_padrao');
     }
   }, [selectedClient]);
+
+  // Função para acionar o Assistente IA de Desenho Técnico
+  const handleExecutarAnaliseIA = () => {
+    if (!promptDesenho.trim()) return;
+    setAnalisandoIA(true);
+
+    setTimeout(() => {
+      const proposta = analisarDesenhoEProporProcesso(promptDesenho, materials);
+      setPropostaIA(proposta);
+      setAnalisandoIA(false);
+    }, 600);
+  };
+
+  // Aplicar proposta da IA diretamente no formulário
+  const handleAplicarPropostaIA = () => {
+    if (!propostaIA) return;
+
+    if (!nomePeca) setNomePeca(propostaIA.nomePeca);
+    if (!codigoPeca) setCodigoPeca(propostaIA.codigoPeca);
+    if (!desenhoNumero) setDesenhoNumero('DES-' + propostaIA.codigoPeca);
+    
+    setMaterialId(propostaIA.materialSugeridoId);
+    setShape(propostaIA.shapeSugerido);
+    setDiametroBruto(propostaIA.diametroBruto);
+    setComprimentoBruto(propostaIA.comprimentoBruto);
+    setDiametroAcabado(propostaIA.diametroAcabado);
+    setComprimentoAcabado(propostaIA.comprimentoAcabado);
+    setTipologia(propostaIA.tipologia);
+    setTempoProgH(propostaIA.tempoProgH);
+    setTempoSetupH(propostaIA.tempoSetupH);
+    setTempoInspH(propostaIA.tempoInspH);
+    setOperacoes(propostaIA.operacoes);
+    setServicosExternos(propostaIA.servicosExternos);
+
+    setPropostaIA(null);
+  };
 
   // Cálculos v2.0
   const calculos = useMemo(() => {
@@ -188,12 +234,12 @@ export const OrcamentoForm: React.FC<OrcamentoFormProps> = ({
     const newOp: MachiningOperation = {
       id: `op_${Date.now()}`,
       nome: 'Nova Operação CNC',
-      maquinaId: machines[0]?.id || 'MAQ001',
-      maquinaNome: machines[0]?.nome || 'Torno CNC Romi GL280',
+      maquinaId: machines[0]?.id || 'MAQ_ROMI_GL280',
+      maquinaNome: machines[0]?.nome || 'Romi GL 280M (Centro de Torneamento)',
       descricao: 'Usinagem de apoio',
       tempoSetupMin: 30,
       tempoCicloMin: 3.0,
-      taxaHoraria: 96.35
+      taxaHoraria: 86.86
     };
     setOperacoes([...operacoes, newOp]);
   };
@@ -285,7 +331,7 @@ export const OrcamentoForm: React.FC<OrcamentoFormProps> = ({
         <div>
           <div className="flex items-center gap-2">
             <span className="rounded-md bg-amber-500/10 px-2 py-0.5 text-xs font-bold text-amber-600 dark:bg-amber-500/20 dark:text-amber-400">
-              MOTOR DE CÁLCULO v2.0
+              MOTOR DE CÁLCULO v2.0 & IA
             </span>
             <span className="text-xs text-zinc-500 dark:text-zinc-400">
               Orçamento #{numero}
@@ -311,6 +357,123 @@ export const OrcamentoForm: React.FC<OrcamentoFormProps> = ({
             <span>Salvar & Emitir 3 Documentos</span>
           </button>
         </div>
+      </div>
+
+      {/* 🤖 ASSISTENTE IA DE ANÁLISE DE DESENHO (DESTAQUE PRINCIPAL) */}
+      <div className="rounded-2xl border-2 border-amber-500/30 bg-gradient-to-br from-amber-500/5 via-white to-amber-500/10 p-5 shadow-md dark:from-amber-950/20 dark:via-zinc-900 dark:to-zinc-900 dark:border-amber-500/30">
+        <div className="flex items-center justify-between gap-2 border-b border-amber-500/20 pb-3">
+          <div className="flex items-center gap-2.5">
+            <div className="rounded-lg bg-amber-500 p-2 text-zinc-950 font-black">
+              <Bot className="h-5 w-5" />
+            </div>
+            <div>
+              <h2 className="text-sm font-black text-zinc-900 dark:text-white flex items-center gap-2">
+                Assistente IA de Engenharia — Análise de Desenho & Proposta de Processo
+                <span className="rounded bg-amber-500/20 px-2 py-0.5 text-[10px] font-bold text-amber-700 dark:text-amber-300">
+                  Automático
+                </span>
+              </h2>
+              <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                Cole dados do desenho, dimensões ou texto natural. A IA calcula o blank, cruza com o banco de 8.4k programas CNC e monta o roteiro de fabricação para sua aprovação.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-4 space-y-3">
+          <div className="flex gap-2">
+            <textarea
+              rows={2}
+              placeholder="Ex: Peça Bucha Guia em Aço 1045 temperado, Ø60 x 80mm com furo central Ø28mm, tolerância H7, lote 100 peças..."
+              value={promptDesenho}
+              onChange={(e) => setPromptDesenho(e.target.value)}
+              className="flex-1 rounded-xl border border-zinc-300 bg-white p-3 text-xs text-zinc-900 shadow-xs focus:border-amber-500 focus:outline-hidden dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
+            />
+            <button
+              onClick={handleExecutarAnaliseIA}
+              disabled={analisandoIA || !promptDesenho.trim()}
+              className="flex items-center justify-center gap-2 rounded-xl bg-amber-500 px-5 text-xs font-black text-zinc-950 shadow-sm transition hover:bg-amber-400 disabled:opacity-50"
+            >
+              {analisandoIA ? (
+                <span>Analisando...</span>
+              ) : (
+                <>
+                  <Sparkles className="h-4 w-4" />
+                  <span>Analisar Desenho</span>
+                </>
+              )}
+            </button>
+          </div>
+
+          {/* Atalhos Rápidos para Teste */}
+          <div className="flex items-center gap-2 flex-wrap text-[11px] text-zinc-500">
+            <span>Exemplos rápidos:</span>
+            <button
+              type="button"
+              onClick={() => setPromptDesenho('Bucha Guia Temperada em Aço 1045, Ø63.5 x 75mm, furo Ø25mm, têmpera e revenimento')}
+              className="rounded-lg bg-zinc-100 px-2 py-1 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700"
+            >
+              🔩 Bucha Guia 1045 Temperada
+            </button>
+            <button
+              type="button"
+              onClick={() => setPromptDesenho('Eixo Flangeado com furação e rasgo de chaveta em 4140 beneficiado, Ø50 x 120mm')}
+              className="rounded-lg bg-zinc-100 px-2 py-1 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700"
+            >
+              ⚙️ Eixo Flangeado c/ Furação
+            </button>
+            <button
+              type="button"
+              onClick={() => setPromptDesenho('Corpo de Conector em Alumínio 6061-T6, Ø35 x 45mm com rosca e anodização')}
+              className="rounded-lg bg-zinc-100 px-2 py-1 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700"
+            >
+              🔘 Conector Alumínio 6061
+            </button>
+          </div>
+        </div>
+
+        {/* 📋 GATE DE APROVAÇÃO DO PROCESSO DE FABRICAÇÃO PROPOSTO PELA IA */}
+        {propostaIA && (
+          <div className="mt-4 rounded-xl border border-amber-500/40 bg-amber-500/10 p-4 dark:bg-amber-950/30">
+            <div className="flex items-center justify-between border-b border-amber-500/20 pb-2">
+              <div className="flex items-center gap-2">
+                <span className="rounded bg-amber-500 px-2 py-0.5 text-[10px] font-black text-zinc-950">
+                  PROCESSO DE FABRICAÇÃO PROPOSTO PELA IA
+                </span>
+                <span className="text-xs font-bold text-zinc-900 dark:text-white">
+                  {propostaIA.nomePeca} (Blank: Ø{propostaIA.diametroBruto} x {propostaIA.comprimentoBruto}mm)
+                </span>
+              </div>
+
+              <button
+                onClick={handleAplicarPropostaIA}
+                className="flex items-center gap-1.5 rounded-lg bg-emerald-600 px-4 py-1.5 text-xs font-bold text-white shadow-sm hover:bg-emerald-500"
+              >
+                <CheckCircle2 className="h-4 w-4" />
+                <span>Aprovar Roteiro & Aplicar</span>
+              </button>
+            </div>
+
+            <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+              <div className="space-y-1.5 text-zinc-700 dark:text-zinc-300">
+                <p><strong>💡 Justificativa de Engenharia:</strong> {propostaIA.justificativaEngenharia}</p>
+                <p><strong>Material Recomendado:</strong> {propostaIA.materialSugeridoId} | <strong>Tipologia:</strong> {propostaIA.tipologia}</p>
+              </div>
+
+              <div>
+                <p className="font-bold text-zinc-900 dark:text-white mb-1">Sequência de Operações Sugerida:</p>
+                <div className="space-y-1">
+                  {propostaIA.operacoes.map((op, i) => (
+                    <div key={i} className="flex justify-between items-center bg-white/70 dark:bg-zinc-800/80 p-1.5 rounded border border-zinc-200 dark:border-zinc-700 text-[11px]">
+                      <span><strong>Op {(i + 1) * 10}:</strong> {op.nome} ({op.maquinaNome})</span>
+                      <span className="font-bold text-amber-700 dark:text-amber-300">{op.tempoCicloMin} min</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Main 2-Column Grid */}
